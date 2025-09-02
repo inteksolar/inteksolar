@@ -35,7 +35,22 @@ header {
 }
 
 .logo img {
-  height: 120px;
+  height: 80px; /* Default desktop size */
+  width: auto;
+}
+
+/* Tablet size */
+@media (max-width: 1024px) {
+  .logo img {
+    height: 70px;
+  }
+}
+
+/* Mobile size */
+@media (max-width: 600px) {
+  .logo img {
+    height: 150px;
+  }
 }
 
 .nav-links {
