@@ -277,8 +277,9 @@ footer {
 }
 
 .footer-bottom {
-  background: #ff7b00;   /* 🔶 Orange theme */
-  color: #fff;
+  background-color: #ff7b00 !important;  /* 🔶 Force Orange */
+  color: #ffffff;
   padding: 12px;
   font-size: 14px;
+  text-align: center;
 }
