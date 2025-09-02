@@ -26,32 +26,32 @@ header {
 }
 
 .navbar {
-  max-width: 1200px;
-  margin: auto;
-  padding: 15px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* logo left, menu/quote right */
   align-items: center;
+  padding: 10px 20px;
 }
 
 .logo img {
-  height: 80px; /* Default desktop size */
+  height: 70px;   /* Default desktop size */
   width: auto;
 }
 
-/* Tablet size */
+/* Tablet */
 @media (max-width: 1024px) {
   .logo img {
-    height: 70px;
+    height: 60px;
   }
 }
 
-/* Mobile size */
+/* Mobile */
 @media (max-width: 600px) {
   .logo img {
-    height: 50px;
+    height: 40px;
   }
-}
+  .navbar {
+    justify-content: space-between; /* logo stays left, menu stays right */
+  }
 
 .nav-links {
   display: flex;
