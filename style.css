@@ -526,7 +526,7 @@
 
 .footer .btn.btn-link {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     padding: 0;
     text-align: left;
     color: #9B9B9B;
@@ -550,7 +550,7 @@
 }
 
 .footer .copyright {
-    padding: 10px 0;
+    padding: 8px 0;
     border-top: 1px solid rgba(256, 256, 256, .1);
 }
 
