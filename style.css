@@ -271,3 +271,14 @@ header {
 .footer p {
   margin: 0.3rem 0;
 }
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-bottom {
+  background: #ff7b00;   /* 🔶 Orange theme */
+  color: #fff;
+  padding: 12px;
+  font-size: 14px;
+}
