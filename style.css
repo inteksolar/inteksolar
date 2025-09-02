@@ -33,12 +33,12 @@ header {
 }
 
 .logo img {
-  height: 70px;   /* Default desktop size */
+  height: 80px;   /* Default desktop size */
   width: auto;
 }
 
 /* Tablet */
-@media (max-width: 1024px) {
+@media (max-width: 500px) {
   .logo img {
     height: 60px;
   }
@@ -47,7 +47,7 @@ header {
 /* Mobile */
 @media (max-width: 600px) {
   .logo img {
-    height: 40px;
+    height: 80px;
   }
   .navbar {
     justify-content: space-between; /* logo stays left, menu stays right */
