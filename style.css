@@ -49,7 +49,7 @@ header {
 /* Mobile size */
 @media (max-width: 600px) {
   .logo img {
-    height: 80px;
+    height: 50px;
   }
 }
 
