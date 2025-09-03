@@ -369,7 +369,7 @@ header {
 .contact-section .contact-inline {
   display: flex;
   flex-wrap: wrap;  /* mobile ma break thayi shake */
-  align-items: center;
+  align-items: center;  /* all text
   gap: 10px;
 }
 
