@@ -367,18 +367,19 @@ header {
 }
 .footer-social {
   margin-top: 15px;
+  text-align: center;   /* icons ne center kare */
 }
 
 .footer-social a {
-  display: inline-block;
-  margin: 0 8px;
-  color: #ff6600;       /* Solar Orange icons */
-  font-size: 20px;
+  display: inline-block; 
+  margin: 0 10px;        /* icons vachche space */
+  color: #ff6600;        /* Solar Orange */
+  font-size: 22px;
   transition: color 0.3s;
 }
 
 .footer-social a:hover {
-  color: #0a2f5a;       /* Dark Blue on hover */
+  color: #0a2f5a;        /* Dark Blue on hover */
 }
 
 /* Footer Bottom */
