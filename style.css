@@ -24,11 +24,19 @@ h4, h5, h6 {
   color: #ffffff;
 }
 
-/* Paragraphs */
-p {
-  color: #333;
-  font-size: 16px;
-  line-height: 1.6;
+/* About Section Paragraph */
+.about-section p {
+  color: #0a2f5a;   /* Dark Blue */
+}
+
+/* Services Section Paragraph */
+.services-section p {
+  color: #0a2f5a;   /* Solar Orange */
+}
+
+/* Contact Section Paragraph */
+.contact-section p {
+  color: #ffffff;   /* White */
 }
 
 /* Links */
