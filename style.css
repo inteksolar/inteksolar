@@ -329,15 +329,6 @@ header {
   min-height: 120px;
 }
 
-/* Contact Section */
-.contact-section {
-  background: #fff4e6;   /* Light Orange */
-  padding: 40px 30px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
-}
-
 /* Contact Text */
 .contact-section p, 
 .contact-section a, 
