@@ -71,6 +71,78 @@ i, .fa, .fas, .fab {
   box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
 }
 
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap; /* responsive */
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #2c7a7b; /* solar theme green */
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 20px;
+  color: #2c7a7b;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff9800; /* hover effect */
+}
+
+/* Button */
+.btn-learn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2c7a7b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-learn:hover {
+  background: #ff9800;
+}
+
 /* Services Section */
 .services-section {
   background: #fff7e6;   /* Light Orange */
