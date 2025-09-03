@@ -82,8 +82,8 @@ i, .fa, .fas, .fab {
 
 /* Universal section spacing */
 section {
-  padding: 60px 20px;   /* section andar content nu gap */
-  margin: 60px 0;       /* section vachche gap */
+  padding: 50px 20px;   /* section andar content nu gap */
+  margin: 40px 0;       /* section vachche gap */
 }
 
 /* Last section niche extra margin na hoy */
@@ -94,8 +94,14 @@ section:last-of-type {
 /* ===== Responsive Adjustments ===== */
 @media (max-width: 768px) {
   section {
-    padding: 40px 15px;   /* mobile ma thodu ochhu padding */
-    margin: 40px 0;       /* section vachche gap ochhu */
+    padding: 30px 15px;   /* mobile ma thodu ochhu padding */
+    margin: 25px 0;       /* section vachche gap ochhu */
+}
+@media (max-width: 768px) {
+  section {
+    padding: 30px 15px !important;
+    margin: 25px 0 !important;
+  }
 }
 
 /* Global Styles */
