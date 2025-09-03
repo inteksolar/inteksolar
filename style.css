@@ -343,7 +343,7 @@ header {
 
 /* Footer */
 .footer {
-  background: #0d2f6e;
+  background: #ff6600;
   color: white;
   padding: 2rem 0;
 }
@@ -371,7 +371,7 @@ header {
 .footer p {
   margin: 0.3rem 0;
 }
-footer {
+.footer {
   text-align: center;
   margin-top: 40px;
 }
