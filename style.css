@@ -328,21 +328,43 @@ header {
   resize: none;
   min-height: 120px;
 }
-.contact-box {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
+
+/* Contact Section */
+.contact-section {
+  background: #f0fff0;   /* Light Green */
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
 }
 
-.contact-box h2 {
-  color: #28a745; /* Green theme */
+/* Contact Text */
+.contact-section p, 
+.contact-section a, 
+.contact-section li {
+  color: #0a2f5a;   /* Dark Blue text */
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+}
+
+/* Contact Heading */
+.contact-section h2 {
+  color: #ff6600;   /* Solar Orange */
   margin-bottom: 10px;
 }
 
-.contact-box i {
-  color: #28a745;
+/* Contact Icons */
+.contact-section i {
+  color: #ff6600;   /* Solar Orange */
   margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Contact Links Hover */
+.contact-section a:hover {
+  color: #ff6600;
+  text-decoration: underline;
 }
 
 /* Footer */
