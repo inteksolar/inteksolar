@@ -320,36 +320,7 @@ header {
   min-height: 120px;
 }
 
-/* Contact Text */
-.contact-section p, 
-.contact-section a, 
-.contact-section li {
-  color: #0a2f5a;   /* Dark Blue text */
-  font-size: 16px;
-  line-height: 1.6;
-  font-family: Arial, sans-serif;
-}
-
-/* Contact Heading */
-.contact-section h2 {
-  color: #ff6600;   /* Solar Orange */
-  margin-bottom: 10px;
-}
-
-/* Contact Icons */
-.contact-section i {
-  color: #ff6600;   /* Solar Orange */
-  margin-right: 8px;
-  font-size: 18px;
-}
-
-/* Contact Links Hover */
-.contact-section a:hover {
-  color: #ff6600;
-  text-decoration: underline;
-}
-
-/* Footer */
+/* Footer Contact */
 .footer {
   background: #0a2f5a;
   color: white;
@@ -382,6 +353,17 @@ header {
 .footer {
   text-align: center;
   margin-top: 40px;
+}
+.contact-section i {
+  color: #ff6600;   /* Solar Orange icon*/
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Contact Links Hover */
+.contact-section a:hover {
+  color: #ff6600;
+  text-decoration: underline;
 }
 
 /* Footer Bottom */
