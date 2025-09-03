@@ -366,6 +366,16 @@ header {
   color: #ff6600;
   text-decoration: underline;
 }
+.contact-section .contact-inline {
+  display: flex;
+  flex-wrap: wrap;  /* mobile ma break thayi shake */
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-section .contact-inline i {
+  margin-right: 5px;
+}
 
 /* Footer */
 .footer {
