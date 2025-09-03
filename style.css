@@ -80,6 +80,24 @@ i, .fa, .fas, .fab {
   box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
 }
 
+/* Universal section spacing */
+section {
+  padding: 60px 20px;   /* section andar content nu gap */
+  margin: 60px 0;       /* section vachche gap */
+}
+
+/* Last section niche extra margin na hoy */
+section:last-of-type {
+  margin-bottom: 0;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  section {
+    padding: 40px 15px;   /* mobile ma thodu ochhu padding */
+    margin: 40px 0;       /* section vachche gap ochhu */
+}
+
 /* Global Styles */
 * {
   margin: 0;
