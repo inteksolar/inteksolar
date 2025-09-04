@@ -1,43 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Intek Solar</title>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<header>
-  <div class="navbar">
-    <!-- Logo -->
-    <div class="logo">
-      <img src="logo.png" alt="Intek Solar Logo">
-    </div>
-
-    <!-- Navigation Menu -->
-    <nav class="nav-links" id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="https://inteksolar.in/contact.html">Contact</a>
-    </nav>
-
-    <!-- Quote Button + Menu Button -->
-    <div class="header-buttons">
-      <a href="#quote" class="quote-btn">Get free Quote</a>
-      <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    </div>
-  </div>
-</header>
-
-<!-- Contact Section -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Intek Solar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #003366; /* Dark Blue */
+      color: #ffffff;
+    }
 
     .container {
       max-width: 1000px;
       margin: 0 auto;
-      padding: 60px 20px;
+      padding: 40px 20px;
     }
 
     h1 {
@@ -60,7 +38,7 @@
       min-width: 300px;
       background: #002244;
       padding: 25px;
-      border-radius: 0px;
+      border-radius: 12px;
       box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
     }
 
@@ -74,7 +52,6 @@
       font-size: 16px;
       margin: 12px 0;
       line-height: 1.6;
-      color: #ffffff;
     }
 
     .contact-info i {
@@ -86,7 +63,7 @@
     .contact-form {
       flex: 1;
       min-width: 300px;
-      background: #fff4e6;
+      background: #ffffff;
       color: #000;
       padding: 25px;
       border-radius: 12px;
@@ -213,145 +190,63 @@
     }
   </style>
 </head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="contact-wrapper">
 
       <!-- Contact Information -->
       <div class="contact-info">
         <h2>Get in Touch</h2>
-<h3 style="color:#ffffff;">INTEK TECHNOLOGIES</h3>
-
-  <p><strong style="color:#ffffff;">GSTIN:</strong> 
-     <span style="color:#ffffff;">24CZLPS5302M6ZU</span>
-  </p>
         <p><i class="fas fa-map-marker-alt"></i> 308/2, Saran, Udwada (R.S.), Valsad</p>
         <p><i class="fas fa-phone-alt"></i> +91 90995 78771</p>
         <p><i class="fas fa-envelope"></i> info@inteksolar.in</p>
+        <p><i class="fas fa-globe"></i> www.inteksolar.in</p>
+      </div>
 
-      <<!-- Contact Form -->
-<section id="contact">
-  <div class="contact-form">
-    <h2>Send us a Message</h2>
-    <form id="contactForm" action="https://formspree.io/f/xqadgpnp" method="POST">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send us a Message</h2>
+        <form id="contactForm" action="https://formspree.io/f/xqadgpnp" method="POST">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-      <label for="mobile">Your Mobile No.</label>
-      <input type="mobile" id="mobile" name="mobile" placeholder="Enter your mobile no." required>
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-      <label for="message">Your Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
 
-      <button type="submit">Send Message</button>
-    </form>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
   </div>
-</section>
 
-  <!-- Footer Contact -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <img src="logo.png" alt="Intek Solar" class="footer-logo" style="margin-bottom: 0px;" />
-
-<h3 style="margin-top: 0px; margin-bottom: 15px;">
-  <span style="font-style: italic; font-weight: normal; color: #ffffff; font-size: 1em;">Simplifying</span>
-  <span style="font-weight: bold; font-style: italic; color: #ff6600; font-size: 1.3em;">SOLAR</span>
-</h3>
-<a href="https://inteksolar.in/contact.html" target="_blank" 
-   style="display:inline-block;
-          background-color:#ff6600;
-          color:#ffffff;
-          padding:3px 10px;
-          font-size:16px;
-          text-decoration:none;
-          border-radius:20px;
-          font-weight:bold;
-          margin-bottom:10px;">
-   Contact Us
-</a>
-  <h3 style="color:#ffffff;">INTEK TECHNOLOGIES</h3>
-
-  <p><strong style="color:#ffffff;">GSTIN:</strong> 
-     <span style="color:#ffffff;">24CZLPS5302M6ZU</span>
-  </p>
-
-  <p>
-    <i class="fas fa-map-marker-alt" style="margin-right:8px; color:#ff6600;"></i>
-    <span style="color:#ffffff; font-weight:bold;">
-      308/2, Saran, Udwada (R.S.), Valsad
-    </span>
-  </p>
-
-  <p>
-    <i class="fas fa-phone-alt" style="margin-right:8px; color:#ff6600;"></i>
-    <span style="color:#ffffff; font-weight:normal;">
-      +91 90995 78771
-    </span>
-  </p>
-
-  <p>
-    <i class="fas fa-envelope" style="margin-right:8px; color:#ff6600;"></i>
-    <span style="color:#ffffff; font-weight:normal;">
-      info@inteksolar.in
-    </span>
-  </p>
-<div class="footer-social">
-  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="https://wa.me/919099578771" target="_blank"><i class="fab fa-whatsapp"></i></a>
-  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-</div>
-</div>
-</section>
-<div>
-  <div class="footer-bottom">
-    <p>© 2025 Intek Solar. All Rights Reserved.</p>
+  <!-- Popup -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-box">
+      <i class="fas fa-solar-panel"></i>
+      <h3>✅ Thank You from Intek Solar!</h3>
+      <p>Your message has been sent successfully.<br> We will get back to you shortly.</p>
+      <div class="popup-buttons">
+        <button onclick="closePopup()">Close</button>
+        <button onclick="goHome()">Close & Go Home</button>
+      </div>
+    </div>
   </div>
-</footer>
-
-<script>
-function toggleMenu() {
-  document.getElementById("navLinks").classList.toggle("show");
-}
-</script>
 
   <!-- Font Awesome for icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <!-- Formspree AJAX + Popup -->
   <script>
-    <!-- Contact Form -->
-<div class="contact-form">
-  <h2>Send us a Message</h2>
-  <form id="contactForm" action="https://formspree.io/f/xqadgpnp" method="POST">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    const form = document.getElementById('contactForm');
+    const popup = document.getElementById('popupOverlay');
 
-    <label for="mobile">Your Mobile No.</label>
-    <input type="mobile" id="mobile" name="mobile" placeholder="Enter your mobile no." required>
-
-    <label for="message">Your Message</label>
-    <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-</div>
-
-<!-- Fixed JS -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('contactForm');
-  const popup = document.getElementById('popupOverlay');
-  const closeBtn = document.getElementById('closeBtn');
-  const goHomeBtn = document.getElementById('goHomeBtn');
-
-  // Hide popup on page load
-  popup.style.display = 'none';
-
-  // AJAX form submit
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const formData = new FormData(form);
-
-    try {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const formData = new FormData(form);
       const response = await fetch(form.action, {
         method: form.method,
         body: formData,
@@ -360,38 +255,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (response.ok) {
         form.reset();
-        popup.style.display = 'flex'; // show popup only on submit success
+        popup.style.display = 'flex';
       } else {
         alert("⚠️ Something went wrong. Please try again.");
       }
-    } catch (error) {
-      alert("⚠️ Something went wrong. Please try again.");
+    });
+
+    function closePopup() {
+      popup.style.display = 'none';
     }
-  });
 
-  // Close button
-  closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
-  });
-
-  // Go Home button
-  goHomeBtn.addEventListener('click', () => {
-    window.location.href = "index.html";
-  });
-});
-</script>
-
-         <!-- Popup -->
-<div class="popup-overlay" id="popupOverlay">
-  <div class="popup-box">
-    <i class="fas fa-solar-panel"></i>
-    <h3>✅ Thank You from Intek Solar!</h3>
-    <p>Your message has been sent successfully.<br>We will get back to you shortly.</p>
-    <div class="popup-buttons">
-      <button id="closeBtn">Close</button>
-      <button id="goHomeBtn">Close & Go Home</button>
-    </div>
-  </div>
-</div>
+    function goHome() {
+      window.location.href = "index.html"; // Home page redirect
+    }
+  </script>
 </body>
 </html>
