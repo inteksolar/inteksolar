@@ -379,12 +379,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
   const popup = document.getElementById('popupOverlay');
 
-  // 🔹 Ensure popup is hidden on page load
+  // Ensure popup hidden on page load
   popup.style.display = 'none';
 
-  // 🔹 AJAX form submit
+  // AJAX form submit
   form.addEventListener('submit', async function(e) {
-    e.preventDefault(); // prevent page reload
+    e.preventDefault();
     const formData = new FormData(form);
 
     try {
@@ -396,7 +396,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (response.ok) {
         form.reset();
-        popup.style.display = 'flex'; // 🔹 show popup only after successful submit
+        popup.style.display = 'flex'; // show popup after successful submit
       } else {
         alert("⚠️ Something went wrong. Please try again.");
       }
@@ -405,15 +405,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 🔹 Functions for buttons
-  window.closePopup = function() {
-    popup.style.display = 'none';
-  }
+  // Attach event listeners to buttons instead of inline onclick
+  const closeBtn = popup.querySelector('button:nth-child(1)');
+  const goHomeBtn = popup.querySelector('button:nth-child(2)');
 
-  window.goHome = function() {
-    window.location.href = "index.html"; // redirect home
-  }
-}
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+  });
+
+  goHomeBtn.addEventListener('click', () => {
+    window.location.href = "index.html";
+  });
+});
 </script>
   </script>
 </body>
