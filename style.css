@@ -192,24 +192,12 @@ header {
 }
 
 .logo img {
-  height: 80px;   /* Default desktop size */
+  height: 80px;
   width: auto;
 }
 
-/* Tablet */
-@media (max-width: 500px) {
-  .logo img {
-    height: 60px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .logo img {
-    height: 80px;
-  }
-  .navbar {
-    justify-content: space-between; /* logo stays left, menu stays right */
+.navbar {
+  justify-content: space-between; /* logo stays left, menu stays right */
   }
 
 .nav-links {
@@ -376,29 +364,6 @@ header {
 }
 .project-grid img:hover {
   transform: scale(1.05);
-}
-
-/* Contact */
-.contact {
-  background: #f9f9f9;
-  padding: 4rem 0;
-  text-align: center;
-}
-.contact form {
-  display: grid;
-  gap: 1rem;
-  max-width: 500px;
-  margin: auto;
-}
-.contact input, .contact textarea {
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-}
-.contact textarea {
-  resize: none;
-  min-height: 120px;
 }
 
 /* Footer Contact */
