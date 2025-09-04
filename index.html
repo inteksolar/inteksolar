@@ -96,15 +96,18 @@
 <div class="popup-overlay" id="quotePopup">
   <div class="popup-box">
     <i class="fas fa-solar-panel"></i>
-    <h3>📩 Get Your Free Quote!</h3>
+    <h3>📩 Get a Free Solar Quotation!</h3>
     <form id="quoteForm" action="https://formspree.io/f/xqadgpnp" method="POST">
-      <label for="qname">Your Name</label>
-      <input type="text" id="qname" name="name" placeholder="Enter your name" required>
+      <label for="qname">Full Name</label>
+      <input type="text" id="qname" name="name" placeholder="Enter your full name" required>
 
-      <label for="qmobile">Your Mobile No.</label>
-      <input type="mobile" id="qmobile" name="mobile" placeholder="Enter your mobile no." required>
+      <label for="qmobile">Phone</label>
+      <input type="phone" id="qphone" name="phone" placeholder="Enter your phone no." required>
 
-      <label for="qmessage">Your Message</label>
+<label for="qpincode">Pincode</label>
+      <input type="pincode" id="qpincode" name="pincode" placeholder="Enter your Area Pincode" required>
+
+      <label for="qmessage">Message</label>
       <textarea id="qmessage" name="message" rows="5" placeholder="Write your message" required></textarea>
 
       <div class="popup-buttons">
