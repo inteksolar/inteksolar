@@ -28,7 +28,7 @@
 
     <!-- Quote Button + Menu Button -->
     <div class="header-buttons">
-      <a href="#quote" class="quote-btn">Get free Quote</a>
+      <a href="javascript:void(0)" class="quote-btn" id="quoteBtn">Get Free Quote</a>
       <button class="menu-btn" onclick="toggleMenu()">☰</button>
     </div>
   </div>
@@ -92,6 +92,29 @@
     </div>
   </section>
 
+<!-- Quote Form Popup -->
+<div class="popup-overlay" id="quotePopup">
+  <div class="popup-box">
+    <i class="fas fa-solar-panel"></i>
+    <h3>📩 Get Your Free Quote!</h3>
+    <form id="quoteForm" action="https://formspree.io/f/xqadgpnp" method="POST">
+      <label for="qname">Your Name</label>
+      <input type="text" id="qname" name="name" placeholder="Enter your name" required>
+
+      <label for="qmobile">Your Mobile No.</label>
+      <input type="mobile" id="qmobile" name="mobile" placeholder="Enter your mobile no." required>
+
+      <label for="qmessage">Your Message</label>
+      <textarea id="qmessage" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+      <div class="popup-buttons">
+        <button type="submit">Send Quote Request</button>
+        <button type="button" id="quoteCloseBtn">Close</button>
+      </div>
+    </form>
+  </div>
+</div>
+
   <!-- Footer Contact -->
   <footer class="footer">
     <div class="container footer-grid">
@@ -142,6 +165,52 @@
     <p>© 2025 Intek Solar. All Rights Reserved.</p>
   </div>
 </footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const quoteBtn = document.getElementById('quoteBtn');
+  const quotePopup = document.getElementById('quotePopup');
+  const quoteCloseBtn = document.getElementById('quoteCloseBtn');
+  const quoteForm = document.getElementById('quoteForm');
+
+  // Hide popup initially
+  quotePopup.style.display = 'none';
+
+  // Open popup on button click
+  quoteBtn.addEventListener('click', () => {
+    quotePopup.style.display = 'flex';
+  });
+
+  // Close button
+  quoteCloseBtn.addEventListener('click', () => {
+    quotePopup.style.display = 'none';
+  });
+
+  // AJAX submit
+  quoteForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(quoteForm);
+
+    try {
+      const response = await fetch(quoteForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        quoteForm.reset();
+        alert("✅ Your quote request has been sent successfully!");
+        quotePopup.style.display = 'none';
+      } else {
+        const data = await response.json();
+        alert(data.error || "⚠️ Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      alert("⚠️ Something went wrong. Please try again.");
+    }
+  });
+});
+</script>
 </body>
 </html>
 
