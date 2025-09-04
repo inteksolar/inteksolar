@@ -401,6 +401,7 @@ header {
 .popup-box p {
   color: #003366;
   font-size: 1rem;
+  text-align: left;
 }
 
 .popup-buttons {
