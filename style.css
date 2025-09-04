@@ -158,6 +158,17 @@ i, .fa, .fas, .fab {
   height: auto;         /* maintain aspect ratio */
   display: block;
 }
+.contact-image-wrapper {
+  width: 100%;          /* screen full width */
+  margin-top: 20px;     /* card upar spacing */
+}
+
+.contact-image-wrapper img {
+  width: 100%;          /* full width of screen */
+  max-width: 100%;      /* responsive */
+  height: auto;         /* aspect ratio maintain */
+  display: block;
+}
 
 /* Universal section spacing */
 section {
