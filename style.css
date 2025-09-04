@@ -439,6 +439,13 @@ header {
   background: #002244;
 }
 
+@media(max-width: 480px){
+  .popup-box {
+    width: 90%; /* popup fits small screens */
+    padding: 20px;
+  }
+}
+
 /* Responsive */
 @media(max-width: 768px) {
   .popup-buttons {
