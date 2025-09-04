@@ -234,24 +234,24 @@
         <p><i class="fas fa-phone-alt"></i> +91 90995 78771</p>
         <p><i class="fas fa-envelope"></i> info@inteksolar.in</p>
 
-      <!-- Contact Form -->
-      <div class="contact-form">
-        <h2>Send us a Message</h2>
-        <form id="contactForm" action="https://formspree.io/f/xqadgpnp" method="POST">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <<!-- Contact Form -->
+<section id="contact">
+  <div class="contact-form">
+    <h2>Send us a Message</h2>
+    <form id="contactForm" action="https://formspree.io/f/xqadgpnp" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-          <label for="mobile">Your Mobile No.</label>
-          <input type="mobile" id="mobile" name="mobile" placeholder="Enter your mobile no." required>
+      <label for="mobile">Your Mobile No.</label>
+      <input type="mobile" id="mobile" name="mobile" placeholder="Enter your mobile no." required>
 
-          <label for="message">Your Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
 
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </div>
+      <button type="submit">Send Message</button>
+    </form>
   </div>
+</section>
 
   <!-- Popup -->
   <div class="popup-overlay" id="popupOverlay">
@@ -367,19 +367,21 @@ function toggleMenu() {
     <h3>✅ Thank You from Intek Solar!</h3>
     <p>Your message has been sent successfully.<br>We will get back to you shortly.</p>
     <div class="popup-buttons">
-      <button onclick="closePopup()">Close</button>
-      <button onclick="goHome()">Close & Go Home</button>
+      <button id="closeBtn">Close</button>
+      <button id="goHomeBtn">Close & Go Home</button>
     </div>
   </div>
 </div>
 
-<!-- Updated JS -->
+<!-- Fixed JS -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
   const popup = document.getElementById('popupOverlay');
+  const closeBtn = document.getElementById('closeBtn');
+  const goHomeBtn = document.getElementById('goHomeBtn');
 
-  // Ensure popup hidden on page load
+  // Hide popup on page load
   popup.style.display = 'none';
 
   // AJAX form submit
@@ -396,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (response.ok) {
         form.reset();
-        popup.style.display = 'flex'; // show popup after successful submit
+        popup.style.display = 'flex'; // show popup only on submit success
       } else {
         alert("⚠️ Something went wrong. Please try again.");
       }
@@ -405,19 +407,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Attach event listeners to buttons instead of inline onclick
-  const closeBtn = popup.querySelector('button:nth-child(1)');
-  const goHomeBtn = popup.querySelector('button:nth-child(2)');
-
+  // Close button
   closeBtn.addEventListener('click', () => {
     popup.style.display = 'none';
   });
 
+  // Go Home button
   goHomeBtn.addEventListener('click', () => {
     window.location.href = "index.html";
   });
 });
 </script>
-  </script>
 </body>
 </html>
