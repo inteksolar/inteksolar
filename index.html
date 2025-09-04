@@ -96,14 +96,24 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
+        <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send us a Message</h2>
+        <form id="contactForm" action="https://formspree.io/f/xqadgpnp" method="POST">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="mobile">Your Mobile No.</label>
+          <input type="mobile" id="mobile" name="mobile" placeholder="Enter your mobile no." required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </div>
+  </div>
   </section>
 
   <!-- Footer Contact -->
