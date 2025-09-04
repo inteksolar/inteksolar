@@ -171,48 +171,45 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const quoteBtns = document.querySelectorAll('.quote-btn'); // select all buttons
-const quotePopup = document.getElementById('quotePopup');
-const quoteCloseBtn = document.getElementById('quoteCloseBtn');
-const quoteForm = document.getElementById('quoteForm');
+  const quoteBtn = document.getElementById('quoteBtn');
+  const quotePopup = document.getElementById('quotePopup');
+  const quoteCloseBtn = document.getElementById('quoteCloseBtn');
+  const quoteForm = document.getElementById('quoteForm');
 
-quotePopup.style.display = 'none';
+  quotePopup.style.display = 'none'; // initially hide
 
-quoteBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    quotePopup.style.display = 'flex'; // same popup open
+  quoteBtn.addEventListener('click', () => {
+    quotePopup.style.display = 'flex'; // show popup
+  });
+
+  quoteCloseBtn.addEventListener('click', () => {
+    quotePopup.style.display = 'none';
+  });
+
+  quoteForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(quoteForm);
+
+    try {
+      const response = await fetch(quoteForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        quoteForm.reset();
+        alert("✅ Your quote request has been sent successfully!");
+        quotePopup.style.display = 'none';
+      } else {
+        const data = await response.json();
+        alert(data.error || "⚠️ Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      alert("⚠️ Something went wrong. Please try again.");
+    }
   });
 });
-
-quoteCloseBtn.addEventListener('click', () => {
-  quotePopup.style.display = 'none';
-});
-
-// AJAX submit (same as before)
-quoteForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const formData = new FormData(quoteForm);
-
-  try {
-    const response = await fetch(quoteForm.action, {
-      method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    });
-
-    if (response.ok) {
-      quoteForm.reset();
-      alert("✅ Your quote request has been sent successfully!");
-      quotePopup.style.display = 'none';
-    } else {
-      const data = await response.json();
-      alert(data.error || "⚠️ Something went wrong. Please try again.");
-    }
-  } catch (err) {
-    alert("⚠️ Something went wrong. Please try again.");
-  }
-});
-}};
 
 </script>
 </body>
