@@ -387,7 +387,23 @@ header {
   max-width: 400px;
   box-shadow: 0px 6px 15px rgba(0,0,0,0.5);
 }
+.popup-box form input,
+.popup-box form textarea {
+  display: block;      /* stack fields vertically */
+  width: 100%;         /* full width of popup */
+  margin-bottom: 15px; /* spacing between fields */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
 
+.popup-box form label {
+  display: block;      /* ensure label above input */
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #003366;
+}
 .popup-box i {
   font-size: 40px;
   margin-bottom: 10px;
@@ -401,7 +417,6 @@ header {
 .popup-box p {
   color: #003366;
   font-size: 1rem;
-  text-align: left;
 }
 
 .popup-buttons {
