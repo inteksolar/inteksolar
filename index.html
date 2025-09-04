@@ -165,6 +165,7 @@
     <p>© 2025 Intek Solar. All Rights Reserved.</p>
   </div>
 </footer>
+
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const quoteBtn = document.getElementById('quoteBtn');
@@ -172,20 +173,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const quoteCloseBtn = document.getElementById('quoteCloseBtn');
   const quoteForm = document.getElementById('quoteForm');
 
-  // Hide popup initially
-  quotePopup.style.display = 'none';
+  quotePopup.style.display = 'none'; // initially hide
 
-  // Open popup on button click
   quoteBtn.addEventListener('click', () => {
-    quotePopup.style.display = 'flex';
+    quotePopup.style.display = 'flex'; // show popup
   });
 
-  // Close button
   quoteCloseBtn.addEventListener('click', () => {
     quotePopup.style.display = 'none';
   });
 
-  // AJAX submit
   quoteForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const formData = new FormData(quoteForm);
