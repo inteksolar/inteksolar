@@ -58,6 +58,59 @@ i, .fa, .fas, .fab {
   margin-right: 8px;
 }
 
+/* ====== FONT STYLE CLASSES ====== */
+
+/* Italic */
+.italic {
+  font-style: italic;
+}
+
+/* Bold */
+.bold {
+  font-weight: bold;
+}
+
+/* Bold + Italic */
+.bolditalic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Underline */
+.underline {
+  text-decoration: underline;
+}
+
+/* ====== COLOR CLASSES ====== */
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.orange {
+  color: orange;
+}
+
+.gray {
+  color: gray;
+}
+
+/* ====== EXTRA (optional) ====== */
+
+/* Highlighted text */
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
 /* --------------------------
    Section-wise Backgrounds
 ---------------------------*/
