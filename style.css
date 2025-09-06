@@ -7,15 +7,6 @@ body {
   color: #333;
 }
 
-h1, h2, .headline, .btn {
-  font-family: 'TASA Explorer', sans-serif;
-  font-weight: 600; /* અથવા એક પસંદગીનું weight */
-}
-
-body, p, .text {
-  font-family: sans-serif; /* fallback textual content માટે */
-}
-
 /* Headings */
 h1 {
   color: #0a2f5a;  /* Dark Blue */
