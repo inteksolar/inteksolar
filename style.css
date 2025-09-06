@@ -7,6 +7,25 @@ body {
   color: #333;
 }
 
+/* Headings + Buttons */
+h1, h2, h3, h4, h5, h6,
+.button, .btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Bold look */
+}
+
+/* Body text */
+body, p, span, a, li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; /* Normal text */
+}
+
+/* Optional – emphasize bold text inside body */
+strong, b {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
 /* Headings */
 h1 {
   color: #0a2f5a;  /* Dark Blue */
