@@ -524,8 +524,8 @@ hero img {
   text-decoration: underline;
 }
 .footer-logo {
-  height: 80px;
-  margin-bottom: 10px;
+  height: 40px;
+  margin-bottom: 0px;
 }
 .footer h4 {
   margin-bottom: 0.8rem;
@@ -534,7 +534,7 @@ hero img {
   margin: 0.3rem 0;
 }
 .footer {
-  text-align: left;
+  text-align: center;
   margin-top: 40px;
 }
 .contact-section i {
@@ -551,7 +551,7 @@ hero img {
 .footer-social {
   margin-top: 15px;
   margin-bottom: 15px
-  text-align: left;   /* icons ne center kare */
+  text-align: center;   /* icons ne center kare */
 }
 
 .footer-social a {
