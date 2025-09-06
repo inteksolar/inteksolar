@@ -7,23 +7,13 @@ body {
   color: #333;
 }
 
-/* Headings + Buttons */
-h1, h2, h3, h4, h5, h6,
-.button, .btn {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600; /* Bold look */
+h1, h2, .headline, .btn {
+  font-family: 'TASA Explorer', sans-serif;
+  font-weight: 600; /* અથવા એક પસંદગીનું weight */
 }
 
-/* Body text */
-body, p, span, a, li {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400; /* Normal text */
-}
-
-/* Optional – emphasize bold text inside body */
-strong, b {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+body, p, .text {
+  font-family: sans-serif; /* fallback textual content માટે */
 }
 
 /* Headings */
