@@ -344,7 +344,10 @@ header {
 .btn-primary:hover {
   background: #e65500;
 }
-
+hero img {
+  width: 100%;
+  border-radius: 5px;
+}
 /* About */
 .about {
   display: grid;
