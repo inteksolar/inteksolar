@@ -7,6 +7,24 @@ body {
   color: #333;
 }
 
+/* Body text */
+body, p, span, li {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; /* normal text */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700; /* bold */
+}
+
+/* Optional – Buttons */
+button, .btn {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
 /* Headings */
 h1 {
   color: #0a2f5a;  /* Dark Blue */
