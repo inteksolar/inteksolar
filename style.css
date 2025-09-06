@@ -324,7 +324,7 @@ header {
 
 /* Hero */
 .hero {
-  background: red;
+  background: url('images/bg/solar-bg3.png') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: center;
