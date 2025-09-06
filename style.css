@@ -148,7 +148,7 @@ i, .fa, .fas, .fab {
  }
 .contact-image-wrapper {
   width: 100%;          /* full screen width */
-  margin-top: 20px;     /* space above image */
+  margin-top: 5px;     /* space above image */
   text-align: center;   /* center image */
 }
 
