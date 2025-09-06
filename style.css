@@ -1,5 +1,5 @@
 /* General Website Settings */
-body {
+html, body {
   background: #f8f9fa;
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
@@ -324,7 +324,7 @@ header {
 
 /* Hero */
 .hero {
-  background: url('images/bg/solar-bg3.png') no-repeat center center/cover;
+  background: red;
   height: 100vh;
   display: flex;
   justify-content: center;
