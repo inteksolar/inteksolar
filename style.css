@@ -350,16 +350,9 @@ hero img {
 }
 /* About */
 .about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  background: #fff7e6
+  background: #fff7e6;
   padding: 4rem 0;
-  align-items: center;
-}
-.about img {
-  width: 100%;
-  border-radius: 10px;
+  text-align: center;
 }
 
 /* Services */
