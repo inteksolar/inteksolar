@@ -306,7 +306,7 @@ header {
 
 /* Hero */
 .hero {
-  background: url('images/solar-bg.jpg') no-repeat center center/cover;
+  background: url('images/bg/solar-bg.jpg') no-repeat center center/cover;
   height: 90vh;
   display: flex;
   justify-content: center;
