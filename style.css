@@ -569,7 +569,7 @@ hero img {
 .footer-bottom {
   background-color: #ff7b00 !important;  /* 🔶 Force Orange */
   color: #ffffff;
-  padding: 0px;
+  padding: 15px;
   font-size: 14px;
   text-align: center;
 }
