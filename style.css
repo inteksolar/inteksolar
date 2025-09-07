@@ -7,6 +7,33 @@ html, body {
   color: #333;
 }
 
+:root {
+  --topbar-bg: #002b5c;     /* background color */
+  --topbar-text: #ffffff;   /* text color */
+  --topbar-icon: #ffcc00;   /* icon color (change from here) */
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: var(--topbar-bg);
+  color: var(--topbar-text);
+  font-size: 14px;
+  padding: 6px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar i {
+  margin-right: 6px;
+  color: var(--topbar-icon);
+}
+
+.top-left, .top-right {
+  display: flex;
+  align-items: center;
+}
+
 /* Body text */
 body, p, span, li {
   font-family: 'Lato', sans-serif;
