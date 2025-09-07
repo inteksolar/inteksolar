@@ -235,11 +235,6 @@ section:last-of-type {
 /* ===== Responsive Adjustments ===== */
 @media (max-width: 768px) {
   section {
-    padding: 30px 15px;   /* mobile ma thodu ochhu padding */
-    margin: 25px 0;       /* section vachche gap ochhu */
-}
-@media (max-width: 768px) {
-  section {
     padding: 30px 15px !important;
     margin: 25px 0 !important;
   }
