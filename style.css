@@ -208,10 +208,6 @@ i, .fa, .fas, .fab {
   height: auto;         /* maintain aspect ratio */
   display: block;
 }
-.contact-image-wrapper {
-  width: 100%;          /* screen full width */
-  margin-top: 20px;     /* card upar spacing */
-}
 
 .contact-image-wrapper img {
   width: 100%;          /* full width of screen */
@@ -282,12 +278,7 @@ header {
 @media (max-width: 768px) {
   .logo img {
     max-height: 45px;
-  }
 }
-
-.navbar {
-  justify-content: space-between; /* logo stays left, menu stays right */
-  }
 
 .nav-links {
   display: flex;
