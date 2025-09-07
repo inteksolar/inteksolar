@@ -10,7 +10,7 @@ html, body {
 :root {
   --topbar-bg: #002b5c;     /* background color */
   --topbar-text: #ffffff;   /* text color */
-  --topbar-icon: #ffcc00;   /* icon color (change from here) */
+  --topbar-icon: #ff6600;   /* icon color (change from here) */
 }
 
 /* Top Bar */
