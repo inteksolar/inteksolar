@@ -10,7 +10,7 @@ html, body {
   --topbar-bg: #002b5c;          /* background color */
   --topbar-text: #ffffff;        /* text color */
   --topbar-icon: #ff6600;        /* normal icon color */
-  --topbar-icon-hover: #00ccff;  /* hover color */
+  --topbar-icon-hover: #ffffff;  /* hover color */
 }
 
 .top-bar {
