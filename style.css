@@ -428,16 +428,19 @@ hero img {
 /* Projects */
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 12px; /* photo vachche gap */
-  max-width: 100%; 
-  margin: auto;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns fix */
+  gap: 12px;              /* photo vachche space */
+  max-width: 1200px;      /* gallery width control */
+  margin: auto;           /* center align */
+  padding: 10px;          /* thodu spacing */
 }
 
 .project-gallery img {
-  width: 100%;      /* column width ma fit thase */
-  height: auto;     /* ratio maintain thase */
-  border-radius: 6px; /* optional: thodu rounded look */
+  width: 100%;            /* column ma fit */
+  height: auto;           /* proportion maintain */
+  object-fit: cover;      /* crop jova na male */
+  border-radius: 6px;     /* optional rounding */
+  display: block;         /* extra gap avoid */
 }
 
 /* ===== Quote Form Popup ===== */
