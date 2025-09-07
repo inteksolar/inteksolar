@@ -24,7 +24,7 @@ html, body {
 }
 
 .top-bar i {
-  margin-right: 25px;
+  margin-right: 2px;
   color: var(--topbar-icon) !important;
   transition: color 0.3s ease;
 }
