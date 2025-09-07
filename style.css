@@ -430,7 +430,7 @@ hero img {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 column fix */
   gap: 12px;              /* photo vachche space */
-  max-width: 1200px;      /* gallery max width */
+  max-width: 1400px;      /* gallery max width */
   margin: auto;           /* center align */
   padding: 10px;
 }
