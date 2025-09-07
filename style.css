@@ -429,8 +429,8 @@ hero img {
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* default 3 columns for mobile/tablet */
-  gap: 12px;
-  max-width: 1700px;  /* slightly bigger images */
+  gap: 15px;
+  max-width: 2000px;  /* slightly bigger images */
   margin: auto;
   padding: 10px;
 }
@@ -445,7 +445,7 @@ hero img {
 }
 
 /* Desktop (larger screens) → 1 column */
-@media(min-width: 1000px) {
+@media(min-width: 600px) {
   .project-gallery {
     grid-template-columns: 1fr; /* full width images */
   }
