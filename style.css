@@ -1,7 +1,6 @@
 /* General Website Settings */
 html, body {
   background: #f8f9fa;
-  font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
@@ -168,7 +167,7 @@ i, .fa, .fas, .fab {
 
 /* About Section */
 .about-section {
-  background: #fff7e6;   /* Light Blue */
+  background: #ff6600;   /* Light Blue */
   padding: 0px 0px;
   border-radius: 12px;
   margin-bottom: 20px;
