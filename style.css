@@ -8,12 +8,12 @@ html, body {
 }
 
 :root {
-  --topbar-bg: #002b5c;     /* background color */
-  --topbar-text: #ffffff;   /* text color */
-  --topbar-icon: #ff6600;   /* icon color (change from here) */
+  --topbar-bg: #002b5c;          /* background color */
+  --topbar-text: #ffffff;        /* text color */
+  --topbar-icon: #ff6600;        /* normal icon color */
+  --topbar-icon-hover: #00ccff;  /* hover color */
 }
 
-/* Top Bar */
 .top-bar {
   background-color: var(--topbar-bg);
   color: var(--topbar-text);
@@ -26,12 +26,18 @@ html, body {
 
 .top-bar i {
   margin-right: 6px;
-  color: var(--topbar-icon);
+  color: var(--topbar-icon) !important;
+  transition: color 0.3s ease;
+}
+
+.top-bar i:hover {
+  color: var(--topbar-icon-hover) !important;
 }
 
 .top-left, .top-right {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 /* Body text */
