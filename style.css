@@ -428,20 +428,27 @@ hero img {
 /* Projects */
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 column fix */
-  gap: 12px;              /* photo vachche space */
-  max-width: 1400px;      /* gallery max width */
-  margin: auto;           /* center align */
+  grid-template-columns: repeat(3, 1fr); /* default 3 columns for mobile/tablet */
+  gap: 12px;
+  max-width: 1500px;  /* slightly bigger images */
+  margin: auto;
   padding: 10px;
 }
 
+/* Images styling */
 .project-gallery img {
-  width: 100%;            /* column width ma fit thase */
-  max-width: 100%;        /* image full width cross na kare */
-  height: auto;           /* proportion maintain */
-  object-fit: cover;      /* unwanted crop avoid */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: 6px;
-  display: block;         /* extra spacing remove */
+  display: block;
+}
+
+/* Desktop (larger screens) → 1 column */
+@media(min-width: 1200px) {
+  .project-gallery {
+    grid-template-columns: 1fr; /* full width images */
+  }
 }
 
 /* ===== Quote Form Popup ===== */
