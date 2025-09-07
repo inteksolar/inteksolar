@@ -161,6 +161,10 @@ i, .fa, .fas, .fab {
   font-weight: bold;
 }
 
+/* ====== icon ====== */
+.icon-large { font-size:60px; }
+.icon-orange { color: orange; -webkit-text-stroke: 2px #004aad; }
+
 /* --------------------------
    Section-wise Backgrounds
 ---------------------------*/
