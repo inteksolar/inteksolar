@@ -231,7 +231,7 @@ hero img {
 .project-gallery {
   display: grid;
   grid-template-columns: 1fr; /* mobile: 1 column */
-  gap: 10px;
+  gap: 25px;
   max-width: 2000px;
   margin: auto;
   padding: 10px;
@@ -253,7 +253,7 @@ hero img {
 }
 
 /* Larger desktop → 3 columns */
-@media(min-width: 500px) {
+@media(min-width: 1200px) {
   .project-gallery {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -591,18 +591,6 @@ i, .fa, .fas, .fab {
   display: block;
 }
 
-.contact-image-wrapper img {
-  width: 100%;          /* full width of screen */
-  max-width: 100%;      /* responsive */
-  height: auto;         /* aspect ratio maintain */
-  display: block;
-}
-
-/* Universal section spacing */
-section {
-  padding: 50px 20px;   /* section andar content nu gap */
-  margin: 40px 0;       /* section vachche gap */
-}
 
 /* Last section niche extra margin na hoy */
 section:last-of-type {
