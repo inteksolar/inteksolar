@@ -197,24 +197,19 @@ hero img {
   border-radius: 5px;
 }
 
-/* 🔹 Hero niche no extra gap remove karva */
-hero {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-/* 🔹 About section top thi direct start karva */
-.about,
-section:first-of-type {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
 /* About */
 .about {
   background: #ffffff;
   padding: 4rem 0;
   text-align: center;
+}
+
+/* About section top & bottom gap remove */
+.about {
+    margin-top: 0;    /* upar no extra space */
+    margin-bottom: 0; /* niche no extra space */
+    padding-top: 0;   /* upar no padding */
+    padding-bottom: 0; /* niche no padding */
 }
 
 /* Services */
