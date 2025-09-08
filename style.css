@@ -13,6 +13,7 @@ html, body {
   --topbar-icon-hover: #ffffff;  /* hover color */
 }
 
+/* 🔹 Topbar Sticky */
 .top-bar {
   background-color: var(--topbar-bg);
   color: var(--topbar-text);
@@ -22,7 +23,6 @@ html, body {
   justify-content: space-between;
   align-items: center;
 
-  /* 🔥 sticky properties */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -38,20 +38,20 @@ html, body {
   color: var(--topbar-icon-hover) !important;
 }
 
-.top-left, 
+.top-left,
 .top-right {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-/* Navbar Sticky Header */
+/* 🔹 Header Sticky (just below topbar) */
 header {
   position: sticky;
-  top: 0;
-  width: 100%;
-  background: #ffffff;
-  z-index: 1000;
+  top: 40px;   /* Topbar ni height pramane adjust karjo */
+  z-index: 999;
+  background: #ffffff; /* overlap avoid */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .navbar {
