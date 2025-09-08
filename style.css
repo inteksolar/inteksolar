@@ -14,12 +14,6 @@ html, body {
 }
 
 .top-bar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.top-bar {
   background-color: var(--topbar-bg);
   color: var(--topbar-text);
   font-size: 14px;
@@ -27,6 +21,11 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* 🔥 sticky properties */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .top-bar i {
@@ -39,228 +38,11 @@ html, body {
   color: var(--topbar-icon-hover) !important;
 }
 
-.top-left, .top-right {
+.top-left, 
+.top-right {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-/* Body text */
-body, p, span, li {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400; /* normal text */
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700; /* bold */
-}
-
-/* Optional – Buttons */
-button, .btn {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
-
-/* Headings */
-h1 {
-  color: #0a2f5a;  /* Dark Blue */
-  font-size: 32px;
-}
-h2 {
-  color: #ff6600;  /* Solar Orange */
-  font-size: 26px;
-}
-h3 {
-  color: #ffffff;  /* White */
-  font-size: 22px;
-}
-h4, h6 {
-  color: #ffffff;
-}
-h5 {
-  color: #0a2f5a;
-}
-
-/* About Section Paragraph */
-.about-section p {
-  color: #0a2f5a;   /* Dark Blue */
-}
-
-/* Services Section Paragraph */
-.services-section p {
-  color: #0a2f5a;   /* Solar Orange */
-}
-
-/* Contact Section Paragraph */
-.contact-section p {
-  color: #ffffff;   /* White */
-}
-
-/* Links */
-a {
-  color: #0a2f5a;
-  text-decoration: none;
-}
-a:hover {
-  color: #ff6600;
-  text-decoration: underline;
-}
-
-/* Icons */
-i, .fa, .fas, .fab {
-  color: #ff6600;
-  margin-right: 8px;
-}
-
-/* ====== FONT STYLE CLASSES ====== */
-
-/* Italic */
-.italic {
-  font-style: italic;
-}
-
-/* Bold */
-.bold {
-  font-weight: bold;
-}
-
-/* Bold + Italic */
-.bolditalic {
-  font-weight: bold;
-  font-style: italic;
-}
-
-/* Underline */
-.underline {
-  text-decoration: underline;
-}
-
-/* ====== COLOR CLASSES ====== */
-
-.red {
-  color: red;
-}
-
-.green {
-  color: green;
-}
-
-.blue {
-  color: blue;
-}
-
-.orange {
-  color: orange;
-}
-
-.gray {
-  color: gray;
-}
-
-/* ====== EXTRA (optional) ====== */
-
-/* Highlighted text */
-.highlight {
-  background-color: yellow;
-  font-weight: bold;
-}
-
-/* ====== icon ====== */
-.icon-large { font-size:60px; }
-.icon-orange { color: orange; -webkit-text-stroke: 2px #004aad; }
-
-/* --------------------------
-   Section-wise Backgrounds
----------------------------*/
-
-/* About Section */
-.about-section {
-  background: #ff6600;   /* Light Blue */
-  padding: 0px 0px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
-}
-
-/* Services Section */
-.services-section {
-  background: #fff7e6;   /* Light Orange */
-  padding: 40px 20px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
-}
-.contact-image img {
-  max-width: 100%;      /* never exceed container width */
-  width: 100%;          /* always fit parent div */
-  height: auto;         /* maintain aspect ratio */
-  border-radius: 12px;  /* optional */
-  display: block;       /* remove inline spacing issues */
-}
-
-/* Optional: container padding for small screens */
-@media(max-width: 768px) {
-  .contact-image {
-    width: 90%;          /* small screen adjustment */
-    margin: 0 auto;      /* center image */
- }
-.contact-image-wrapper {
-  width: 100%;          /* full screen width */
-  margin-top: 5px;     /* space above image */
-  text-align: center;   /* center image */
-}
-
-.contact-image-wrapper img {
-  max-width: 100%;      /* responsive */
-  width: 100%;          /* always full width */
-  height: auto;         /* maintain aspect ratio */
-  display: block;
-}
-
-.contact-image-wrapper img {
-  width: 100%;          /* full width of screen */
-  max-width: 100%;      /* responsive */
-  height: auto;         /* aspect ratio maintain */
-  display: block;
-}
-
-/* Universal section spacing */
-section {
-  padding: 50px 20px;   /* section andar content nu gap */
-  margin: 40px 0;       /* section vachche gap */
-}
-
-/* Last section niche extra margin na hoy */
-section:last-of-type {
-  margin-bottom: 0;
-}
-
-/* ===== Responsive Adjustments ===== */
-@media (max-width: 768px) {
-  section {
-    padding: 30px 15px !important;
-    margin: 25px 0 !important;
-  }
-}
-
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Lato', sans-serif;
-  color: #333;
-  line-height: 1.6;
-  background: #fff;
-}
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
 }
 
 /* Navbar Sticky Header */
@@ -614,3 +396,222 @@ hero img {
   font-size: 14px;
   text-align: center;
 }
+
+/* Body text */
+body, p, span, li {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; /* normal text */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700; /* bold */
+}
+
+/* Optional – Buttons */
+button, .btn {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+/* Headings */
+h1 {
+  color: #0a2f5a;  /* Dark Blue */
+  font-size: 32px;
+}
+h2 {
+  color: #ff6600;  /* Solar Orange */
+  font-size: 26px;
+}
+h3 {
+  color: #ffffff;  /* White */
+  font-size: 22px;
+}
+h4, h6 {
+  color: #ffffff;
+}
+h5 {
+  color: #0a2f5a;
+}
+
+/* About Section Paragraph */
+.about-section p {
+  color: #0a2f5a;   /* Dark Blue */
+}
+
+/* Services Section Paragraph */
+.services-section p {
+  color: #0a2f5a;   /* Solar Orange */
+}
+
+/* Contact Section Paragraph */
+.contact-section p {
+  color: #ffffff;   /* White */
+}
+
+/* Links */
+a {
+  color: #0a2f5a;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+/* Icons */
+i, .fa, .fas, .fab {
+  color: #ff6600;
+  margin-right: 8px;
+}
+
+/* ====== FONT STYLE CLASSES ====== */
+
+/* Italic */
+.italic {
+  font-style: italic;
+}
+
+/* Bold */
+.bold {
+  font-weight: bold;
+}
+
+/* Bold + Italic */
+.bolditalic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Underline */
+.underline {
+  text-decoration: underline;
+}
+
+/* ====== COLOR CLASSES ====== */
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.orange {
+  color: orange;
+}
+
+.gray {
+  color: gray;
+}
+
+/* ====== EXTRA (optional) ====== */
+
+/* Highlighted text */
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+/* ====== icon ====== */
+.icon-large { font-size:60px; }
+.icon-orange { color: orange; -webkit-text-stroke: 2px #004aad; }
+
+/* --------------------------
+   Section-wise Backgrounds
+---------------------------*/
+
+/* About Section */
+.about-section {
+  background: #ff6600;   /* Light Blue */
+  padding: 0px 0px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
+}
+
+/* Services Section */
+.services-section {
+  background: #fff7e6;   /* Light Orange */
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
+}
+.contact-image img {
+  max-width: 100%;      /* never exceed container width */
+  width: 100%;          /* always fit parent div */
+  height: auto;         /* maintain aspect ratio */
+  border-radius: 12px;  /* optional */
+  display: block;       /* remove inline spacing issues */
+}
+
+/* Optional: container padding for small screens */
+@media(max-width: 768px) {
+  .contact-image {
+    width: 90%;          /* small screen adjustment */
+    margin: 0 auto;      /* center image */
+ }
+.contact-image-wrapper {
+  width: 100%;          /* full screen width */
+  margin-top: 5px;     /* space above image */
+  text-align: center;   /* center image */
+}
+
+.contact-image-wrapper img {
+  max-width: 100%;      /* responsive */
+  width: 100%;          /* always full width */
+  height: auto;         /* maintain aspect ratio */
+  display: block;
+}
+
+.contact-image-wrapper img {
+  width: 100%;          /* full width of screen */
+  max-width: 100%;      /* responsive */
+  height: auto;         /* aspect ratio maintain */
+  display: block;
+}
+
+/* Universal section spacing */
+section {
+  padding: 50px 20px;   /* section andar content nu gap */
+  margin: 40px 0;       /* section vachche gap */
+}
+
+/* Last section niche extra margin na hoy */
+section:last-of-type {
+  margin-bottom: 0;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  section {
+    padding: 30px 15px !important;
+    margin: 25px 0 !important;
+  }
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #fff;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
