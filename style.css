@@ -138,6 +138,20 @@ header {
     display: block;
   }
 
+/* 🔹 Header niche no extra gap remove karva */
+header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* 🔹 Hero section top thi direct start karva */
+.hero,
+.banner,
+section:first-of-type {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 /* Hero */
 .hero {
   background: url('images/bg/hero-bg.png') no-repeat center center/cover;
