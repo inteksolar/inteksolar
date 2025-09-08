@@ -203,6 +203,13 @@ hero {
   padding-bottom: 0;
 }
 
+/* 🔹 About section top thi direct start karva */
+.about,
+section:first-of-type {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 /* About */
 .about {
   background: #ffffff;
