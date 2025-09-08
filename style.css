@@ -25,7 +25,7 @@ html, body {
 
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .top-bar i {
@@ -48,7 +48,7 @@ html, body {
 /* 🔹 Header Sticky (just below topbar) */
 header {
   position: sticky;
-  top: 40px;   /* Topbar ni height pramane adjust karjo */
+  top: 28px;   /* Topbar ni height pramane adjust karjo */
   z-index: 999;
   background: #ffffff; /* overlap avoid */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
