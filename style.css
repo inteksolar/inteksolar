@@ -253,7 +253,7 @@ hero img {
 }
 
 /* Larger desktop → 3 columns */
-@media(min-width: 1200px) {
+@media(min-width: 500px) {
   .project-gallery {
     grid-template-columns: repeat(3, 1fr);
   }
