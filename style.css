@@ -196,6 +196,13 @@ hero img {
   width: 100%;
   border-radius: 5px;
 }
+
+/* 🔹 Hero niche no extra gap remove karva */
+hero {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 /* About */
 .about {
   background: #ffffff;
