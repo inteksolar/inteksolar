@@ -246,10 +246,10 @@ hero img {
   display: block;
 }
 
-/* Desktop (larger screens) → 1 column */
+/* Desktop (larger screens) → 3 column */
 @media(min-width: 600px) {
   .project-gallery {
-    grid-template-columns: 1fr; /* full width images */
+    grid-template-columns: 3fr; /* full width images */
   }
 }
 
