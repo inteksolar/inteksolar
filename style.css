@@ -540,16 +540,6 @@ i, .fa, .fas, .fab {
    Section-wise Backgrounds
 ---------------------------*/
 
-/* About Section */
-.about-section {
-  background: #ff6600;   /* Light Blue */
-  padding: 0px 0px;
-  border-radius: 12px;
-  margin-bottom: 0px;
-margin-top: 0px
-  box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
-}
-
 /* Services Section */
 .services-section {
   background: #fff7e6;   /* Light Orange */
