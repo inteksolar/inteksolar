@@ -13,7 +13,14 @@ html, body {
   --topbar-icon-hover: #ffffff;  /* hover color */
 }
 
-/* 🔹 Topbar Sticky */
+/* 🔹 Wrapper (topbar + header ek sathe sticky) */
+.header-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* 🔹 Topbar */
 .top-bar {
   background-color: var(--topbar-bg);
   color: var(--topbar-text);
@@ -22,12 +29,6 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-  .header-wrapper {
-  position: sticky;
-  top: 0;
-  z-index: 999;
 }
 
 .top-bar i {
@@ -47,12 +48,9 @@ html, body {
   gap: 12px;
 }
 
-/* 🔹 Header Sticky (just below topbar) */
+/* 🔹 Header (normal, no sticky) */
 header {
-  position: sticky;
-  top: 28px;   /* Topbar ni height pramane adjust karjo */
-  z-index: 999;
-  background: #ffffff; /* overlap avoid */
+  background: #ffffff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
