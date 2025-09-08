@@ -231,7 +231,7 @@ hero img {
 .project-gallery {
   display: grid;
   grid-template-columns: 1fr; /* mobile: 1 column */
-  gap: 25px;
+  gap: 10px;
   max-width: 2000px;
   margin: auto;
   padding: 10px;
