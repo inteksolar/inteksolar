@@ -8,41 +8,44 @@
   <link rel="stylesheet" href="style.css" />
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<<body>
 
 <div class="header-wrapper">
-<div class="top-bar">
-  <div class="top-left">
-    <i class="fa-solid fa-envelope"></i>info@inteksolar.in
+  <!-- 🔹 Topbar -->
+  <div class="top-bar">
+    <div class="top-left">
+      <i class="fa-solid fa-envelope"></i> info@inteksolar.in
+    </div>
+    <div class="top-right">
+      <i class="fa-solid fa-phone"></i> +91 90995 78771
+    </div>
   </div>
-  <div class="top-right">
-    <i class="fa-solid fa-phone"></i>+91 90995 78771
-  </div>
+
+  <!-- 🔹 Header / Navbar -->
+  <header>
+    <div class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/logo/logo1.png" alt="Intek Solar Logo">
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-links" id="navLinks">
+        <a href="https://inteksolar.in/index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="https://inteksolar.in/contact.html">Contact</a>
+      </nav>
+
+      <!-- Quote Button + Menu Button -->
+      <div class="header-buttons">
+        <a href="javascript:void(0)" class="quote-btn" id="quoteBtn">Get Free Quote</a>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      </div>
+    </div>
+  </header>
 </div>
-
-<header>
-  <div class="navbar">
-    <!-- Logo -->
-    <div class="logo">
-      <img src="images/logo/logo1.png" alt="Intek Solar Logo">
-    </div>
-
-    <!-- Navigation Menu -->
-    <nav class="nav-links" id="navLinks">
-      <a href="https://inteksolar.in/index.html">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="https://inteksolar.in/contact.html">Contact</a>
-    </nav>
-
-    <!-- Quote Button + Menu Button -->
-    <div class="header-buttons">
-      <a href="javascript:void(0)" class="quote-btn" id="quoteBtn">Get Free Quote</a>
-      <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    </div>
-  </div>
-</header>
   
   <!-- Hero Section -->
   <section id="home" class="hero">
