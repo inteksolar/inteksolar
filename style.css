@@ -204,14 +204,6 @@ hero img {
   text-align: center;
 }
 
-/* About section top & bottom gap remove */
-.about {
-    margin-top: 0;    /* upar no extra space */
-    margin-bottom: 0; /* niche no extra space */
-    padding-top: 0;   /* upar no padding */
-    padding-bottom: 0; /* niche no padding */
-}
-
 /* Services */
 .services {
   background: #ff6600;
@@ -540,14 +532,6 @@ i, .fa, .fas, .fab {
   color: gray;
 }
 
-/* ====== EXTRA (optional) ====== */
-
-/* Highlighted text */
-.highlight {
-  background-color: yellow;
-  font-weight: bold;
-}
-
 /* ====== icon ====== */
 .icon-large { font-size:60px; }
 .icon-orange { color: orange; -webkit-text-stroke: 2px #004aad; }
@@ -561,7 +545,8 @@ i, .fa, .fas, .fab {
   background: #ff6600;   /* Light Blue */
   padding: 0px 0px;
   border-radius: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+margin-top: 0px
   box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
 }
 
