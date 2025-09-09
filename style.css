@@ -296,6 +296,25 @@ hero img {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+.services-btn {
+  background-color: transparent;   /* Transparent background */
+  color: #002b5c;                 /* Dark Blue text */
+  padding: 8px 16px;
+  border: 2px solid #002b5c;      /* Dark Blue border */
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block;
+  margin-top: 10px;               /* card text thi gap */
+  text-decoration: none;          /* underline remove */
+}
+
+.services-btn:hover {
+  background-color: #002b5c;      /* Hover ma Dark Blue fill */
+  color: #ffffff;                 /* White text on hover */
+}
+
 /* Projects */
 .project-gallery {
   display: grid;
