@@ -477,7 +477,7 @@ section:first-of-type {
   margin: 0.3rem 0;
 }
 
-}
+
 .contact-section i {
   color: #ff6600;   /* Solar Orange icon*/
   margin-right: 8px;
@@ -654,8 +654,8 @@ i, .fa, .fas, .fab {
   width: 100%;          /* always full width */
   height: auto;         /* maintain aspect ratio */
   display: block;
+ }
 }
-
 
 /* Last section niche extra margin na hoy */
 section:last-of-type {
