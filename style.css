@@ -315,6 +315,13 @@ hero img {
   color: #ffffff;                 /* White text on hover */
 }
 
+/* =======================
+   Projects Section (HIDE)
+======================= */
+#projects-gallery {
+  display: none;   /* 🔴 aa line thi pura section hide thase */
+}
+
 /* Projects */
 .project-gallery {
   display: grid;
