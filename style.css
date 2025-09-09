@@ -226,6 +226,22 @@ hero img {
   color: #0a2f5a;   /* Dark Blue */
 }
 
+.about-btn {
+  background-color: #002b5c;   /* Dark Blue */
+  color: #ffffff;             /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background-color: #ff6600;   /* Hover ma Orange */
+  color: #fff;
+}
+
 /* Services */
 .services {
   background: #ffffff;        /* White background */
