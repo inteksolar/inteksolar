@@ -642,24 +642,24 @@ i, .fa, .fas, .fab {
   .contact-image {
     width: 90%;          /* small screen adjustment */
     margin: 0 auto;      /* center image */
- }
+  }
 .contact-image-wrapper {
   width: 100%;          /* full screen width */
   margin-top: 5px;     /* space above image */
   text-align: center;   /* center image */
-}
+  }
 
 .contact-image-wrapper img {
   max-width: 100%;      /* responsive */
   width: 100%;          /* always full width */
   height: auto;         /* maintain aspect ratio */
   display: block;
- }
-}
+  }
 
 /* Last section niche extra margin na hoy */
 section:last-of-type {
   margin-bottom: 0;
+  }
 }
 
 /* ===== Responsive Adjustments ===== */
