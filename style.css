@@ -232,7 +232,7 @@ hero img {
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10rem;
+  gap: 6rem;
   margin-top: 2rem;
 }
 
@@ -263,8 +263,8 @@ hero img {
 }
 
 .card .image-wrapper img {
-  width: 130%;
-  height: 130%;
+  width: 500%;
+  height: 500%;
   object-fit: contain;
   border-radius: 50%;          /* circle image */
   background: #fff;            /* white background for logo/icons */
