@@ -222,6 +222,10 @@ hero img {
   text-align: center;
 }
 
+.about-section p {
+  color: #0a2f5a;   /* Dark Blue */
+}
+
 /* Services */
 .services {
   background: #ffffff;        /* White background */
@@ -234,6 +238,10 @@ hero img {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 6rem;
   margin-top: 2rem;
+}
+
+.services-section p {
+  color: #0a2f5a;   /* Dark Blue */
 }
 
 /* Card */
@@ -501,14 +509,8 @@ h5 {
 }
 
 /* About Section Paragraph */
-.about-section p {
-  color: #0a2f5a;   /* Dark Blue */
-}
 
-/* Services Section Paragraph */
-.services-section p {
-  color: #0a2f5a;   /* Solar Orange */
-}
+
 
 /* Contact Section Paragraph */
 .contact-section p {
