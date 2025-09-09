@@ -240,7 +240,7 @@ hero img {
 .card {
   position: relative;          /* for absolute image */
   background: #fff7e6;         /* Light orange card */
-  padding: 5rem 1.5rem 1.5rem; /* extra top padding for image overlap */
+  padding: 4rem 1.5rem 1.5rem; /* extra top padding for image overlap */
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   transition: 0.3s;
