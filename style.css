@@ -1,9 +1,14 @@
 /* General Website Settings */
 html, body {
-  background: #000000;
   margin: 0;
   padding: 0;
-  color: #666;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #000;  /* ek j jagyae enough */
 }
 
 /* Global Styles */
@@ -11,13 +16,6 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Lato', sans-serif;
-  color: #333;
-  line-height: 1.6;
-  background: #000;  /* black rakho to barabar kaam karse */
 }
 
 .container {
