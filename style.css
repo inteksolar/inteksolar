@@ -250,6 +250,14 @@ hero img {
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
+.card .icon {
+  margin-bottom: 1rem;
+}
+.card .icon svg {
+  display: block;
+  margin: 0 auto;
+}
+
 /* Projects */
 .project-gallery {
   display: grid;
