@@ -131,7 +131,7 @@ header {
   font-size: 22px;
   background: transparent;
   border: none;
-  color: ff6600;
+  color: #ff6600;
   cursor: pointer;
 }
 
@@ -441,13 +441,17 @@ section:first-of-type {
   .popup-buttons {
     flex-direction: column;
  }
+}
 
 /* Footer Contact */
 .footer {
   background: #0a2f5a;
   color: white;
   padding: 2rem 0;
+  text-align: center;
+  margin-top: 40px;
 }
+
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -472,9 +476,7 @@ section:first-of-type {
 .footer p {
   margin: 0.3rem 0;
 }
-.footer {
-  text-align: center;
-  margin-top: 40px;
+
 }
 .contact-section i {
   color: #ff6600;   /* Solar Orange icon*/
@@ -627,7 +629,7 @@ i, .fa, .fas, .fab {
 .icon-orange { color: orange; -webkit-text-stroke: 2px #004aad; }
 
 
-contact-image img {
+.contact-image img {
   max-width: 100%;      /* never exceed container width */
   width: 100%;          /* always fit parent div */
   height: auto;         /* maintain aspect ratio */
