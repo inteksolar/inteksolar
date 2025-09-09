@@ -223,6 +223,15 @@ hero img {
 }
 
 /* Services */
+
+.services-section {
+  background: #fff7e6;   /* Light Orange */
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
+}
+
 .services {
   background: #ff6600;
   padding: 4rem 0;
@@ -245,16 +254,6 @@ hero img {
   transform: translateY(-8px);
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
-
-.services-section {
-  background: #fff7e6;   /* Light Orange */
-  padding: 40px 20px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
-}
-
-.
 
 /* Projects */
 .project-gallery {
