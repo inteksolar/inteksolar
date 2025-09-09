@@ -318,7 +318,7 @@ hero img {
 /* =======================
    Projects Section (HIDE)
 ======================= */
-#projects-gallery {
+.projects {
   display: none;   /* 🔴 aa line thi pura section hide thase */
 }
 
