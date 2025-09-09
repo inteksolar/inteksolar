@@ -250,12 +250,12 @@ hero img {
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.card .icon {
-  margin-bottom: 1rem;
-}
-.card .icon svg {
+.card .image-wrapper img {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 1rem;  /* center + gap */
+  width: 80px;          /* display size */
+  height: 80px;
+  object-fit: contain;  /* image fit without stretch */
 }
 
 /* Projects */
