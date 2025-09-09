@@ -263,8 +263,8 @@ hero img {
 }
 
 .card .image-wrapper img {
-  width: 500%;
-  height: 500%;
+  width: 160%;
+  height: 160%;
   object-fit: contain;
   border-radius: 50%;          /* circle image */
   background: #fff;            /* white background for logo/icons */
