@@ -2,9 +2,6 @@
 html, body {
   margin: 0;
   padding: 0;
-}
-
-body {
   font-family: 'Lato', sans-serif;
   color: #333;
   line-height: 1.6;
@@ -527,14 +524,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
   font-weight: 700; /* bold */
 }
-
-/* Optional – Buttons */
-button, .btn {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
-
-/* Headings */
 h1 {
   color: #0a2f5a;  /* Dark Blue */
   font-size: 32px;
@@ -553,6 +542,15 @@ h4, h6 {
 h5 {
   color: #0a2f5a;
 }
+
+/* Optional – Buttons */
+button, .btn {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+/* Headings */
+
 
 /* About Section Paragraph */
 
