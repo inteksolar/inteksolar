@@ -12,12 +12,14 @@ html, body {
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Lato', sans-serif;
   color: #333;
   line-height: 1.6;
-  background: #fff;
+  background: #000;  /* black rakho to barabar kaam karse */
 }
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -87,6 +89,7 @@ header {
 @media (max-width: 768px) {
   .logo img {
     max-height: 45px;
+  }
 }
 
 .nav-links {
@@ -210,7 +213,7 @@ section:first-of-type {
 .btn-primary:hover {
   background: #e65500;
 }
-hero img {
+.hero img {
   width: 100%;
   border-radius: 5px;
 }
