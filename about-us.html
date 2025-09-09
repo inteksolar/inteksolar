@@ -1,1 +1,194 @@
-about-us
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intek Solar</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="header-wrapper">
+  <!-- 🔹 Topbar -->
+  <div class="top-bar">
+    <div class="top-left">
+      <i class="fa-solid fa-envelope"></i> info@inteksolar.in
+    </div>
+    <div class="top-right">
+      <i class="fa-solid fa-phone"></i> +91 90995 78771
+    </div>
+  </div>
+
+  <!-- 🔹 Header / Navbar -->
+  <header>
+    <div class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/logo/logo1.png" alt="Intek Solar Logo">
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-links" id="navLinks">
+        <a href="https://inteksolar.in/index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="https://inteksolar.in/contact.html">Contact</a>
+      </nav>
+
+      <!-- Quote Button + Menu Button -->
+      <div class="header-buttons">
+        <a href="javascript:void(0)" class="quote-btn" id="quoteBtn">Get Free Quote</a>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      </div>
+    </div>
+  </header>
+</div>
+  
+  <!-- About Section -->
+<section id="about" class="about" style="width:100%; padding:0px; text-align:left; background:#e6f2fa;">
+  <div class="about-text">
+    <h2 style="margin-top: 0px; margin-bottom: 15px; font-style: normal; font-weight: normal; color: #003366; font-size: 2em;">
+      Gujarat's <strong>Leading</strong> Solar Solutions Provider
+    </h2>
+
+    <p style="margin-top: 0px; margin-bottom: 15px; font-style: italic; font-weight: normal; color: #003366; font-size: 1em;">
+      At<strong> Intek Solar</strong>, we deliver reliable and sustainable solar solutions for homes, businesses, and industries.
+    </p>
+<p style="margin-top: 0px; margin-bottom: 15px; font-style: italic; font-weight: normal; color: #003366; font-size: 1em;">
+      Our focus is on<strong> quality, transparency, and customer satisfaction</strong> with end-to-end installation and affordable solar systems.
+    </p>
+<p style="margin-top: 0px; margin-bottom: 15px; font-style: italic; font-weight: normal; color: #003366; font-size: 1em;">
+      Together, we help you save electricity costs and contribute to a greener future.
+    </p>
+
+    <a href="About-Us.html" class="about-btn">About Us</a>
+  </div>
+</section>
+
+<!-- Quote Form Popup -->
+<div class="popup-overlay" id="quotePopup">
+  <div class="popup-box">
+    <i class="fas fa-solar-panel"></i>
+    <h3>📩 Get a Free Solar Quotation!</h3>
+    <form id="quoteForm" action="https://formspree.io/f/xqadgpnp" method="POST">
+      <label for="qname">Full Name</label>
+      <input type="text" id="qname" name="name" placeholder="Enter your full name" required>
+
+      <label for="qmobile">Phone</label>
+      <input type="phone" id="qphone" name="phone" placeholder="Enter your phone no." required>
+
+<label for="qpincode">Pincode</label>
+      <input type="pincode" id="qpincode" name="pincode" placeholder="Enter your Area Pincode" required>
+
+      <label for="qmessage">Message</label>
+      <textarea id="qmessage" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+      <div class="popup-buttons">
+        <button type="submit">Send Quote Request</button>
+        <button type="button" id="quoteCloseBtn">Close</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <!-- Footer Contact -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="lo.png" alt="Intek Solar" class="footer-logo" style="margin-bottom: 0px; margin-top: 0px;">
+
+<h3 style="margin-top: 0px; margin-bottom: 15px;">
+  <span style="font-style: italic; font-weight: normal; color: #ffffff; font-size: 1em;">Simplifying</span>
+  <span style="font-weight: bold; font-style: italic; color: #ff6600; font-size: 1em;">SOLAR</span>
+</h3>
+<a href="https://inteksolar.in/contact.html" target="_blank" 
+   style="display:inline-block;
+          background-color:#ff6600;
+          color:#ffffff;
+          padding:3px 15px;
+          font-size:14px;
+          text-decoration:none;
+          border-radius:20px;
+          font-weight:normal;
+          margin-bottom:15px;">
+   CONNECT WITH US
+</a>
+<p>
+    <i class="fas fa-phone-alt" style="margin-right:8px; color:#ff6600;"></i>
+    <span style="color:#ffffff; font-weight:normal;">
+      +91 90995 78771
+    </span>
+  </p>
+  <p>
+    <i class="fas fa-envelope" style="margin-right:8px; color:#ff6600;"></i>
+    <span style="color:#ffffff; font-weight:normal;">
+      info@inteksolar.in
+    </span>
+  </p>
+<div class="footer-social">
+  <a href="https://facebook.com/inteksolar" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://instagram.com/inteksolar" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://wa.me/919099578771" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://linkedin.com/company/inteksolar" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+     </div>
+    </div>
+<div>
+  <div class="footer-bottom">
+    <p>© 2025 Intek Solar. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Quote Popup -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const quoteBtn = document.getElementById('quoteBtn');
+  const quotePopup = document.getElementById('quotePopup');
+  const quoteCloseBtn = document.getElementById('quoteCloseBtn');
+  const quoteForm = document.getElementById('quoteForm');
+
+  quotePopup.style.display = 'none'; // initially hide
+
+  quoteBtn.addEventListener('click', () => {
+    quotePopup.style.display = 'flex'; // show popup
+  });
+
+  quoteCloseBtn.addEventListener('click', () => {
+    quotePopup.style.display = 'none';
+  });
+
+  quoteForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(quoteForm);
+
+    try {
+      const response = await fetch(quoteForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        quoteForm.reset();
+        alert("✅ Your quote request has been sent successfully!");
+        quotePopup.style.display = 'none';
+      } else {
+        const data = await response.json();
+        alert(data.error || "⚠️ Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      alert("⚠️ Something went wrong. Please try again.");
+    }
+  });
+});
+</script>
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
+</body>
+</html>
