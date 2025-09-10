@@ -1,14 +1,16 @@
-/* General Website Settings */
+/* =======================
+   General Website Settings
+======================= */
 html, body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
   color: #333;
   line-height: 1.6;
-  background: #000;  /* ek j jagyae enough */
+  background: #000;
+  box-sizing: border-box;
 }
 
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -22,20 +24,22 @@ html, body {
 }
 
 :root {
-  --topbar-bg: #002b5c;          /* background color */
-  --topbar-text: #ffffff;        /* text color */
-  --topbar-icon: #ff6600;        /* normal icon color */
-  --topbar-icon-hover: #ffffff;  /* hover color */
+  --topbar-bg: #002b5c;
+  --topbar-text: #ffffff;
+  --topbar-icon: #ff6600;
+  --topbar-icon-hover: #ffffff;
 }
 
-/* 🔹 Header Wrapper - Topbar + Header Sticky */
+/* =======================
+   Header - Topbar + Navbar
+======================= */
 .header-wrapper {
   position: sticky;
   top: 0;
   z-index: 999;
 }
 
-/* 🔹 Topbar */
+/* Topbar */
 .top-bar {
   background-color: var(--topbar-bg);
   color: var(--topbar-text);
@@ -48,43 +52,37 @@ html, body {
 
 .top-bar i {
   margin-right: 0px;
-  color: var(--topbar-icon) !important;
+  color: var(--topbar-icon);
   transition: color 0.3s ease;
 }
-
 .top-bar i:hover {
-  color: var(--topbar-icon-hover) !important;
+  color: var(--topbar-icon-hover);
 }
 
-.top-left,
-.top-right {
+.top-left, .top-right {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-/* 🔹 Header (Navbar) */
+/* Navbar */
 header {
   background: #ffffff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between; /* logo left, menu/quote right */
+  justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
 }
 
 .logo img {
-  max-height: 40px !important;
-  width: auto !important;
-}
-
-@media (max-width: 768px) {
-  .logo img {
-    max-height: 45px;
-  }
+  max-height: 40px;
+  width: auto;
 }
 
 .nav-links {
@@ -93,7 +91,7 @@ header {
 }
 
 .nav-links a {
-  color: white;
+  color: #002b5c;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -132,7 +130,7 @@ header {
   cursor: pointer;
 }
 
-/* Responsive Menu */
+/* Responsive Navbar */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -145,55 +143,30 @@ header {
     border-radius: 8px;
     gap: 15px;
   }
-
   .nav-links.show {
     display: flex;
   }
-
   .menu-btn {
     display: block;
   }
 }
 
-@media (min-width: 769px) {
-  .nav-links a {
-    color: #002b5c;       /* Dark Blue text */
-  }
-
-  .nav-links a:hover {
-    color: #ff6600;       /* Orange hover */
-  }
-}
-
-/* 🔹 Header niche no extra gap remove karva */
-header {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-/* 🔹 Hero section top thi direct start karva */
-.hero,
-.banner {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* Hero */
+/* =======================
+   Hero Section
+======================= */
 .hero {
-  /* Background image remove kari ne gradient aapo */
-  background: linear-gradient(135deg, #0d2f6e, #002b5c); /* Dark Blue gradient */
-  
-  height: 100vh;               /* full screen height */
+  background: linear-gradient(135deg, #0d2f6e, #ff6600);
+  height: 100vh;
+  min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
   position: relative;
-  padding-top: 100px;          /* sticky header space */
-  box-sizing: border-box;
-  margin-bottom: 0 !important; /* about section sath gap fix */
+  padding-top: 100px;
   padding-bottom: 40px;
+  margin: 0;
 }
 
 .hero::after {
@@ -201,20 +174,27 @@ header {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  /* overlay optional, if you want extra dark effect */
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
   max-width: 700px;
+  padding: 0 15px;
 }
 
 .hero h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
 }
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
 .btn-primary {
   background: #ff6600;
   color: white;
@@ -225,30 +205,32 @@ header {
   margin-top: 15px;
   transition: 0.3s;
 }
+
 .btn-primary:hover {
   background: #e65500;
 }
-.hero img {
-  width: 100%;
-  border-radius: 5px;
-}
 
-/* About */
+/* =======================
+   About Section
+======================= */
 .about {
   background: #ffffff;
   padding: 4rem 0;
   text-align: center;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 30px;
 }
 
 .about-section p {
-  color: #0a2f5a;   /* Dark Blue */
+  color: #0a2f5a;
 }
 
 .about-btn {
-  background-color: transparent;   /* Transparent background */
-  color: #002b5c;                 /* Dark Blue text */
+  background-color: transparent;
+  color: #002b5c;
   padding: 10px 20px;
-  border: 2px solid #002b5c;      /* Dark Blue border */
+  border: 2px solid #002b5c;
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
@@ -256,15 +238,20 @@ header {
 }
 
 .about-btn:hover {
-  background-color: #002b5c;      /* Hover ma Dark Blue fill */
-  color: #ffffff;                 /* White text on hover */
+  background-color: #002b5c;
+  color: #ffffff;
 }
 
-/* Services */
+/* =======================
+   Services Section
+======================= */
 .services {
-  background: #ffffff;        /* White background */
+  background: #ffffff;
   padding: 4rem 0;
   text-align: center;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 40px;
 }
 
 .service-grid {
@@ -275,14 +262,14 @@ header {
 }
 
 .services-section p {
-  color: #0a2f5a;   /* Dark Blue */
+  color: #0a2f5a;
 }
 
 /* Card */
 .card {
-  position: relative;          /* for absolute image */
-  background: #e6f2fa;         /* Light Blue card */
-  padding: 4rem 1.5rem 2.5rem; /* extra top padding for image overlap */
+  position: relative;
+  background: #e6f2fa;
+  padding: 4rem 1.5rem 2.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   transition: 0.3s;
@@ -294,46 +281,49 @@ header {
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* Image wrapper → overlap effect */
+/* Card image wrapper (centered circle) */
 .card .image-wrapper {
   position: absolute;
-  top: -70px;                 /* overlap position */
+  top: -70px;
   left: 50%;
   transform: translateX(-50%);
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 
 .card .image-wrapper img {
-  width: 160%;
-  height: 160%;
-  object-fit: contain;
-  border-radius: 50%;          /* circle image */
-  background: #fff;            /* white background for logo/icons */
-  border: 3px solid #fff;      /* white border to separate from card */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+/* Services button */
 .services-btn {
-  background-color: transparent;   /* Transparent background */
-  color: #002b5c;                 /* Dark Blue text */
+  background-color: transparent;
+  color: #002b5c;
   padding: 8px 16px;
-  border: 2px solid #002b5c;      /* Dark Blue border */
+  border: 2px solid #002b5c;
   border-radius: 6px;
   font-size: 14px;
   cursor: pointer;
   transition: 0.3s;
   display: inline-block;
-  margin-top: 10px;               /* card text thi gap */
-  text-decoration: none;          /* underline remove */
+  margin-top: 10px;
+  text-decoration: none;
 }
 
 .services-btn:hover {
-  background-color: #002b5c;      /* Hover ma Dark Blue fill */
-  color: #ffffff;                 /* White text on hover */
+  background-color: #002b5c;
+  color: #ffffff;
 }
 
-/* Brand Logo Section */
+/* =======================
+   Brand Logos
+======================= */
 .brand-section {
   padding: 60px 20px;
   background: #ffffff;
@@ -356,7 +346,7 @@ header {
 }
 
 .brand-item {
-  flex: 0 1 120px; /* logo size */
+  flex: 0 1 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -373,471 +363,62 @@ header {
   transform: scale(1.1);
 }
 
-/* Responsive */
-@media(max-width: 768px) {
-  .brand-item {
-    flex: 0 1 80px;
-  }
-}
-
 /* =======================
-   Projects Section (HIDE)
+   Footer
 ======================= */
-.projects {
-  display: none;   /* 🔴 aa line thi pura section hide thase */
-}
-
-/* Projects */
-.project-gallery {
-  display: grid;
-  grid-template-columns: 1fr; /* mobile: 1 column */
-  gap: 25px;
-  max-width: 2000px;
-  margin: auto;
-  padding: 10px;
-}
-
-.project-gallery img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 6px;
-  display: block;
-}
-
-/* Tablet / small desktop → 2 columns */
-@media(min-width: 768px) {
-  .project-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Larger desktop → 3 columns */
-@media(min-width: 1200px) {
-  .project-gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* FAQ Section Styles */
-.faq-section {
-  padding: 60px 20px;
-  background: #f8f9fa;
-  font-family: 'Lato', sans-serif;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 40px;
-  color: #002b5c;
-}
-
-.faq-item {
-  background: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.faq-question {
-  padding: 20px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 600;
-  font-size: 18px;
-  color: #002b5c;
-}
-
-.faq-toggle {
-  font-size: 24px;
-  transition: transform 0.3s ease;
-}
-
-.faq-answer {
-  padding: 0 20px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-  font-size: 16px;
-  color: #555;
-}
-
-.faq-item.active .faq-answer {
-  max-height: 500px; /* adjust if answers are longer */
-  padding: 20px;
-}
-
-.faq-item.active .faq-toggle {
-  transform: rotate(45deg); /* + becomes x style */
-}
-
-/* ===== Quote Form Popup ===== */
-.popup-overlay {
-  display: none;        /* initially hidden */
-  position: fixed;      /* always center of screen */
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;        /* above footer */
-}
-
-.popup-box {
-  background: #fff4e6;
-  color: #003366;
-  padding: 25px 30px;
-  border-radius: 12px;
-  text-align: center;
-  max-width: 400px;
-  box-shadow: 0px 6px 15px rgba(0,0,0,0.5);
-}
-.popup-box form input,
-.popup-box form textarea {
-  display: block;      /* stack fields vertically */
-  width: 100%;         /* full width of popup */
-  margin-bottom: 15px; /* spacing between fields */
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-}
-
-.popup-box form label {
-  display: block;      /* ensure label above input */
-  margin-bottom: 6px;
-  font-weight: bold;
-  color: #003366;
-}
-.popup-box i {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.popup-box h3 {
-  margin-bottom: 15px;
-  color: #ff6600;
-}
-
-.popup-box p {
-  color: #003366;
-  font-size: 1rem;
-}
-
-.popup-buttons {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-}
-
-.popup-box button {
-  background: #003366;
-  color: #fff;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.popup-box button:hover {
-  background: #002244;
-}
-
-@media(max-width: 480px){
-  .popup-box {
-    width: 90%; /* popup fits small screens */
-    padding: 20px;
-  }
-}
-
-/* Responsive */
-@media(max-width: 768px) {
-  .popup-buttons {
-    flex-direction: column;
- }
-}
-
-/* Footer Contact */
 .footer {
   background: #0a2f5a;
   color: white;
   padding: 2rem 0;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 0 !important;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-}
 .footer a {
   color: #ff6600;
   display: block;
   margin-top: 5px;
   text-decoration: none;
 }
+
 .footer a:hover {
   text-decoration: underline;
 }
-.footer-logo {
-  height: 80px;
-  margin-bottom: 0px;
-}
-.footer h4 {
-  margin-bottom: 0.8rem;
-}
-.footer p {
-  margin: 0.3rem 0;
-}
-
-
-.contact-section i {
-  color: #ff6600;   /* Solar Orange icon*/
-  margin-right: 8px;
-  font-size: 18px;
-}
-
-/* Contact Links Hover */
-.contact-section a:hover {
-  color: #ff6600;
-  text-decoration: underline;
-}
-.footer-social {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: center;   /* icons ne center kare */
-}
 
 .footer-social a {
-  display: inline-block; 
-  margin: 0 10px;        /* icons vachche space */
-  color: #ff6600;        /* Solar Orange */
+  display: inline-block;
+  margin: 0 10px;
+  color: #ff6600;
   font-size: 22px;
   transition: color 0.3s;
 }
 
 .footer-social a:hover {
-  color: #0a2f5a;        /* Dark Blue on hover */
+  color: #0a2f5a;
 }
 
-/* Footer Bottom */
 .footer-bottom {
-  background-color: #ff7b00 !important;  /* 🔶 Force Orange */
+  background-color: #ff7b00;
   color: #ffffff;
   padding: 12px;
   font-size: 14px;
   text-align: center;
 }
 
-/* Body text */
-body, p, span, li {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400; /* normal text */
+/* =======================
+   Responsive Adjustments
+======================= */
+@media(max-width: 1200px) {
+  .hero h1 { font-size: 2.4rem; }
+  .hero p { font-size: 1.1rem; }
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700; /* bold */
-}
-h1 {
-  color: #0a2f5a;  /* Dark Blue */
-  font-size: 32px;
-}
-h2 {
-  color: #ff6600;  /* Solar Orange */
-  font-size: 26px;
-}
-h3 {
-  color: #ffffff;  /* White */
-  font-size: 22px;
-}
-h4, h6 {
-  color: #ffffff;
-}
-h5 {
-  color: #0a2f5a;
-}
-
-/* Optional – Buttons */
-button, .btn {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
-
-/* Headings */
-
-
-/* About Section Paragraph */
-
-
-
-/* Contact Section Paragraph */
-.contact-section p {
-  color: #ffffff;   /* White */
-}
-
-/* Links */
-a {
-  color: #0a2f5a;
-  text-decoration: none;
-}
-a:hover {
-  color: #ff6600;
-  text-decoration: underline;
-}
-
-/* Icons */
-i, .fa, .fas, .fab {
-  color: #ff6600;
-  margin-right: 8px;
-}
-
-/* ====== FONT STYLE CLASSES ====== */
-
-/* Italic */
-.italic {
-  font-style: italic;
-}
-
-/* Bold */
-.bold {
-  font-weight: bold;
-}
-
-/* Bold + Italic */
-.bolditalic {
-  font-weight: bold;
-  font-style: italic;
-}
-
-/* Underline */
-.underline {
-  text-decoration: underline;
-}
-
-/* ====== COLOR CLASSES ====== */
-
-.red {
-  color: red;
-}
-
-.green {
-  color: green;
-}
-
-.blue {
-  color: blue;
-}
-
-.orange {
-  color: orange;
-}
-
-.gray {
-  color: gray;
-}
-
-/* ====== icon ====== */
-.icon-large { font-size:60px; }
-.icon-orange { color: orange; -webkit-text-stroke: 2px #004aad; }
-
-
-.contact-image img {
-  max-width: 100%;      /* never exceed container width */
-  width: 100%;          /* always fit parent div */
-  height: auto;         /* maintain aspect ratio */
-  border-radius: 12px;  /* optional */
-  display: block;       /* remove inline spacing issues */
-}
-
-/* Optional: container padding for small screens */
 @media(max-width: 768px) {
-  .contact-image {
-    width: 90%;          /* small screen adjustment */
-    margin: 0 auto;      /* center image */
-  }
-.contact-image-wrapper {
-  width: 100%;          /* full screen width */
-  margin-top: 5px;     /* space above image */
-  text-align: center;   /* center image */
-  }
+  .hero { padding-top: 80px; padding-bottom: 30px; }
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
 
-.contact-image-wrapper img {
-  max-width: 100%;      /* responsive */
-  width: 100%;          /* always full width */
-  height: auto;         /* maintain aspect ratio */
-  display: block;
-  }
+  .brand-item { flex: 0 1 80px; }
 
-/* Last section niche extra margin na hoy */
-section:last-of-type {
-  margin-bottom: 0;
-  }
-}
-
-/* ===== Responsive Adjustments ===== */
-@media (max-width: 768px) {
-  section {
-    padding: 30px 15px !important;
-    margin: 25px 0 !important;
-  }
-}
-
-/* 🔹 Fix About & Services section gap */
-.about {
-  margin-bottom: 0 !important;
-  padding-bottom: 30px; /* thodu normal spacing */
-}
-
-.services {
-  margin-top: 0 !important;
-  padding-top: 30px; /* thodu spacing */
-}
-
-/* 🔹 Service card image centre properly */
-.card .image-wrapper {
-  position: absolute;
-  top: -70px;
-  left: 50%;
-  transform: translateX(-50%); /* centre align */
-  width: 100px;
-  height: 100px;
-}
-
-.card .image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;      /* round image */
-  background: #fff;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-/* Hero ane About vachche gap fix */
-.hero {
-  margin-bottom: 0 !important;
-  padding-bottom: 40px;
-}
-
-.about {
-  margin-top: 0 !important;
-}
-
-/* Services ane Footer vachche gap fix */
-.services {
-  margin-bottom: 0 !important;
-  padding-bottom: 40px;
-}
-
-.footer {
-  margin-top: 0 !important;
+  section { padding: 30px 15px !important; margin: 25px 0 !important; }
 }
