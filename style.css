@@ -134,7 +134,7 @@ header {
 /* ===================== HERO SECTION ===================== */
 .hero {
   background: linear-gradient(135deg, #0d2f6e, #ff6600);
-  height: 90vh;
+  height: 120vh;
   min-height: 600px;
   display: flex;
   justify-content: center;
