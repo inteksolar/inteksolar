@@ -134,7 +134,7 @@ header {
 /* ===================== HERO SECTION ===================== */
 .hero {
   background: linear-gradient(135deg, #0d2f6e, #ff6600);
-  height: 100vh;
+  height: 90vh;
   min-height: 600px;
   display: flex;
   justify-content: center;
@@ -142,10 +142,16 @@ header {
   text-align: center;
   color: white;
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 40px;
-  margin: 0;
+  padding-top: 120px;
+  padding-bottom: 60px;
   box-sizing: border-box;
+  z-index: 1;
+}
+
+/* hero image z-index */
+.hero img {
+  position: relative;
+  z-index: 2;
 }
 
 .hero::after {
@@ -201,9 +207,10 @@ header {
 /* ===================== ABOUT SECTION ===================== */
 .about {
   background: #ffffff;
-  padding: 5rem 0 4rem 0;    /* top 5rem (hero ni niche space), bottom 4rem (gap before services) */
+  padding: 6rem 0 5rem 0; /* top padding for space from hero, bottom padding for services gap */
   text-align: center;
-  margin-top: 0 !important;  /* remove default margin */
+  position: relative;
+  z-index: 3;
 }
 
 .about-section h2 {
@@ -214,13 +221,11 @@ header {
 }
 
 .about-section p {
-  color: #0a2f5a;           /* Dark Blue paragraph */
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-  line-height: 1.8;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 25px auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #0a2f5a;
 }
 
 .about-btn {
