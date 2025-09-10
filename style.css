@@ -31,8 +31,10 @@ html, body {
 
 /* ===================== HEADER ===================== */
 .header-wrapper {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 9999;
 }
 
@@ -126,7 +128,7 @@ header {
     border-radius: 8px;
     gap: 15px;
     z-index: 9999;
-  }
+ }
   .nav-links.show { display: flex; }
   .menu-btn { display: block; }
 }
@@ -142,7 +144,7 @@ header {
   text-align: center;
   color: white;
   position: relative;
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 60px;
   box-sizing: border-box;
   z-index: 1;
