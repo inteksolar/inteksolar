@@ -1,14 +1,12 @@
-/* =======================
-   General Website Settings
-======================= */
+/* ===================== GENERAL SETTINGS ===================== */
 html, body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
   background: #000;
-  box-sizing: border-box;
 }
 
 * {
@@ -23,6 +21,7 @@ html, body {
   margin: auto;
 }
 
+/* ===================== ROOT VARIABLES ===================== */
 :root {
   --topbar-bg: #002b5c;
   --topbar-text: #ffffff;
@@ -30,16 +29,13 @@ html, body {
   --topbar-icon-hover: #ffffff;
 }
 
-/* =======================
-   Header - Topbar + Navbar
-======================= */
+/* ===================== HEADER ===================== */
 .header-wrapper {
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 9999;
 }
 
-/* Topbar */
 .top-bar {
   background-color: var(--topbar-bg);
   color: var(--topbar-text);
@@ -51,26 +47,18 @@ html, body {
 }
 
 .top-bar i {
-  margin-right: 0px;
+  margin-right: 0;
   color: var(--topbar-icon);
   transition: color 0.3s ease;
 }
-.top-bar i:hover {
-  color: var(--topbar-icon-hover);
-}
+.top-bar i:hover { color: var(--topbar-icon-hover); }
 
-.top-left, .top-right {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+.top-left, .top-right { display: flex; align-items: center; gap: 12px; }
 
-/* Navbar */
 header {
   background: #ffffff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  margin-bottom: 0;
-  padding-bottom: 0;
+  z-index: 9999;
 }
 
 .navbar {
@@ -81,8 +69,8 @@ header {
 }
 
 .logo img {
-  max-height: 40px;
-  width: auto;
+  max-height: 40px !important;
+  width: auto !important;
 }
 
 .nav-links {
@@ -97,29 +85,24 @@ header {
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: #ff6600;
-}
+.nav-links a:hover { color: #ff6600; }
 
-.header-buttons {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
+.header-buttons { display: flex; align-items: center; gap: 15px; }
 
 .quote-btn {
+  position: relative;
+  z-index: 1000;
   background: #ff6600;
   color: white;
   padding: 6px 11px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
+  cursor: pointer;
   transition: background 0.3s;
 }
 
-.quote-btn:hover {
-  background: #e65c00;
-}
+.quote-btn:hover { background: #e65c00; }
 
 .menu-btn {
   display: none;
@@ -130,7 +113,7 @@ header {
   cursor: pointer;
 }
 
-/* Responsive Navbar */
+/* Responsive Menu */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -142,18 +125,13 @@ header {
     padding: 15px;
     border-radius: 8px;
     gap: 15px;
+    z-index: 9999;
   }
-  .nav-links.show {
-    display: flex;
-  }
-  .menu-btn {
-    display: block;
-  }
+  .nav-links.show { display: flex; }
+  .menu-btn { display: block; }
 }
 
-/* =======================
-   Hero Section
-======================= */
+/* ===================== HERO SECTION ===================== */
 .hero {
   background: linear-gradient(135deg, #0d2f6e, #ff6600);
   height: 100vh;
@@ -167,6 +145,7 @@ header {
   padding-top: 100px;
   padding-bottom: 40px;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .hero::after {
@@ -174,7 +153,7 @@ header {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0,0,0,0.3);
   z-index: 1;
 }
 
@@ -206,13 +185,20 @@ header {
   transition: 0.3s;
 }
 
-.btn-primary:hover {
-  background: #e65500;
+.btn-primary:hover { background: #e65500; }
+
+/* Responsive */
+@media(max-width: 1200px){
+  .hero h1 { font-size: 2.4rem; }
+  .hero p { font-size: 1.1rem; }
+}
+@media(max-width: 768px){
+  .hero { padding-top: 80px; padding-bottom: 30px; }
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
 }
 
-/* =======================
-   About Section
-======================= */
+/* ===================== ABOUT SECTION ===================== */
 .about {
   background: #ffffff;
   padding: 4rem 0;
@@ -222,9 +208,7 @@ header {
   padding-bottom: 30px;
 }
 
-.about-section p {
-  color: #0a2f5a;
-}
+.about-section p { color: #0a2f5a; }
 
 .about-btn {
   background-color: transparent;
@@ -242,15 +226,14 @@ header {
   color: #ffffff;
 }
 
-/* =======================
-   Services Section
-======================= */
+/* ===================== SERVICES SECTION ===================== */
 .services {
   background: #ffffff;
   padding: 4rem 0;
   text-align: center;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+  padding-top: 30px;
   padding-bottom: 40px;
 }
 
@@ -261,27 +244,18 @@ header {
   margin-top: 2rem;
 }
 
-.services-section p {
-  color: #0a2f5a;
-}
-
-/* Card */
 .card {
   position: relative;
   background: #e6f2fa;
   padding: 4rem 1.5rem 2.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
   text-align: center;
+  transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
+.card:hover { transform: translateY(-8px); box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
 
-/* Card image wrapper (centered circle) */
 .card .image-wrapper {
   position: absolute;
   top: -70px;
@@ -301,7 +275,6 @@ header {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* Services button */
 .services-btn {
   background-color: transparent;
   color: #002b5c;
@@ -310,10 +283,10 @@ header {
   border-radius: 6px;
   font-size: 14px;
   cursor: pointer;
-  transition: 0.3s;
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .services-btn:hover {
@@ -321,51 +294,60 @@ header {
   color: #ffffff;
 }
 
-/* =======================
-   Brand Logos
-======================= */
-.brand-section {
-  padding: 60px 20px;
-  background: #ffffff;
+/* ===================== POPUP ===================== */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
-.section-title {
+.popup-box {
+  background: #fff4e6;
+  color: #003366;
+  padding: 25px 30px;
+  border-radius: 12px;
   text-align: center;
-  font-size: 32px;
-  color: #002b5c;
-  margin-bottom: 30px;
-  font-weight: 700;
+  max-width: 400px;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.5);
 }
 
-.brand-logos {
+.popup-box form input,
+.popup-box form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.popup-box h3 { margin-bottom: 15px; color: #ff6600; }
+
+.popup-buttons {
+  margin-top: 15px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 30px;
+  gap: 12px;
 }
 
-.brand-item {
-  flex: 0 1 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease;
+.popup-box button {
+  background: #003366;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.brand-item img {
-  max-width: 100%;
-  max-height: 60px;
-  object-fit: contain;
-}
+.popup-box button:hover { background: #002244; }
 
-.brand-item:hover {
-  transform: scale(1.1);
-}
-
-/* =======================
-   Footer
-======================= */
+/* ===================== FOOTER ===================== */
 .footer {
   background: #0a2f5a;
   color: white;
@@ -374,51 +356,9 @@ header {
   margin-top: 0 !important;
 }
 
-.footer a {
-  color: #ff6600;
-  display: block;
-  margin-top: 5px;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.footer-social a {
-  display: inline-block;
-  margin: 0 10px;
-  color: #ff6600;
-  font-size: 22px;
-  transition: color 0.3s;
-}
-
-.footer-social a:hover {
-  color: #0a2f5a;
-}
-
-.footer-bottom {
-  background-color: #ff7b00;
-  color: #ffffff;
-  padding: 12px;
-  font-size: 14px;
-  text-align: center;
-}
-
-/* =======================
-   Responsive Adjustments
-======================= */
-@media(max-width: 1200px) {
-  .hero h1 { font-size: 2.4rem; }
-  .hero p { font-size: 1.1rem; }
-}
-
-@media(max-width: 768px) {
+/* ===================== MEDIA QUERIES ===================== */
+@media(max-width: 768px){
   .hero { padding-top: 80px; padding-bottom: 30px; }
   .hero h1 { font-size: 2rem; }
   .hero p { font-size: 1rem; }
-
-  .brand-item { flex: 0 1 80px; }
-
-  section { padding: 30px 15px !important; margin: 25px 0 !important; }
 }
