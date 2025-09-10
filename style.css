@@ -189,7 +189,10 @@ section:first-of-type {
   text-align: center;
   color: white;
   position: relative;
+  padding-top: 120px;     /* header height adjust karo */
+  box-sizing: border-box;
 }
+
 .hero::after {
   content: "";
   position: absolute;
