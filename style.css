@@ -173,7 +173,7 @@ header {
 
 /* 🔹 Hero section top thi direct start karva */
 .hero,
-.banner,{
+.banner {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
