@@ -251,6 +251,7 @@ header {
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;   /* underline remove kare che */
   transition: 0.3s;
   display: inline-block;
 }
