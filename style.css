@@ -173,8 +173,7 @@ header {
 
 /* 🔹 Hero section top thi direct start karva */
 .hero,
-.banner,
-section:first-of-type {
+.banner,{
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -189,7 +188,7 @@ section:first-of-type {
   text-align: center;
   color: white;
   position: relative;
-  padding-top: 120px;     /* header height adjust karo */
+  padding-top: 100px;     /* header height adjust karo */
   box-sizing: border-box;
 }
 
