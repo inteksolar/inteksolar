@@ -314,6 +314,53 @@ section:first-of-type {
   color: #ffffff;                 /* White text on hover */
 }
 
+/* Brand Logo Section */
+.brand-section {
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  color: #002b5c;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.brand-item {
+  flex: 0 1 120px; /* logo size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.brand-item img {
+  max-width: 100%;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.brand-item:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .brand-item {
+    flex: 0 1 80px;
+  }
+}
+
 /* =======================
    Projects Section (HIDE)
 ======================= */
