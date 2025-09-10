@@ -140,6 +140,47 @@
 </div>
   </section>
 
+!-- FAQ Section -->
+<section id="faq" class="faq-section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+
+    <!-- FAQ Item 1 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What services do you provide?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>We provide residential, commercial, and industrial solar installation solutions with high-quality equipment.</p>
+      </div>
+    </div>
+
+    <!-- FAQ Item 2 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Do you offer maintenance services?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Yes, we provide regular maintenance and inspection services to ensure optimal performance of your solar system.</p>
+      </div>
+    </div>
+
+    <!-- FAQ Item 3 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Do you offer EMI options?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Yes, we offer easy EMI options for our solar systems to make it affordable for everyone.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- Quote Form Popup -->
 <div class="popup-overlay" id="quotePopup">
   <div class="popup-box">
@@ -261,6 +302,18 @@ document.addEventListener('DOMContentLoaded', () => {
 function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("show");
 }
+</script>
+
+!-- JavaScript (Directly in HTML before </body>) -->
+<script>
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  question.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
 </script>
 </body>
 </html>
