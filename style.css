@@ -181,13 +181,15 @@ header {
 /* Hero */
 .hero {
   background: url('images/bg/hero-bg.png') no-repeat center center/cover;
-  height: calc(100vh - 100px);  /* screen height - header height */
+  height: 100vh;              /* full screen */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
   position: relative;
+  padding-top: 100px;         /* header jitli jagya niche push */
+  box-sizing: border-box;     /* padding count ma include thase */
 }
 
 .hero::after {
