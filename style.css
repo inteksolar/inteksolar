@@ -155,6 +155,16 @@ header {
   }
 }
 
+@media (min-width: 769px) {
+  .nav-links a {
+    color: #002b5c;       /* Dark Blue text */
+  }
+
+  .nav-links a:hover {
+    color: #ff6600;       /* Orange hover */
+  }
+}
+
 /* 🔹 Header niche no extra gap remove karva */
 header {
   margin-bottom: 0;
