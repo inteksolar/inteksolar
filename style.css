@@ -699,3 +699,22 @@ section:last-of-type {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+/* Hero ane About vachche gap fix */
+.hero {
+  margin-bottom: 0 !important;
+  padding-bottom: 40px;
+}
+
+.about {
+  margin-top: 0 !important;
+}
+
+/* Services ane Footer vachche gap fix */
+.services {
+  margin-bottom: 0 !important;
+  padding-bottom: 40px;
+}
+
+.footer {
+  margin-top: 0 !important;
+}
