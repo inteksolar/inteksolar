@@ -136,7 +136,7 @@ header {
 /* ===================== HERO SECTION ===================== */
 .hero {
   background: linear-gradient(135deg, #0d2f6e, #ff6600);
-  height: 100vh;
+  height: 90vh;
   min-height: 600px;
   display: flex;
   justify-content: left;
@@ -144,8 +144,8 @@ header {
   text-align: left;
   color: white;
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 60px;
+  padding-top: 120px;
+  padding-bottom: 40px;
   box-sizing: border-box;
   z-index: 1;
 }
