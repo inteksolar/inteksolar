@@ -108,10 +108,10 @@ header {
 
 .menu-btn {
   display: none;
-  font-size: 22px;
+  font-size: 25px;
   background: transparent;
   border: none;
-  color: #ff6600;
+  color: #002b5c;
   cursor: pointer;
 }
 
