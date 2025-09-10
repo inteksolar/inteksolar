@@ -208,22 +208,71 @@ header {
   padding-bottom: 30px;
 }
 
-.about-section p { color: #0a2f5a; }
+.about .section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #002b5c; /* Dark Blue */
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #0a2f5a; /* Dark Blue */
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
 
 .about-btn {
+  display: inline-block;
   background-color: transparent;
-  color: #002b5c;
+  color: #002b5c; /* Dark Blue */
   padding: 10px 20px;
   border: 2px solid #002b5c;
   border-radius: 6px;
   font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .about-btn:hover {
-  background-color: #002b5c;
-  color: #ffffff;
+  background-color: #002b5c; /* Dark Blue fill on hover */
+  color: #ffffff;             /* White text */
+  transform: translateY(-2px); /* subtle lift effect */
+}
+
+/* Optional Image in About Section */
+.about-image {
+  margin-top: 30px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media(max-width: 1200px){
+  .about p {
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 768px){
+  .about {
+    padding: 3rem 15px;
+  }
+  .about .section-title {
+    font-size: 26px;
+  }
+  .about p {
+    font-size: 0.95rem;
+  }
+  .about-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
 }
 
 /* ===================== SERVICES SECTION ===================== */
