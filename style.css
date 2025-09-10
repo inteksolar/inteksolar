@@ -201,78 +201,65 @@ header {
 /* ===================== ABOUT SECTION ===================== */
 .about {
   background: #ffffff;
-  padding: 4rem 0;
+  padding: 5rem 0 4rem 0;    /* top 5rem (hero ni niche space), bottom 4rem (gap before services) */
   text-align: center;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-bottom: 30px;
+  margin-top: 0 !important;  /* remove default margin */
 }
 
-.about .section-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #002b5c; /* Dark Blue */
+.about-section h2 {
+  font-size: 2.5rem;
+  color: #0a2f5a;           /* Dark Blue heading */
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
-.about p {
+.about-section p {
+  color: #0a2f5a;           /* Dark Blue paragraph */
   font-size: 1.1rem;
+  margin-bottom: 25px;
   line-height: 1.8;
-  color: #0a2f5a; /* Dark Blue */
   max-width: 800px;
-  margin: 0 auto 20px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-btn {
-  display: inline-block;
   background-color: transparent;
-  color: #002b5c; /* Dark Blue */
+  color: #002b5c;
   padding: 10px 20px;
   border: 2px solid #002b5c;
   border-radius: 6px;
   font-size: 16px;
-  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
 }
 
 .about-btn:hover {
-  background-color: #002b5c; /* Dark Blue fill on hover */
-  color: #ffffff;             /* White text */
-  transform: translateY(-2px); /* subtle lift effect */
+  background-color: #002b5c;
+  color: #ffffff;
 }
 
-/* Optional Image in About Section */
-.about-image {
-  margin-top: 30px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-/* Responsive */
+/* Responsive Adjustments */
 @media(max-width: 1200px){
-  .about p {
-    font-size: 1rem;
-  }
+  .about-section h2 { font-size: 2.2rem; }
+  .about-section p { font-size: 1.05rem; }
 }
 
 @media(max-width: 768px){
   .about {
-    padding: 3rem 15px;
+    padding: 4rem 15px 3rem 15px;  /* smaller padding for mobile */
   }
-  .about .section-title {
-    font-size: 26px;
+  .about-section h2 { font-size: 2rem; }
+  .about-section p { font-size: 1rem; }
+}
+
+@media(max-width: 480px){
+  .about {
+    padding: 3rem 15px 2.5rem 15px;
   }
-  .about p {
-    font-size: 0.95rem;
-  }
-  .about-btn {
-    padding: 8px 18px;
-    font-size: 14px;
-  }
+  .about-section h2 { font-size: 1.8rem; }
+  .about-section p { font-size: 0.95rem; }
 }
 
 /* ===================== SERVICES SECTION ===================== */
