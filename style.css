@@ -526,7 +526,7 @@ header {
   margin-top: 20px;
 }
 
-.show-more-btn {
+.reviews-section .show-more-btn {
   background-color: transparent !important;
   border: none !important;
   color: #ff6600 !important;
@@ -538,7 +538,7 @@ header {
   transition: all 0.3s ease;
 }
 
-.show-more-btn:hover {
+.reviews-section .show-more-btn:hover {
   background-color: #ff6600;      /* hover par orange fill */
   color: #fff;                    /* white text */
 }
@@ -611,7 +611,7 @@ header {
   margin-top: 20px;
 }
 
-.show-more-btn {
+.faq-section .show-more-btn {
   background: #002b5c;
   color: #fff;
   padding: 10px 20px;
@@ -622,7 +622,7 @@ header {
   transition: background 0.3s ease;
 }
 
-.show-more-btn:hover {
+.faq-section .show-more-btn:hover {
   background: #004080;
 }
 
