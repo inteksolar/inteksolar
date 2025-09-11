@@ -242,36 +242,29 @@
   </div>
 </section>
 
+!-- Testimonials Section 2 -->
 <section id="testimonials" class="testimonials-section">
   <div class="container">
     <h2 class="section-title">What Our Customers Say</h2>
     <div class="testimonials-grid">
       <!-- Review 1 -->
       <div class="testimonial-card">
-        <p>"Excellent service and professional team. My electricity bill is almost zero now!"</p>
+        <p class="review-text">
+          "Excellent service and professional team. My electricity bill is almost zero now! The installation process was smooth and the team explained every step clearly. I am very happy with the after-sales support as well."
+        </p>
+        <span class="read-more">Read More</span>
         <h4>- Rakesh Patel ⭐⭐⭐⭐⭐</h4>
       </div>
 
       <!-- Review 2 -->
       <div class="testimonial-card">
-        <p>"Intek Solar team completed my project on time and explained everything clearly."</p>
+        <p class="review-text">
+          "Intek Solar team completed my project on time and explained everything clearly. They were very professional and transparent with pricing. I highly recommend them to anyone looking for solar solutions."
+        </p>
+        <span class="read-more">Read More</span>
         <h4>- Neha Sharma ⭐⭐⭐⭐⭐</h4>
       </div>
-
-      <!-- Hidden Reviews -->
-      <div class="testimonial-card extra-review" style="display:none;">
-        <p>"Great experience! Very transparent pricing and smooth installation."</p>
-        <h4>- Amit Joshi ⭐⭐⭐⭐⭐</h4>
-      </div>
-
-      <div class="testimonial-card extra-review" style="display:none;">
-        <p>"Highly recommended. Excellent after-sales service and maintenance."</p>
-        <h4>- Priya Mehta ⭐⭐⭐⭐⭐</h4>
-      </div>
     </div>
-
-    <!-- Show More Button -->
-    <button id="showMoreBtn" class="btn-primary" style="margin-top:20px;">Show More Reviews</button>
   </div>
 </section>
 
@@ -444,20 +437,19 @@ faqItems.forEach(item => {
 </script>
 
 <script>
-const showMoreBtn = document.getElementById('showMoreBtn');
-const extraReviews = document.querySelectorAll('.extra-review');
+const readMoreBtns = document.querySelectorAll('.read-more');
 
-showMoreBtn.addEventListener('click', () => {
-  extraReviews.forEach(review => {
-    if(review.style.display === 'none'){
-      review.style.display = 'block';
+readMoreBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const review = btn.previousElementSibling; // p.review-text
+    if(review.style.webkitLineClamp === 'none') {
+      review.style.webkitLineClamp = '2';
+      btn.textContent = "Read More";
     } else {
-      review.style.display = 'none';
+      review.style.webkitLineClamp = 'none';
+      btn.textContent = "Show Less";
     }
   });
-
-  // Toggle button text
-  showMoreBtn.textContent = showMoreBtn.textContent === "Show More Reviews" ? "Show Less Reviews" : "Show More Reviews";
 });
 </script>
 </body>
