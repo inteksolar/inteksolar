@@ -527,9 +527,10 @@ header {
 }
 
 .show-more-btn {
-  background-color: transparent;  /* transparent background */
-  border: none;                   /* koi border nathi */
-  color: #ff6600;                 /* orange text */
+  background-color: transparent !important;
+  border: none !important;
+  color: #ff6600 !important;
+}
   padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
