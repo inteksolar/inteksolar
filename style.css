@@ -506,6 +506,17 @@ header {
   max-height: 500px; /* show full */
 }
 
+.review-rating {
+  color: #ffcc00; /* Gold stars */
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.review-rating i {
+  margin-right: 3px;
+}
+
 /* ===================== FAQ SECTION ===================== */
 .faq-section {
   padding: 60px 20px;
