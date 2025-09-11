@@ -191,39 +191,37 @@
 <section id="testimonials" class="testimonials">
   <div class="container">
     <h2 class="section-title">What Our Customers Say</h2>
-
     <div class="testimonial-grid">
       <!-- Testimonial 1 -->
       <div class="testimonial-card">
         <div class="testimonial-header">
-          <i class="fab fa-google google-icon"></i>
-          <div class="stars">★★★★★</div>
+          <img src="images/customers/cust1.jpg" alt="Customer 1">
+          <div class="customer-info">
+            <h3>Ramesh Patel</h3>
+            <span class="google-review"><i class="fab fa-google"></i> Google Review</span>
+          </div>
         </div>
-        <p class="testimonial-text">
-          "Intek Solar provided excellent service and installation. Their team was professional, and the system works flawlessly. I have already noticed a drop in my electricity bill..."
-        </p>
-        <span class="read-more-btn">Read More</span>
-        <p class="testimonial-full-text">
-          Full review text: I highly recommend Intek Solar to anyone looking for reliable solar solutions. Their customer support is top-notch, and the installation was smooth and timely.
-        </p>
-        <h4 class="testimonial-author">— Rajesh Patel</h4>
+        <div class="testimonial-text" id="review1">
+          Intek Solar installed our rooftop solar panels last month. The team was extremely professional, explained everything clearly, and the system performance is fantastic. Highly recommend them for reliable solar solutions!
+        </div>
+        <span class="read-more-btn" onclick="toggleReview('review1', this)">Read More</span>
       </div>
 
       <!-- Testimonial 2 -->
       <div class="testimonial-card">
         <div class="testimonial-header">
-          <i class="fab fa-google google-icon"></i>
-          <div class="stars">★★★★★</div>
+          <img src="images/customers/cust2.jpg" alt="Customer 2">
+          <div class="customer-info">
+            <h3>Priya Shah</h3>
+            <span class="google-review"><i class="fab fa-google"></i> Google Review</span>
+          </div>
         </div>
-        <p class="testimonial-text">
-          "Excellent experience! Intek Solar guided me through the process and the panels are working great. I can already see the savings on my electricity bill..."
-        </p>
-        <span class="read-more-btn">Read More</span>
-        <p class="testimonial-full-text">
-          Full review text: The team was knowledgeable and professional. The system installation was fast and hassle-free. I recommend them for both residential and commercial solar installations.
-        </p>
-        <h4 class="testimonial-author">— Meena Shah</h4>
+        <div class="testimonial-text" id="review2">
+          I had a great experience with Intek Solar. From survey to installation, everything was smooth. The support team is responsive and helped me understand all aspects of my solar system. My monthly electricity bill has dropped significantly!
+        </div>
+        <span class="read-more-btn" onclick="toggleReview('review2', this)">Read More</span>
       </div>
+
     </div>
   </div>
 </section>
@@ -396,18 +394,54 @@ faqItems.forEach(item => {
 });
 </script>
 
+<!-- Testimonials Script -->
 <script>
-document.querySelectorAll('.read-more-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const fullText = btn.nextElementSibling;
-    if (fullText.style.display === 'block') {
-      fullText.style.display = 'none';
-      btn.textContent = 'Read More';
-    } else {
-      fullText.style.display = 'block';
-      btn.textContent = 'Read Less';
+document.addEventListener('DOMContentLoaded', () => {
+
+  // ✅ All review cards
+  const reviews = document.querySelectorAll('.review-card');
+
+  reviews.forEach(card => {
+    const readMoreBtn = card.querySelector('.read-more-btn');
+    const reviewText = card.querySelector('.review-text');
+
+    if(readMoreBtn && reviewText){
+      // 1️⃣ Initially limit text to 2 lines (~20 words)
+      const fullText = reviewText.textContent.trim();
+      const shortText = fullText.split(" ").slice(0, 20).join(" ") + "...";
+      reviewText.textContent = shortText;
+
+      // 2️⃣ Toggle Read More / Show Less
+      readMoreBtn.addEventListener('click', () => {
+        if(reviewText.classList.contains('expanded')){
+          reviewText.textContent = shortText;
+          readMoreBtn.textContent = "Read More";
+          reviewText.classList.remove('expanded');
+        } else {
+          reviewText.textContent = fullText;
+          readMoreBtn.textContent = "Show Less";
+          reviewText.classList.add('expanded');
+        }
+      });
     }
   });
+
+  // ✅ Optional: Collapse all reviews initially
+  const collapseAllBtn = document.getElementById('collapseAllReviews');
+  if(collapseAllBtn){
+    collapseAllBtn.addEventListener('click', () => {
+      reviews.forEach(card => {
+        const readMoreBtn = card.querySelector('.read-more-btn');
+        const reviewText = card.querySelector('.review-text');
+        if(readMoreBtn && reviewText){
+          reviewText.textContent = reviewText.textContent.split(" ").slice(0, 20).join(" ") + "...";
+          readMoreBtn.textContent = "Read More";
+          reviewText.classList.remove('expanded');
+        }
+      });
+    });
+  }
+
 });
 </script>
 </body>
