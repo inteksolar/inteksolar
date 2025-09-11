@@ -442,5 +442,23 @@ faqItems.forEach(item => {
   });
 });
 </script>
+
+<script>
+const showMoreBtn = document.getElementById('showMoreBtn');
+const extraReviews = document.querySelectorAll('.extra-review');
+
+showMoreBtn.addEventListener('click', () => {
+  extraReviews.forEach(review => {
+    if(review.style.display === 'none'){
+      review.style.display = 'block';
+    } else {
+      review.style.display = 'none';
+    }
+  });
+
+  // Toggle button text
+  showMoreBtn.textContent = showMoreBtn.textContent === "Show More Reviews" ? "Show Less Reviews" : "Show More Reviews";
+});
+</script>
 </body>
 </html>
