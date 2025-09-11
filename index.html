@@ -423,17 +423,15 @@ faqItems.forEach(item => {
 </script>
 
 <script>
-const readMoreBtns = document.querySelectorAll('.read-more');
-
-readMoreBtns.forEach(btn => {
+document.querySelectorAll('.read-more-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    const review = btn.previousElementSibling; // p.review-text
-    if(review.style.webkitLineClamp === 'none') {
-      review.style.webkitLineClamp = '2';
-      btn.textContent = "Read More";
+    const fullText = btn.nextElementSibling;
+    if (fullText.style.display === 'block') {
+      fullText.style.display = 'none';
+      btn.textContent = 'Read More';
     } else {
-      review.style.webkitLineClamp = 'none';
-      btn.textContent = "Show Less";
+      fullText.style.display = 'block';
+      btn.textContent = 'Read Less';
     }
   });
 });
