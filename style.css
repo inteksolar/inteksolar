@@ -626,6 +626,11 @@ header {
   background: #004080;
 }
 
+.faq-section .show-more-btn i {
+  color: inherit;
+  margin-left: 6px;
+}
+
 /* Responsive */
 @media(max-width: 768px){
   .faq-section {
