@@ -504,6 +504,25 @@ header {
   right: 16px;
 }
 
+/* Extra Reviews Hidden by Default */
+.extra-review { display: none; }
+
+/* Button Modern Style */
+#showMoreBtn {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#showMoreBtn:hover {
+  background-color: #e65c00;
+}
+
 /* ===================== FAQ SECTION ===================== */
 .faq-section {
   padding: 60px 20px;
