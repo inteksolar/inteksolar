@@ -527,18 +527,19 @@ header {
 }
 
 .show-more-btn {
-  background: #002b5c;
-  color: #fff;
-  border: none;
-  padding: 10px 18px;
-  font-size: 1rem;
-  border-radius: 25px;
+  background-color: transparent;  /* transparent background */
+  border: none;                   /* koi border nathi */
+  color: #ff6600;                 /* orange text */
+  padding: 10px 20px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .show-more-btn:hover {
-  background: #0056b3;
+  background-color: #ff6600;      /* hover par orange fill */
+  color: #fff;                    /* white text */
 }
 
 /* ===================== FAQ SECTION ===================== */
