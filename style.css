@@ -517,6 +517,30 @@ header {
   margin-right: 3px;
 }
 
+.more-reviews.hidden {
+  display: none;
+}
+
+.more-btn-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.show-more-btn {
+  background: #002b5c;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.show-more-btn:hover {
+  background: #0056b3;
+}
+
 /* ===================== FAQ SECTION ===================== */
 .faq-section {
   padding: 60px 20px;
