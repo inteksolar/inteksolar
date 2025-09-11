@@ -433,96 +433,77 @@ header {
 
 /* ===================== TESTIMONIALS SECTION ===================== */
 .testimonials {
-  background: #f0f6fa;
-  padding: 4rem 0;
-  text-align: center;
+  background: #f8f9fa;
+  padding: 60px 20px;
 }
 
 .testimonials .section-title {
-  font-size: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
   color: #002b5c;
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
   font-weight: 700;
 }
 
 .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  justify-items: center;
 }
 
-.testimonial-card {
+.review-card {
   background: #ffffff;
-  border-radius: 12px;
-  padding: 1.5rem;
+  border-radius: 10px;
+  padding: 25px 20px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  text-align: left;
-  width: 100%;
-  max-width: 350px;
   position: relative;
-  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.testimonial-card:hover { transform: translateY(-5px); }
-
-.testimonial-header {
+.review-header {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
-.testimonial-header img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
+.review-icon {
+  width: 25px;
+  height: 25px;
 }
 
-.customer-info h3 {
-  font-size: 1.1rem;
-  margin: 0;
+.review-author {
+  font-weight: 600;
   color: #002b5c;
 }
 
-.google-review {
-  font-size: 0.8rem;
-  color: #ff6600;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.testimonial-text {
-  font-size: 0.95rem;
-  color: #002b5c;
-  line-height: 1.6;
-  margin-top: 10px;
-  max-height: 3em; /* approx 2 lines initially */
+.review-text {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
   overflow: hidden;
-  position: relative;
-  transition: max-height 0.3s;
-}
-
-.testimonial-text.expanded {
-  max-height: 1000px; /* full text */
+  max-height: 3em; /* show 2 lines approx */
+  transition: max-height 0.4s ease;
 }
 
 .read-more-btn {
-  display: inline-block;
-  margin-top: 8px;
-  font-size: 0.85rem;
+  align-self: flex-start;
+  background: transparent;
   color: #ff6600;
-  font-weight: 600;
+  border: none;
   cursor: pointer;
+  font-weight: 600;
   transition: color 0.3s;
 }
 
-.read-more-btn:hover { color: #002b5c; }
+.read-more-btn:hover {
+  color: #e65c00;
+}
 
-/* Responsive */
-@media(max-width: 768px){
-  .testimonial-grid { gap: 1.5rem; }
+/* Expanded review text */
+.review-text.expanded {
+  max-height: 500px; /* show full */
 }
 
 /* ===================== FAQ SECTION ===================== */
