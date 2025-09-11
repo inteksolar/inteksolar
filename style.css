@@ -597,7 +597,7 @@ header {
   font-size: 18px;
   margin-bottom: 12px;
   color: #ffffff;
-  border-left: 4px solid #00ccff;
+  border-left: 4px solid #ff6600; /* new orange line */
   padding-left: 8px;
 }
 
