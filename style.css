@@ -526,7 +526,7 @@ header {
   margin-top: 20px;
 }
 
-.reviews-section .show-more-btn {
+.show-more-btn {
   background-color: transparent !important;
   border: none !important;
   color: #ff6600 !important;
@@ -538,10 +538,14 @@ header {
   transition: all 0.3s ease;
 }
 
-.reviews-section .show-more-btn:hover {
+.show-more-btn:hover {
   background-color: #ff6600;      /* hover par orange fill */
   color: #fff;                    /* white text */
 }
+
+.show-more-btn i { color: inherit; margin-left: 6px; }
+
+
 
 /* ===================== FAQ SECTION ===================== */
 .faq-section {
