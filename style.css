@@ -252,39 +252,38 @@ header {
 
 /* ===================== ABOUT SECTION ===================== */
 .about {
-  background: #ffffff;
-  padding: 6rem 0 5rem 0; /* top padding for space from hero, bottom padding for services gap */
-  text-align: center;
-  position: relative;
-  z-index: 3;
+  width: 100%;
+  background: #e6f2fa;
+  padding: 40px 20px;
+  text-align: left;
 }
 
 .about-section h2 {
-  font-size: 2.5rem;
-  color: #0a2f5a;           /* Dark Blue heading */
-  margin-bottom: 20px;
-  font-weight: 700;
+  margin: 5px 0 20px 0;
+  font-weight: normal;
+  color: #003366;
+  font-size: 2em;
 }
 
 .about-section p {
-  max-width: 800px;
-  margin: 0 auto 25px auto;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #0a2f5a;
+  margin: 0 0 15px 0;
+  font-weight: normal;
+  color: #003366;
+  font-size: 1em;
+  line-height: 1.6;
 }
 
 .about-btn {
+  display: inline-block;
+  padding: 10px 20px;
   background-color: transparent;
   color: #002b5c;
-  padding: 10px 20px;
   border: 2px solid #002b5c;
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
-  text-decoration: none;   /* underline remove kare che */
+  text-decoration: none;
   transition: 0.3s;
-  display: inline-block;
 }
 
 .about-btn:hover {
@@ -293,22 +292,9 @@ header {
 }
 
 /* Responsive Adjustments */
-@media(max-width: 1200px){
-  .about-section h2 { font-size: 2.2rem; }
-  .about-section p { font-size: 1.05rem; }
-}
-
-@media(max-width: 768px){
+@media(max-width: 768px) {
   .about {
-    padding: 4rem 15px 3rem 15px;  /* smaller padding for mobile */
-  }
-  .about-section h2 { font-size: 2rem; }
-  .about-section p { font-size: 1rem; }
-}
-
-@media(max-width: 480px){
-  .about {
-    padding: 3rem 15px 2.5rem 15px;
+    padding: 30px 15px;
   }
   .about-section h2 { font-size: 1.8rem; }
   .about-section p { font-size: 0.95rem; }
