@@ -615,7 +615,7 @@ header {
   margin-top: 20px;
 }
 
-.faq-section .show-more-btn {
+.faq-btn {
   background: #002b5c;
   color: #fff;
   padding: 10px 20px;
@@ -626,11 +626,11 @@ header {
   transition: background 0.3s ease;
 }
 
-.faq-section .show-more-btn:hover {
+.faq-btn:hover {
   background: #004080;
 }
 
-.faq-section .show-more-btn i {
+.faq-btn i {
   color: inherit;
   margin-left: 6px;
 }
