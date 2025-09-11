@@ -431,29 +431,48 @@ faqItems.forEach(item => {
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+  /* ========= Read More / Show Less for each review ========= */
   const reviews = document.querySelectorAll('.review-card');
 
   reviews.forEach(card => {
     const readMoreBtn = card.querySelector('.read-more-btn');
     const reviewText = card.querySelector('.review-text');
 
-    const fullText = reviewText.textContent.trim();
-    const shortText = fullText.split(" ").slice(0, 20).join(" ") + "...";
+    if (readMoreBtn && reviewText) {
+      const fullText = reviewText.textContent.trim();
+      const shortText = fullText.split(" ").slice(0, 20).join(" ") + "...";
 
-    reviewText.textContent = shortText;
+      // Initially short text show karo
+      reviewText.textContent = shortText;
 
-    readMoreBtn.addEventListener('click', () => {
-      if (reviewText.classList.contains('expanded')) {
-        reviewText.textContent = shortText;
-        reviewText.classList.remove('expanded');
-        readMoreBtn.textContent = "Read More";
+      readMoreBtn.addEventListener('click', () => {
+        if (reviewText.classList.contains('expanded')) {
+          reviewText.textContent = shortText;
+          reviewText.classList.remove('expanded');
+          readMoreBtn.textContent = "Read More";
+        } else {
+          reviewText.textContent = fullText;
+          reviewText.classList.add('expanded');
+          readMoreBtn.textContent = "Show Less";
+        }
+      });
+    }
+  });
+
+  /* ========= Show More / Show Less Reviews ========= */
+  const showMoreBtn = document.getElementById("showMoreBtn");
+  const moreReviews = document.querySelector(".more-reviews");
+
+  if (showMoreBtn && moreReviews) {
+    showMoreBtn.addEventListener("click", () => {
+      moreReviews.classList.toggle("hidden");
+      if (moreReviews.classList.contains("hidden")) {
+        showMoreBtn.innerHTML = 'Show More Reviews <i class="fas fa-chevron-down"></i>';
       } else {
-        reviewText.textContent = fullText;
-        reviewText.classList.add('expanded');
-        readMoreBtn.textContent = "Show Less";
+        showMoreBtn.innerHTML = 'Show Less Reviews <i class="fas fa-chevron-up"></i>';
       }
     });
-  });
+  }
 });
 </script>
 </body>
