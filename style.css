@@ -527,8 +527,8 @@ header {
 }
 
 .show-more-btn {
-  background: transparent;
-  color: #ff6600;
+  background: #002b5c;
+  color: #fff;
   border: none;
   padding: 10px 18px;
   font-size: 1rem;
