@@ -21,6 +21,15 @@ html, body {
   margin: auto;
 }
 
+/* ===================== GLOBAL STYLES ===================== */
+
+/* Section Title Highlight (Global) */
+.section-title .highlight {
+  color: #ff6600;
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* ===================== ROOT VARIABLES ===================== */
 :root {
   --topbar-bg: #002b5c;
