@@ -456,6 +456,8 @@ header {
 
 .section-title .highlight {
    color: #ff6600;
+   font-weight: bold;
+   font-style: italic;
 }
 
 .testimonial-grid {
