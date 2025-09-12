@@ -344,8 +344,8 @@ header {
   top: -0px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
 }
 
 .card .image-wrapper img {
