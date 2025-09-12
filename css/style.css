@@ -143,119 +143,90 @@ header {
 }
 
 /* ===================== HERO SECTION ===================== */
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #0d2f6e, #ff6600);
-  min-height: 100vh;
+  position: relative;
+  height: 100vh;
+  background: url('about.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  padding: 140px 20px 40px; /* sticky header offset */
-  color: white;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
 }
-
-.hero::after {
-  content: "";
+.hero-overlay {
   position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
   z-index: 1;
 }
-
 .hero-content {
-  display: flex;
-  flex-direction: row; /* desktop horizontal */
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: auto;
   position: relative;
   z-index: 2;
-  width: 100%;
+  max-width: 700px;
 }
-
-.hero-text {
-  flex: 1 1 50%;
-  text-align: left;
-}
-
-.hero-text h2 {
-  margin: 0 0 30px 0;
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
   line-height: 1.2;
 }
-
-.hero-text h3 {
-  margin: 30px 0 15px 0;
+.hero-content h1 span {
+  color: #ff6b00;
 }
-
-/* spans inside h2 */
-.h2-normal {
-  font-style: normal;
-  font-weight: normal;
-  color: #ffffff;
-  font-size: 1.4em;
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #f0f0f0;
 }
-
-.h2-highlight {
-  font-weight: bold;
-  font-style: normal;
-  color: #ff6600;
-  font-size: 2.2em;
-}
-
-/* spans inside h3 */
-.h3-normal {
-  font-style: normal;
-  font-weight: normal;
-  color: #ffffff;
-  font-size: 1.1em;
-}
-
-.h3-highlight {
-  font-weight: bold;
-  font-style: normal;
-  color: #ff6600;
-  font-size: 1.1em;
-}
-
-/* button */
-.btn-primary {
+.hero-content .btn {
   display: inline-block;
-  padding: 10px 23px;
-  background: #ff6600;
-  border: none;
-  color: white;
+  padding: 14px 30px;
+  background: #ff6b00;
+  color: #fff;
   font-weight: bold;
-  font-size: 1.1em;
   border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  text-decoration: none;
+  transition: background 0.3s;
 }
-
-.btn-primary:hover {
+.hero-content .btn:hover {
   background: #e65c00;
 }
 
+/* Hero Image */
 .hero-image {
-  flex: 1 1 40%;
+  margin-top: 30px;
   text-align: center;
 }
-
 .hero-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 10px; /* optional */
 }
 
-/* ✅ Responsive (Mobile) */
-@media(max-width: 992px) {
-  .hero-content {
-    flex-direction: column; /* stack */
-    text-align: center;
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
   }
-  .hero-text {
-    text-align: center;
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .hero-image {
+    margin-top: 20px;
   }
 }
 
