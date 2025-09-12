@@ -27,7 +27,7 @@ html, body {
 .section-title .highlight {
   color: #ff6600;
   font-weight: bold;
-  font-style: italic;
+  font-style: normal;
 }
 
 /* ===================== ROOT VARIABLES ===================== */
