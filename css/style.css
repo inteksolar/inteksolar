@@ -237,7 +237,7 @@ body {
   max-height: 70vh;  /* hero height ma fit */
   object-fit: contain; /* crop na thay */
   display: block;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
 /* Responsive */
