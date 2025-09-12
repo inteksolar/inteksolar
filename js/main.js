@@ -122,3 +122,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// ===================== Underline Animation Script =====================
+window.addEventListener("scroll", function () {
+  const underline = document.querySelector(".title-underline");
+  if (!underline) return; // safety check
+
+  const position = underline.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (position < windowHeight - 100) {
+    underline.classList.add("visible");
+  }
+});
