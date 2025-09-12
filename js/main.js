@@ -74,43 +74,51 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-/* ===================== REVIEWS SECTION ===================== */
+
+// ================= Reviews Section =================
 document.addEventListener('DOMContentLoaded', () => {
-  const reviews = document.querySelectorAll('.review-card');
-
-  reviews.forEach(card => {
-    const readMoreBtn = card.querySelector('.read-more-btn');
-    const reviewText = card.querySelector('.review-text');
-
-    if (readMoreBtn && reviewText) {
-      const fullText = reviewText.textContent.trim();
-      const shortText = fullText.split(" ").slice(0, 20).join(" ") + "...";
-
-      reviewText.textContent = shortText;
-
-      readMoreBtn.addEventListener('click', () => {
-        if (reviewText.classList.contains('expanded')) {
-          reviewText.textContent = shortText;
-          reviewText.classList.remove('expanded');
-          readMoreBtn.textContent = "Read More";
-        } else {
-          reviewText.textContent = fullText;
-          reviewText.classList.add('expanded');
-          readMoreBtn.textContent = "Show Less";
-        }
-      });
-    }
+  // --- Read More toggle per review ---
+  document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const reviewText = btn.previousElementSibling;
+      reviewText.classList.toggle('expanded');
+      btn.textContent = reviewText.classList.contains('expanded')
+        ? "Read Less"
+        : "Read More";
+    });
   });
 
-  const showMoreBtn = document.getElementById("showMoreBtn");
-  const moreReviews = document.querySelector(".more-reviews");
+  // --- Show More Reviews toggle ---
+  const showMoreBtn = document.querySelector(".show-more-btn");
+  const moreReviews = document.querySelectorAll(".more-reviews");
 
-  if (showMoreBtn && moreReviews) {
+  if (showMoreBtn) {
     showMoreBtn.addEventListener("click", () => {
-      moreReviews.classList.toggle("hidden");
-      showMoreBtn.innerHTML = moreReviews.classList.contains("hidden")
+      moreReviews.forEach(item => item.classList.toggle("hidden"));
+      showMoreBtn.innerHTML = moreReviews[0].classList.contains("hidden")
         ? 'Show More Reviews <i class="fas fa-chevron-down"></i>'
         : 'Show Less Reviews <i class="fas fa-chevron-up"></i>';
+    });
+  }
+
+  // ================= FAQ Section =================
+  // --- Expand/Collapse single FAQ ---
+  document.querySelectorAll(".faq-question").forEach(question => {
+    question.addEventListener("click", () => {
+      question.parentElement.classList.toggle("active");
+    });
+  });
+
+  // --- Show More FAQs toggle ---
+  const faqBtn = document.querySelector(".faq-btn");
+  const moreFaqs = document.querySelectorAll(".hidden-faq");
+
+  if (faqBtn) {
+    faqBtn.addEventListener("click", () => {
+      moreFaqs.forEach(faq => faq.classList.toggle("hidden-faq"));
+      faqBtn.innerHTML = moreFaqs[0].classList.contains("hidden-faq")
+        ? 'Show More FAQs <i class="fas fa-chevron-down"></i>'
+        : 'Show Less FAQs <i class="fas fa-chevron-up"></i>';
     });
   }
 });
