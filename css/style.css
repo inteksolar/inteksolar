@@ -157,12 +157,11 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('about.png') center/cover no-repeat;
+  background: url('images/solar-bg.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  text-align: center;
   padding: 0 20px;
 }
 .hero-overlay {
@@ -174,25 +173,37 @@ body {
   background: rgba(0,0,0,0.45);
   z-index: 1;
 }
-.hero-content {
+
+/* Wrapper: Text + Image */
+.hero-content-wrapper {
   position: relative;
   z-index: 2;
-  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 30px;
 }
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+
+/* Text */
+.hero-text {
+  flex: 1;
+}
+.hero-text h1 {
+  font-size: 2.8rem;
   line-height: 1.2;
+  margin-bottom: 20px;
 }
-.hero-content h1 span {
+.hero-text h1 span {
   color: #ff6b00;
 }
-.hero-content p {
-  font-size: 1.1rem;
+.hero-text p {
+  font-size: 1.2rem;
   margin-bottom: 30px;
   color: #f0f0f0;
 }
-.hero-content .btn {
+.hero-text .btn {
   display: inline-block;
   padding: 14px 30px;
   background: #ff6b00;
@@ -202,31 +213,47 @@ body {
   text-decoration: none;
   transition: background 0.3s;
 }
-.hero-content .btn:hover {
+.hero-text .btn:hover {
   background: #e65c00;
 }
 
-/* Hero Image */
+/* Image */
 .hero-image {
-  margin-top: 30px;
-  text-align: center;
+  flex: 1;
+  text-align: right;
 }
 .hero-image img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 500px; /* desktop max width */
   height: auto;
-  border-radius: 10px; /* optional */
+  border-radius: 10px;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2rem;
+@media (max-width: 1024px) {
+  .hero-content-wrapper {
+    gap: 20px;
   }
-  .hero-content p {
-    font-size: 1rem;
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-content-wrapper {
+    flex-direction: column;
+    text-align: center;
   }
   .hero-image {
-    margin-top: 20px;
+    text-align: center;
+  }
+  .hero-image img {
+    max-width: 90%;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
   }
 }
 
