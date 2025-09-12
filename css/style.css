@@ -454,12 +454,6 @@ header {
   font-weight: 700;
 }
 
-.section-title .highlight {
-   color: #ff6600;
-   font-weight: bold;
-   font-style: normal;
-}
-
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -729,7 +723,7 @@ header {
 .section-title .highlight {
   color: #ff6600;
   font-weight: bold;
-  font-style: italic;
+  font-style: normal;
 }
 
 /* ===================== Title Underline ===================== */
