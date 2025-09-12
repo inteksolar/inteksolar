@@ -454,6 +454,10 @@ header {
   font-weight: 700;
 }
 
+.section-title .highlight {
+   color: orange;
+}
+
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
