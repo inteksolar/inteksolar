@@ -196,11 +196,18 @@ header {
   }
 }
 
-@media (max-width: 768px) {
+@@media (max-width: 768px) {
   .hero-content-wrapper {
     flex-direction: column; /* stacked on mobile only */
     text-align: center;
   }
+
+  .hero-text {
+    margin-top: 20px; /* mobile ma text thodu niche */
+    padding-right: 0;  /* optional */
+  }
+}
+
   .hero-image {
     text-align: center;
     margin-top: 20px;
