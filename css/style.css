@@ -229,12 +229,14 @@ body {
   flex: 1 1 auto;
   text-align: right; /* image right aligned */
 }
+
 .hero-image img {
-  width: 100%;
-  max-width: 500px; /* desktop max width */
-  height: auto;
-  max-height: 70vh; /* fit hero height + leave space for text */
-  object-fit: contain;
+  width: 100%;       /* container width occupy */
+  max-width: 450px;  /* desktop max width */
+  height: auto;      /* maintain aspect ratio */
+  max-height: 70vh;  /* hero height ma fit */
+  object-fit: contain; /* crop na thay */
+  display: block;
   border-radius: 10px;
 }
 
@@ -242,6 +244,14 @@ body {
 @media (max-width: 1024px) {
   .hero-text h1 {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image img {
+    max-width: 90%;  /* container width nearly full */
+    max-height: 50vh; /* text upar dabay na kare */
+    margin-left: 0;  /* start from left */
   }
 }
 
