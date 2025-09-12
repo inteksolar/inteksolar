@@ -396,14 +396,31 @@ header {
 .brand-section {
   padding: 60px 20px;
   background: #ffffff;
+  text-align: center;
 }
 
 .section-title {
-  text-align: center;
   font-size: 32px;
-  color: #002b5c; /* Dark Blue */
-  margin-bottom: 0;
-  font-weight: 700;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.title-underline {
+  width: 120px;
+  height: 12px;
+  margin: 4px auto 40px;  /* gap logos vachche */
+  border-top: 3px solid #ff6600;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.6s ease-in-out;
+}
+
+.title-underline.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .brand-logos {
@@ -415,7 +432,7 @@ header {
 }
 
 .brand-item {
-  flex: 0 1 120px; /* base logo size */
+  flex: 0 1 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -433,10 +450,9 @@ header {
   transform: scale(1.1);
 }
 
-/* Responsive Adjustments */
 @media(max-width: 768px) {
   .brand-item {
-    flex: 0 1 80px; /* smaller logos on mobile */
+    flex: 0 1 80px;
   }
 }
 
@@ -710,36 +726,6 @@ header {
 
 .popup-box button:hover { background: #002244; }
 
-/* ===================== Section Title ===================== */
-.section-title {
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  color: #333;
-  margin: 0;            /* 👈 remove default top & bottom margin */
-  padding: 0;           /* 👈 remove padding if any */
-  line-height: 1.2;     /* 👈 adjust text height */
-}
-
-.section-title .highlight {
-  color: #ff6600;
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* ===================== Title Underline ===================== */
-.title-underline {
-  width: 120px;
-  height: 12px;
-  margin: 0 auto;       /* 👈 no extra gap */
-  border-top: 3px solid #ff6600;
-  border-radius: 50%;
-}
-
-.title-underline.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /* ===================== FOOTER ===================== */
 .footer {
