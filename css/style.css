@@ -730,8 +730,8 @@ header {
 .title-underline {
   width: 120px;
   height: 12px;
-  margin: 0 auto;
-  border-bottom: 3px solid #ff6600;
+  margin: 4px auto 0;
+  border-top: 3px solid #ff6600;
   border-radius: 50%;     /* curve effect */
   opacity: 0;             /* hidden by default */
   transform: translateY(10px);
