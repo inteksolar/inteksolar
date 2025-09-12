@@ -172,6 +172,7 @@ header {
 .hero-text {
   flex: 1 1 auto;
   padding-right: 20px;
+  margin-top: 40px;
 }
 
 /* Image */
