@@ -145,7 +145,8 @@ header {
 /* ===================== HERO SECTION ===================== */
 .hero {
   position: relative;
-  height: 100vh; /* full viewport height */
+  min-height: 600px; /* Minimum height */
+  max-height: 100vh; /* Max full screen */
   background: url('images/solar-bg.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -161,28 +162,28 @@ header {
   display: flex;
   align-items: center; /* vertical center */
   justify-content: space-between;
-  max-width: 1200px;
   width: 100%;
+  max-width: 1200px;
   gap: 30px;
   flex-wrap: nowrap; /* Prevent stacking on desktop */
 }
 
 /* Text */
 .hero-text {
-  flex: 1;
-  padding-right: 20px; /* spacing between text & image */
+  flex: 1 1 auto;
+  padding-right: 20px;
 }
 
 /* Image */
 .hero-image {
-  flex: 1;
+  flex: 1 1 auto;
   text-align: right;
 }
 .hero-image img {
   width: 100%;
-  max-width: 500px; /* desktop max width */
+  max-width: 500px;
   height: auto;
-  max-height: 80vh; /* fit hero height */
+  max-height: 70vh; /* fit hero + leave space for text */
   object-fit: contain;
   border-radius: 10px;
 }
