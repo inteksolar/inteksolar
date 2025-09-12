@@ -402,7 +402,7 @@ header {
   text-align: center;
   font-size: 32px;
   color: #002b5c; /* Dark Blue */
-  margin-bottom: 30px;
+  margin-bottom: 0;
   font-weight: 700;
 }
 
