@@ -324,7 +324,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 6rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .card {
