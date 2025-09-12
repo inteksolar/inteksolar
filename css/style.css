@@ -716,6 +716,39 @@ header {
 
 .popup-box button:hover { background: #002244; }
 
+/* ===================== Section Title ===================== */
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.section-title .highlight {
+  color: #ff6600;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* ===================== Title Underline ===================== */
+.title-underline {
+  width: 120px;
+  height: 12px;
+  margin: 0 auto;
+  border-bottom: 3px solid #ff6600;
+  border-radius: 50%;     /* curve effect */
+  opacity: 0;             /* hidden by default */
+  transform: translateY(10px);
+  transition: all 0.6s ease-in-out;
+}
+
+.title-underline.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ===================== FOOTER ===================== */
 .footer {
   background: #002b5c;
