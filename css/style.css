@@ -229,6 +229,9 @@ header {
   .hero-btn {
     width: 100%;
     text-align: center;
+max-width: 250px;   /* max width limit */
+    padding: 10px 0;    /* reduce vertical padding */
+    margin: 20px auto;  /* center + spacing from text */
   }
 }
 
