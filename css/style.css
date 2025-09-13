@@ -157,6 +157,7 @@ header {
   flex-wrap: wrap; /* allow wrapping on smaller screens */
   position: relative;
   z-index: 2;
+  padding-top: 100px;
 }
 
 .hero-text {
@@ -165,6 +166,7 @@ header {
   font-size: 2rem;
   line-height: 1.4;
   color: #002b5c;
+  margin-top: 20px;
 }
 
 .hero-text h1 span {
