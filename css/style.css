@@ -813,7 +813,7 @@ max-width: 250px;   /* max width limit */
   font-size: 18px;
   margin-bottom: 12px;
   color: #ffffff;
-  border-left: 2px solid #ff6600; /* new orange line */
+  border-left: 4px solid #ff6600; /* new orange line */
   padding-left: 8px;
 }
 
