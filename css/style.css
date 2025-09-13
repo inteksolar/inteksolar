@@ -644,14 +644,18 @@ body {
 
 .faq-toggle {
   font-size: 24px;
+  line-height: 1;
+  font-weight: bold;
   transition: transform 0.3s ease;
+  display: inline-block;
 }
 
+/* Answer animation */
 .faq-answer {
   padding: 0 20px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  transition: max-height 0.4s ease, padding 0.3s ease;
   font-size: 16px;
   color: #555;
 }
@@ -661,8 +665,9 @@ body {
   padding: 20px;
 }
 
+/* Plus → Minus icon style */
 .faq-item.active .faq-toggle {
-  transform: rotate(45deg); /* + becomes x style */
+  transform: rotate(180deg); /* rotate instead of cross */
 }
 
 /* Hide extra FAQs by default */
