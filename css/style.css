@@ -385,7 +385,7 @@ max-width: 250px;   /* max width limit */
 }
 
 .section-title {
-  font-size: 33px;
+  font-size: 30px;
   font-weight: bold;
   color: #333;
   margin: 0;
@@ -697,7 +697,7 @@ max-width: 250px;   /* max width limit */
   padding: 12px 25px;
   font-size: 1rem;
   font-weight: 500;
-  border-radius: 20px;
+  border-radius: 50px;
   text-decoration: none;
   transition: background 0.3s;
 }
