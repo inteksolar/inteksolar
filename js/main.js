@@ -108,18 +108,21 @@ document.addEventListener("DOMContentLoaded", () => {
     question.addEventListener("click", () => {
       const parent = question.parentElement;
 
-      // close all other open FAQs
+      // Close all other open FAQs
       document.querySelectorAll(".faq-item.active").forEach(item => {
         if (item !== parent) {
           item.classList.remove("active");
-          item.querySelector(".faq-toggle").textContent = "+";
+          const icon = item.querySelector(".faq-toggle");
+          if (icon) icon.textContent = "+";
         }
       });
 
-      // toggle clicked FAQ
+      // Toggle clicked FAQ
       parent.classList.toggle("active");
       const toggleIcon = question.querySelector(".faq-toggle");
-      toggleIcon.textContent = parent.classList.contains("active") ? "−" : "+";
+      if (toggleIcon) {
+        toggleIcon.textContent = parent.classList.contains("active") ? "−" : "+";
+      }
     });
   });
 
@@ -131,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
     faqBtn.addEventListener("click", () => {
       moreFaqs.forEach(faq => faq.classList.toggle("hidden-faq"));
 
-      // button text & icon update
+      // Button text & arrow update
       if (moreFaqs[0].classList.contains("hidden-faq")) {
         faqBtn.innerHTML = 'Show More FAQs <i class="fas fa-chevron-down"></i>';
       } else {
