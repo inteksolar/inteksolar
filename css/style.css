@@ -694,7 +694,7 @@ max-width: 250px;   /* max width limit */
   gap: 8px;
   background-color: #ff6600; /* orange button */
   color: #fff;
-  padding: 12px 24px;
+  padding: 10px 20px;
   font-size: 1rem;
   font-weight: 600;
   border: none;
@@ -707,13 +707,6 @@ max-width: 250px;   /* max width limit */
 .footer-top-btn i {
   font-size: 1.1rem;
   color: #fff !important;
-}
-
-.footer-top-btn .arrow {
-  margin-left: 5px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #fff;
 }
 
 .footer-top-btn:hover {
