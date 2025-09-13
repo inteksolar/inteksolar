@@ -142,7 +142,7 @@ header {
   .menu-btn { display: block; }
 }
 
-/* Hero Section */
+/* ===================== HERO SECTION ===================== */
 .hero {
   position: relative;
   background: #f8f9fa;
@@ -186,23 +186,6 @@ header {
 /* Mobile Responsive */
 @media(max-width: 768px) {
   .hero {
-    padding: 60px 20px; /* increase spacing top-bottom */
-  }
-
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .hero-text {
-    font-size: 1.5rem;
-  }
-}
-
-/* Mobile Responsive */
-@media(max-width: 768px) {
-  .hero {
     padding: 120px 20px 60px; /* 👈 top padding vadhaavi */
   }
 
@@ -215,6 +198,35 @@ header {
   .hero-text {
     font-size: 1.5rem;
     margin-top: 20px; /* 👈 extra space header & text vachche */
+  }
+}
+
+/* Only for Hero Button */
+.hero-btn {
+  display: inline-block;
+  background: #ff6600;  /* orange color */
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.hero-btn:hover {
+  background: #e55b00;
+  transform: translateY(-2px);
+}
+
+/* Mobile full width */
+@media(max-width: 768px) {
+  .hero-btn {
+    width: 100%;
+    text-align: center;
   }
 }
 
