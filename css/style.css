@@ -157,7 +157,7 @@ header {
   flex-wrap: wrap; /* allow wrapping on smaller screens */
   position: relative;
   z-index: 2;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .hero-text {
