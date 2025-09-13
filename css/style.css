@@ -704,14 +704,17 @@ max-width: 250px;   /* max width limit */
   transition: background 0.3s;
 }
 
+.footer-top-btn i {
+  font-size: 1.1rem;
+  color: #fff !important;
+  text-shadow: 0 0 3px rgba(0,0,0,0.4);
+}
+
 .footer-top-btn:hover {
   background-color: #002b5c;
 }
 
-.footer-top-btn i {
-  font-size: 1.1rem;
-  color: #fff !important;
-}
+
 
 /* ===================== POPUP ===================== */
 .popup-overlay {
