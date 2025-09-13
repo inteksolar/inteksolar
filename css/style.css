@@ -200,6 +200,24 @@ header {
   }
 }
 
+/* Mobile Responsive */
+@media(max-width: 768px) {
+  .hero {
+    padding: 100px 20px 60px; /* 👈 top padding vadhaavi */
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+    margin-top: 20px; /* 👈 extra space header & text vachche */
+  }
+}
+
 /* ===================== ABOUT SECTION ===================== */
 .about {
   width: 100%;
