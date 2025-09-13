@@ -102,10 +102,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ================= FAQ Section =================
-  // --- Expand/Collapse single FAQ ---
+document.addEventListener("DOMContentLoaded", () => {
+  // --- Accordion Expand/Collapse ---
   document.querySelectorAll(".faq-question").forEach(question => {
     question.addEventListener("click", () => {
-      question.parentElement.classList.toggle("active");
+      const parent = question.parentElement;
+
+      // close all open FAQs first
+      document.querySelectorAll(".faq-item.active").forEach(item => {
+        if (item !== parent) {
+          item.classList.remove("active");
+          item.querySelector(".faq-toggle").textContent = "+";
+        }
+      });
+
+      // toggle clicked one
+      parent.classList.toggle("active");
+      const toggleIcon = question.querySelector(".faq-toggle");
+      if (parent.classList.contains("active")) {
+        toggleIcon.textContent = "−";
+      } else {
+        toggleIcon.textContent = "+";
+      }
     });
   });
 
@@ -116,9 +134,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (faqBtn) {
     faqBtn.addEventListener("click", () => {
       moreFaqs.forEach(faq => faq.classList.toggle("hidden-faq"));
-      faqBtn.innerHTML = moreFaqs[0].classList.contains("hidden-faq")
-        ? 'Show More FAQs <i class="fas fa-chevron-down"></i>'
-        : 'Show Less FAQs <i class="fas fa-chevron-up"></i>';
+
+      // button text & arrow update
+      if (moreFaqs[0].classList.contains("hidden-faq")) {
+        faqBtn.innerHTML = 'Show More FAQs <i class="fas fa-chevron-down"></i>';
+      } else {
+        faqBtn.innerHTML = 'Show Less FAQs <i class="fas fa-chevron-up"></i>';
+      }
     });
   }
 });
