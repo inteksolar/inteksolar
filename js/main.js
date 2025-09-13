@@ -49,60 +49,6 @@ function toggleMenu() {
 
 /* ===================== FAQ SECTION ===================== */
 document.addEventListener("DOMContentLoaded", () => {
-  const faqItems = document.querySelectorAll(".faq-item");
-  faqItems.forEach(item => {
-    const question = item.querySelector(".faq-question");
-    question.addEventListener("click", () => {
-      item.classList.toggle("active");
-    });
-  });
-
-  const showMoreFaqBtn = document.getElementById("showMoreFaqBtn");
-  const hiddenFaqs = document.querySelectorAll(".hidden-faq");
-  if(showMoreFaqBtn && hiddenFaqs.length) {
-    let isExpanded = false;
-
-    showMoreFaqBtn.addEventListener("click", () => {
-      hiddenFaqs.forEach(faq => {
-        faq.style.display = isExpanded ? "none" : "block";
-      });
-      isExpanded = !isExpanded;
-      showMoreFaqBtn.innerHTML = isExpanded
-        ? 'Show Less FAQs <i class="fas fa-chevron-up"></i>'
-        : 'Show More FAQs <i class="fas fa-chevron-down"></i>';
-    });
-  }
-});
-
-
-// ================= Reviews Section =================
-document.addEventListener('DOMContentLoaded', () => {
-  // --- Read More toggle per review ---
-  document.querySelectorAll('.read-more-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const reviewText = btn.previousElementSibling;
-      reviewText.classList.toggle('expanded');
-      btn.textContent = reviewText.classList.contains('expanded')
-        ? "Read Less"
-        : "Read More";
-    });
-  });
-
-  // --- Show More Reviews toggle ---
-  const showMoreBtn = document.querySelector(".show-more-btn");
-  const moreReviews = document.querySelectorAll(".more-reviews");
-
-  if (showMoreBtn) {
-    showMoreBtn.addEventListener("click", () => {
-      moreReviews.forEach(item => item.classList.toggle("hidden"));
-      showMoreBtn.innerHTML = moreReviews[0].classList.contains("hidden")
-        ? 'Show More Reviews <i class="fas fa-chevron-down"></i>'
-        : 'Show Less Reviews <i class="fas fa-chevron-up"></i>';
-    });
-  }
-
-  // ================= FAQ Section =================
-document.addEventListener("DOMContentLoaded", () => {
   // --- Accordion Expand/Collapse ---
   document.querySelectorAll(".faq-question").forEach(question => {
     question.addEventListener("click", () => {
@@ -130,21 +76,44 @@ document.addEventListener("DOMContentLoaded", () => {
   const faqBtn = document.querySelector(".faq-btn");
   const moreFaqs = document.querySelectorAll(".hidden-faq");
 
-  if (faqBtn) {
+  if (faqBtn && moreFaqs.length) {
     faqBtn.addEventListener("click", () => {
       moreFaqs.forEach(faq => faq.classList.toggle("hidden-faq"));
-
-      // Button text & arrow update
-      if (moreFaqs[0].classList.contains("hidden-faq")) {
-        faqBtn.innerHTML = 'Show More FAQs <i class="fas fa-chevron-down"></i>';
-      } else {
-        faqBtn.innerHTML = 'Show Less FAQs <i class="fas fa-chevron-up"></i>';
-      }
+      faqBtn.innerHTML = moreFaqs[0].classList.contains("hidden-faq")
+        ? 'Show More FAQs <i class="fas fa-chevron-down"></i>'
+        : 'Show Less FAQs <i class="fas fa-chevron-up"></i>';
     });
   }
 });
 
-// ===================== Underline Animation Script =====================
+/* ===================== Reviews Section ===================== */
+document.addEventListener('DOMContentLoaded', () => {
+  // --- Read More toggle per review ---
+  document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const reviewText = btn.previousElementSibling;
+      reviewText.classList.toggle('expanded');
+      btn.textContent = reviewText.classList.contains('expanded')
+        ? "Read Less"
+        : "Read More";
+    });
+  });
+
+  // --- Show More Reviews toggle ---
+  const showMoreBtn = document.querySelector(".show-more-btn");
+  const moreReviews = document.querySelectorAll(".more-reviews");
+
+  if (showMoreBtn && moreReviews.length) {
+    showMoreBtn.addEventListener("click", () => {
+      moreReviews.forEach(item => item.classList.toggle("hidden"));
+      showMoreBtn.innerHTML = moreReviews[0].classList.contains("hidden")
+        ? 'Show More Reviews <i class="fas fa-chevron-down"></i>'
+        : 'Show Less Reviews <i class="fas fa-chevron-up"></i>';
+    });
+  }
+});
+
+/* ===================== Underline Animation Script ===================== */
 window.addEventListener("scroll", function () {
   const underline = document.querySelector(".title-underline");
   if (!underline) return; // safety check
