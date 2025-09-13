@@ -665,27 +665,34 @@ max-width: 250px;   /* max width limit */
 /* Footer Top Section CSS */
 .footer-top {
   background: #f5f5f5; /* light grey background */
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
 .footer-top-img {
-  max-width: 120px;
+  max-width: 150px; /* image size thodi moti */
   margin-bottom: 20px;
 }
 
 .footer-top-heading {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
   color: #111;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.footer-top-subheading {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #555;
+  font-weight: 500;
 }
 
 .footer-top-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background-color: #28a745; /* green button */
+  background-color: #ff6600; /* orange button */
   color: #fff;
   padding: 12px 25px;
   font-size: 1rem;
