@@ -791,9 +791,10 @@ max-width: 250px;   /* max width limit */
 }
 
 .footer-left .slogan {
-  font-size: 14px;
+  font-size: 16px;
   color: #d1d1d1;
   margin-bottom: 20px;
+  font-style: italic;
 }
 
 .footer-social a {
