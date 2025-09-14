@@ -6,6 +6,33 @@
   background: #002b5c; /* blue background */
 }
 
+.breadcrumb-section h1 {
+  margin: 0;
+  font-size: 36px;       /* heading thodi moti */
+  font-weight: 700;
+color: #ffffff;
+}
+
+.breadcrumb {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  margin: 0 6px;
+  color: #e5e7eb;
+}
+
 .contact-section {
   padding: 30px 20px 30px;
   background: linear-gradient(135deg, #f8fbff, #eef5ff);
