@@ -1,75 +1,83 @@
 /* ================================
    Contact Section Styles
 ================================ */
-.contact-container {
+/* Contact Section */
+.contact-section {
+  padding: 80px 20px;
+  background: #f3f7fa;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+.contact-wrapper {
   display: flex;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 0 15px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
 }
-
-.contact-card, .side-card {
-  background: #f9f9f9;
-  padding: 30px;
+.contact-card {
+  background: #fff;
+  padding: 30px 20px;
   border-radius: 12px;
-  flex: 1 1 450px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  flex: 1 1 220px;
+  min-width: 220px;
+  transition: 0.3s;
 }
-
-.contact-card h2 {
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+.contact-card i {
+  font-size: 32px;
+  color: #0b5ed7;
   margin-bottom: 15px;
-  font-size: 28px;
+}
+.contact-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #0b5ed7;
+}
+.contact-card p {
+  font-size: 14px;
+  color: #555;
+}
+.contact-card a {
+  color: #0b5ed7;
+  text-decoration: none;
+}
+.contact-card a:hover {
+  text-decoration: underline;
 }
 
-.contact-card form input,
-.contact-card form textarea,
-.contact-card form select {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+/* Social Media Row */
+.social-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
-
-.submit-btn {
-  background: #28a745;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.submit-btn:hover {
-  background: #218838;
-}
-
-.side-card .info-list {
-  margin: 20px 0;
-}
-
-.side-card .info-item {
+.social-row a {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
-  gap: 10px;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: #0b5ed7;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.social-row a:hover {
+  background: #0949a4;
 }
 
-.side-card .social-row a {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 20px;
-  color: #333;
-}
-
-.side-card .social-row a:hover {
-  color: #28a745;
-}
-
-/* Mobile */
+/* Responsive */
 @media (max-width: 768px) {
-  .contact-container {
+  .contact-wrapper {
     flex-direction: column;
+    align-items: center;
   }
 }
