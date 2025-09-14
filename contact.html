@@ -46,4 +46,103 @@
       </div>
     </div>
   </header>
+
+<!-- contact.html (section only, external CSS & JS) --><link rel="stylesheet" href="contact.css" /><section class="contact-wrap">  <!-- Right column: contact cards & map -->  <aside class="side-card">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <div>
+        <h3 style="margin:0 0 6px 0;font-size:18px">Connect with Intek Solar</h3>
+        <p style="margin:0;color:var(--muted);font-size:13px">Get a free site visit & estimate. We're based in Vapi — serving South Gujarat.</p>
+      </div>
+      <div style="font-size:12px;color:var(--muted)">Open: Mon–Sat</div>
+    </div><div class="info-list" style="margin-top:16px">
+  <div class="info-item">
+    <div class="icon-box" aria-hidden>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12 1.05.4 2.07.83 3.03a2 2 0 0 1-.45 2.11L8.7 10.7a16 16 0 0 0 6 6l1.84-1.12a2 2 0 0 1 2.11-.45c.96.43 1.98.71 3.03.83A2 2 0 0 1 22 16.92z" stroke="#dff7f0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+    <div>
+      <h4>Phone</h4>
+      <p><a href="tel:+919898765432" style="color:inherit;text-decoration:none">+91 98 9876 5432</a> — Call or WhatsApp</p>
+    </div>
+  </div>
+
+  <div class="info-item">
+    <div class="icon-box" aria-hidden>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z" stroke="#dff7f0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="10" r="2.5" stroke="#dff7f0" stroke-width="1.2"></circle></svg>
+    </div>
+    <div>
+      <h4>Address</h4>
+      <p>Vapi, Valsad, Gujarat — India</p>
+    </div>
+  </div>
+
+  <div class="info-item">
+    <div class="icon-box" aria-hidden>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8.5v7A2.5 2.5 0 0 0 5.5 18h13a2.5 2.5 0 0 0 2.5-2.5v-7" stroke="#dff7f0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 6.5l-9 6-9-6" stroke="#dff7f0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+    <div>
+      <h4>Email</h4>
+      <p><a href="mailto:info@inteksolar.com" style="color:inherit;text-decoration:none">info@inteksolar.com</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="map-wrap">
+  <div class="map-placeholder">Map iframe / Google Maps embed jya aavse — replace karo</div>
+</div>
+
+<div class="social-row">
+  <button class="soc-btn" onclick="window.open('https://wa.me/919898765432','_blank')">WhatsApp</button>
+  <button class="soc-btn" onclick="window.open('https://www.instagram.com/','_blank')">Instagram</button>
+  <button class="soc-btn" onclick="window.open('https://www.facebook.com/','_blank')">Facebook</button>
+</div>
+
+  </aside>  <!-- Left column: contact form -->  <section class="contact-card">
+    <div class="contact-head">
+      <div class="brand-dot">IS</div>
+      <div>
+        <h2>Request a free site visit</h2>
+        <p>Share a few details and our team will contact you within 24 hours.</p>
+      </div>
+    </div><form id="contactForm" autocomplete="on" novalidate>
+  <div class="row">
+    <div>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Tamaaru naam" required />
+    </div>
+    <div>
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" placeholder="+91 9XXXXXXXXX" pattern="[0-9+\- ]{7,20}" required />
+    </div>
+  </div>
+
+  <div style="margin-top:12px">
+    <label for="email">Email (optional)</label>
+    <input id="email" name="email" type="email" placeholder="name@example.com" />
+  </div>
+
+  <div style="margin-top:12px">
+    <label for="service">Service required</label>
+    <select id="service" name="service" class="select">
+      <option>Residential solar</option>
+      <option>Commercial solar</option>
+      <option>Industrial solar</option>
+      <option>CCTV & Security</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div style="margin-top:12px">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Thoduk vistrut ma bataavo (optional)"></textarea>
+  </div>
+
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:14px;flex-wrap:wrap">
+    <button type="submit" class="submit-btn">Send request</button>
+    <div style="color:var(--muted);font-size:13px">Or call <a href="tel:+919898765432" style="color:inherit;text-decoration:none">+91 98 9876 5432</a></div>
+  </div>
+
+  <p id="form-note" style="margin-top:10px;color:var(--muted);font-size:13px">We respect your privacy — your details will only be used to respond to your enquiry.</p>
+</form>
+
+  </section></section><div id="toast" class="toast" role="status" aria-live="polite">Message sent — thank you!</div><script src="contact.js"></script>
   
