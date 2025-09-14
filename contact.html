@@ -144,5 +144,91 @@
   <p id="form-note" style="margin-top:10px;color:var(--muted);font-size:13px">We respect your privacy — your details will only be used to respond to your enquiry.</p>
 </form>
 
-  </section></section><div id="toast" class="toast" role="status" aria-live="polite">Message sent — thank you!</div><script src="contact.js"></script>
+  </section></section><div id="toast" class="toast" role="status" aria-live="polite">Message sent — thank you!</div>
+
+<!-- Footer Top Section -->
+<section class="footer-top">
+  <div class="container">
+    <div class="footer-top-content">
+      <img src="images/footer-top.png" alt="Solar Company" class="footer-top-img">
+      <h2 class="footer-top-heading">Gujarat's Leading Integrated Solar Company</h2>
+<p class="footer-top-subheading">Smart Solar Solutions</p>
+      <a href="tel:+919099578771" class="footer-top-btn">
+        <i class="fa-brands fa-whatsapp"></i> Connect With Us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Quote Form Popup -->
+<div class="popup-overlay" id="quotePopup">
+  <div class="popup-box">
+    <i class="fas fa-solar-panel"></i>
+    <h3>📩 Get a Free Solar Quotation!</h3>
+    <form id="quoteForm" action="https://formspree.io/f/xqadgpnp" method="POST">
+      <label for="qname">Full Name</label>
+      <input type="text" id="qname" name="name" placeholder="Enter your full name" required>
+
+      <label for="qmobile">Phone</label>
+      <input type="phone" id="qphone" name="phone" placeholder="Enter your phone no." required>
+
+<label for="qpincode">Pincode</label>
+      <input type="pincode" id="qpincode" name="pincode" placeholder="Enter your Area Pincode" required>
+
+      <label for="qmessage">Message</label>
+      <textarea id="qmessage" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+      <div class="popup-buttons">
+        <button type="submit">Send Quote Request</button>
+        <button type="button" id="quoteCloseBtn">Close</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Left Column -->
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="images/logo/intek-solar-logo.png" alt="Intek Solar Logo">
+        <p class="slogan">Simplifying<strong> SOLAR</strong></p>
+      </div>
+      <div class="footer-social">
+        <a href="https://facebook.com/inteksolar"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/inteksolar"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/919099578771" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://linktr.ee/inteksolar" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+        <a href="https://linkedin.com//company/inteksolar"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="footer-right">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-phone"></i> +91 90995 78771</p>
+      <p><i class="fas fa-envelope"></i> info@inteksolar.in</p>
+      <p><i class="fas fa-map-marker-alt"></i> 308/2, Saran, Udwada (R.S.), Valsad, Gujarat</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2025 - Intek Technologies. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="contact.js"></script>
+
+</body>
+</html>
   
