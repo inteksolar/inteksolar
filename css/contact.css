@@ -1,6 +1,10 @@
 /* ================================
    Contact Section Styles
 ================================ */
+.breadcrumb-section {
+  margin-top: 90px; /* contact page ma thodu ochu spacing */
+}
+
 .contact-section {
   padding: 100px 20px 80px;
   background: linear-gradient(135deg, #f8fbff, #eef5ff);
