@@ -51,6 +51,11 @@
   object-fit: contain;
 }
 
+.contact-card .office-icon img {
+  width: 100px;   /* 🔹 Office icon vadu moto */
+  height: 100px;
+}
+
 .contact-card h3 {
   font-size: 20px;
   font-weight: 600;
