@@ -23,6 +23,11 @@
   flex: 1 1 220px;
   min-width: 220px;
   transition: 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;   /* 👈 gap added between cards */
+  margin-top: 30px;
 }
 .contact-card:hover {
   transform: translateY(-5px);
