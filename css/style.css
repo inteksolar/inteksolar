@@ -142,6 +142,40 @@ header {
   .menu-btn { display: block; }
 }
 
+<!-- ================= Breadcrumb Section ================= -->
+.breadcrumb-section {
+  background: #2563eb; /* blue background */
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.breadcrumb-section h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.breadcrumb {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  margin: 0 6px;
+  color: #e5e7eb;
+}
+
 /* ===================== HERO SECTION ===================== */
 .hero {
   position: relative;
