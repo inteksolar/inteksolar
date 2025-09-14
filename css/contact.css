@@ -29,6 +29,24 @@
   gap: 40px;   /* 👈 gap added between cards */
   margin-top: 30px;
 }
+
+.contact-card p {
+  margin: 6px 0;              /* paragraph vachche small gap */
+  display: flex;              /* icon + text ek line ma */
+  align-items: center;        /* vertically center */
+  gap: 8px;                   /* icon ane text vachche spacing */
+}
+
+.contact-card p i {
+  font-size: 1.2rem;
+  color: #007bff;             /* blue look like screenshot */
+}
+
+.contact-card.address p {
+  display: block;   /* 👈 Address ma line by line */
+  margin: 4px 0;
+}
+
 .contact-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
