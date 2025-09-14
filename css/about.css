@@ -1,1 +1,4 @@
-h
+/* About Page Specific CSS */
+.breadcrumb-section {
+  margin-top: 100px; /* header niche enough gap */
+}
