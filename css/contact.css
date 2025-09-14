@@ -32,14 +32,13 @@
 
 .contact-card p {
   margin: 6px 0;              /* paragraph vachche small gap */
-  display: flex;              /* icon + text ek line ma */
   align-items: center;        /* vertically center */
   gap: 8px;                   /* icon ane text vachche spacing */
 }
 
 .contact-card p i {
   font-size: 1.2rem;
-  color: #007bff;             /* blue look like screenshot */
+  color: #ff6600;             /* orange look like screenshot */
 }
 
 .contact-card.address p {
