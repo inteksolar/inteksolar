@@ -146,7 +146,7 @@ header {
 .breadcrumb-section {
   background: #2563eb; /* blue background */
   color: #fff;
-  padding: 80px 0 60px;  /* 👈 upar ane niche padding vadhaari */
+  padding: 150px 0 60px;  /* 👈 upar ane niche padding vadhaari */
   text-align: center;
   margin-top: 70px;      /* 👈 header niche thodu gap */
 }
