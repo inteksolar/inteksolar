@@ -2,7 +2,7 @@
    Contact Section Styles
 ================================ */
 .contact-section {
-  padding: 80px 20px;
+  padding: 100px 20px 80px;
   background: linear-gradient(135deg, #f8fbff, #eef5ff);
   text-align: center;
 }
