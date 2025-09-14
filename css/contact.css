@@ -42,19 +42,13 @@
 }
 
 .contact-card .icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 15px;
-  background: #0056d2;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .contact-card .icon img {
-  width: 40px;
-  height: 40px;
+  width: 70px;   /* 🔹 icon size moto */
+  height: 70px;
+  object-fit: contain;
 }
 
 .contact-card h3 {
@@ -67,5 +61,5 @@
 .contact-card p {
   font-size: 15px;
   color: #555;
-  line-height: 1.5;
+  line-height: 1.6;
 }
