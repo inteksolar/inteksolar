@@ -102,3 +102,20 @@
     grid-template-columns: 1fr;
   }
 }
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4caf50;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.toast.show {
+  opacity: 1;
+  pointer-events: auto;
+}
