@@ -1,6 +1,7 @@
 /* Services Page Specific CSS */
 .breadcrumb-section {
   margin-top: 120px; /* services page ma alag spacing */
+  background: #002b5c; /* blue background */
 }
 
 .breadcrumb-section h1 {
