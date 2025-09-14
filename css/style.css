@@ -146,13 +146,14 @@ header {
 .breadcrumb-section {
   background: #2563eb; /* blue background */
   color: #fff;
-  padding: 40px 0;
+  padding: 80px 0 60px;  /* 👈 upar ane niche padding vadhaari */
   text-align: center;
+  margin-top: 70px;      /* 👈 header niche thodu gap */
 }
 
 .breadcrumb-section h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 36px;       /* heading thodi moti */
   font-weight: 700;
 }
 
