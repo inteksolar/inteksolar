@@ -32,8 +32,8 @@ html, body {
 
 /* ===================== ROOT VARIABLES ===================== */
 :root {
-  --topbar-bg: #ffffff;
-  --topbar-text: #002b5c;
+  --topbar-bg: #002b5c;
+  --topbar-text: #ffffff;
   --topbar-icon: #ff6600;
   --topbar-icon-hover: #ffffff;
 }
