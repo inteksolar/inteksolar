@@ -129,9 +129,9 @@ header {
   .nav-links {
     display: none;
     position: absolute;
-    top: 82px;
+    top: 81px;
     right: 0px;
-    background: #002b5c;
+    background: #ff6600;
     flex-direction: column;
     padding: 50px;
     border-radius: 0px;
