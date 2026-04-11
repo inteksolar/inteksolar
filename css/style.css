@@ -134,7 +134,7 @@ header {
     background: #002b5c;
     flex-direction: column;
     padding: 100px;
-    border-radius: 8px;
+    border-radius: 0px;
     gap: 15px;
     z-index: 9999;
  }
