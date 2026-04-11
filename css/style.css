@@ -296,7 +296,7 @@ max-width: 250px;   /* max width limit */
 .about-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: solid;
+  background-color: #002b5c;
   color: #002b5c;
   border: 2px solid #002b5c;
   border-radius: 6px;
