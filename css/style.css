@@ -135,7 +135,7 @@ header {
     flex-direction: column;
     padding: 100px;
     border-radius: 8px;
-    gap: 15px;
+    gap: 5px;
     z-index: 9999;
  }
   .nav-links.show { display: flex; }
