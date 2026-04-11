@@ -431,7 +431,7 @@ max-width: 250px;   /* max width limit */
   width: 120px;
   height: 12px;
   margin: 4px auto 40px;  /* gap logos vachche */
-  border-top: 3px solid #ff6600;
+  border-top: 3px solid #ff8c00;
   border-radius: 50%;
   opacity: 0;
   transform: translateY(10px);
@@ -535,7 +535,7 @@ max-width: 250px;   /* max width limit */
 .read-more-btn {
   align-self: flex-start;
   background: transparent;
-  color: #ff6600;
+  color: #ff8c00;
   border: none;
   cursor: pointer;
   font-weight: 600;
@@ -574,7 +574,7 @@ max-width: 250px;   /* max width limit */
 .show-more-btn {
   background-color: transparent !important;
   border: none !important;
-  color: #ff6600 !important;
+  color: #ff8c00 !important;
   padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
@@ -583,7 +583,7 @@ max-width: 250px;   /* max width limit */
 }
 
 .show-more-btn:hover {
-  background-color: #ff6600;      /* hover par orange fill */
+  background-color: #ff8c00;      /* hover par orange fill */
   color: #fff;                    /* white text */
 }
 
@@ -727,7 +727,7 @@ max-width: 250px;   /* max width limit */
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background-color: #ff6600; /* orange button */
+  background-color: #ff8c00; /* orange button */
   color: #fff;
   padding: 10px 20px;
   font-size: 1rem;
@@ -848,7 +848,7 @@ max-width: 250px;   /* max width limit */
   font-size: 18px;
   margin-bottom: 12px;
   color: #ffffff;
-  border-left: 4px solid #ff6600; /* new orange line */
+  border-left: 4px solid #ff8c00; /* new orange line */
   padding-left: 8px;
 }
 
@@ -869,7 +869,7 @@ max-width: 250px;   /* max width limit */
 }
 
 .footer-links a:hover {
-  color: #ff6600;
+  color: #ff8c00;
 }
 
 .footer-right p {
