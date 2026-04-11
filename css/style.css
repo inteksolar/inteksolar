@@ -129,7 +129,7 @@ header {
   .nav-links {
     display: none;
     position: absolute;
-    top: 82px;
+    top: 82.5px;
     right: 0px;
     background: #ff6600;
     flex-direction: column;
