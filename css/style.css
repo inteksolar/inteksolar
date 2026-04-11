@@ -105,10 +105,10 @@ header {
   z-index: 1000;
   background: #ff8c00;
   color: white;
-  padding: 4px 8px;
+  padding: 3px 8px;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 900;
   cursor: pointer;
   transition: background 0.3s;
 }
