@@ -34,7 +34,7 @@ html, body {
 :root {
   --topbar-bg: #ffffff;
   --topbar-text: #002b5c;
-  --topbar-icon: #ffffff;
+  --topbar-icon: #002b5c;
   --topbar-icon-hover: #ff6600;
 }
 
