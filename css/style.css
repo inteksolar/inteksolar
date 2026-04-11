@@ -67,7 +67,7 @@ html, body {
 .top-left, .top-right { display: flex; align-items: center; gap: 12px; }
 
 header {
-  background: #ffffff;
+  background: #002b5c;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 9999;
 }
