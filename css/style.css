@@ -25,14 +25,14 @@ html, body {
 
 /* Section Title Highlight (Global) */
 .section-title .highlight {
-  color: #ff6600;
+  color: ##ff8c00;
   font-weight: bold;
   font-style: normal;
 }
 
 /* ===================== ROOT VARIABLES ===================== */
 :root {
-  --topbar-bg: #ff8c00;
+  --topbar-bg: #ffffff;
   --topbar-text: #002b5c;
   --topbar-icon: #002b5c;
   --topbar-icon-hover: #ff8c00;
