@@ -120,7 +120,7 @@ header {
   font-size: 25px;
   background: transparent;
   border: none;
-  color: #002b5c;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -131,7 +131,7 @@ header {
     position: absolute;
     top: 70px;
     right: 20px;
-    background: #ffffff;
+    background: #002b5c;
     flex-direction: column;
     padding: 15px;
     border-radius: 8px;
