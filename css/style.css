@@ -32,10 +32,10 @@ html, body {
 
 /* ===================== ROOT VARIABLES ===================== */
 :root {
-  --topbar-bg: #002b5c;
-  --topbar-text: #ffffff;
-  --topbar-icon: #ff6600;
-  --topbar-icon-hover: #ffffff;
+  --topbar-bg: #ffffff;
+  --topbar-text: #002b5c;
+  --topbar-icon: #ffffff;
+  --topbar-icon-hover: #ff6600;
 }
 
 /* ===================== HEADER ===================== */
