@@ -130,12 +130,12 @@ header {
     display: none;
     position: absolute;
     top: 80px;
-    right: 20px;
+    right: 5px;
     background: #002b5c;
     flex-direction: column;
     padding: 100px;
     border-radius: 8px;
-    gap: 5px;
+    gap: 15px;
     z-index: 9999;
  }
   .nav-links.show { display: flex; }
