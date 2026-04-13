@@ -308,7 +308,7 @@ max-width: 250px;   /* max width limit */
 }
 
 .about-btn:hover {
-  background-color: #ff8c00;
+  background-color: #002b5c;
   color: #ffffff;
 }
 
@@ -713,7 +713,7 @@ max-width: 250px;   /* max width limit */
 .footer-top-heading {
   font-size: 1.7rem;
   margin-bottom: 10px;
-  color: #111;
+  color: #002b5c;
   font-weight: 700;
 }
 
