@@ -72,6 +72,20 @@ document.querySelectorAll(".dropdown > a").forEach(item => {
   });
 });
 
+document.querySelectorAll(".menu-title").forEach(item => {
+  item.addEventListener("click", function () {
+    const parent = this.parentElement;
+
+    // Close others
+    document.querySelectorAll(".menu-item").forEach(el => {
+      if (el !== parent) el.classList.remove("active");
+    });
+
+    // Toggle current
+    parent.classList.toggle("active");
+  });
+});
+
   /* ===================== FAQ SECTION ===================== */
   document.querySelectorAll(".faq-question").forEach(question => {
     question.addEventListener("click", () => {
