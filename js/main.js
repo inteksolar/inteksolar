@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function toggleMenu() {
   document.querySelector(".nav-links").classList.toggle("show");
   document.querySelector(".overlay").classList.toggle("active");
+  document.body.classList.toggle("menu-open");
 }
 
 /* ===================== FAQ SECTION ===================== */
