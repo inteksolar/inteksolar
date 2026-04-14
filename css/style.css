@@ -85,15 +85,6 @@ header {
   cursor: pointer;
 }
 
-.nav-links a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover { color: #ff8c00; }
-
 .header-buttons { display: flex; align-items: center; gap: 15px; }
 
 .quote-btn {
@@ -139,6 +130,23 @@ header {
     z-index: 1001;
     overflow-y: auto;
   }
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  nav-links a {
+  padding: 5px 0;
+}
+
+.nav-links a:hover { color: #ff8c00; }
 
   .nav-links.show {
     right: 0;
