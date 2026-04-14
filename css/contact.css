@@ -99,14 +99,14 @@ color: #002b5c;
   font-size: 22px;
   font-weight: 700;
   color: #002b5c;
-  margin-bottom: 10px;   /* title niche gap pan ochhu */
+  margin-bottom: 6px;   /* title niche gap pan ochhu */
 }
 
 .contact-card h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #002b5c;
-  margin-bottom: 6px;   /* title niche gap pan ochhu */
+  margin-bottom: 10px;   /* title niche gap pan ochhu */
 }
 
 .contact-card h5 {
