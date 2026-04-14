@@ -25,7 +25,7 @@ html, body {
 
 /* Section Title Highlight (Global) */
 .section-title .highlight {
-  color: ##ff8c00;
+  color: #ff8c00;
   font-weight: bold;
   font-style: normal;
 }
@@ -44,7 +44,7 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 1000;
 }
 
 .top-bar {
@@ -66,7 +66,7 @@ html, body {
 
 .top-left, .top-right { display: flex; align-items: center; gap: 12px; }
 
-header {
+.header {
   background: #002b5c;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 9999;
@@ -83,11 +83,6 @@ header {
   height: 40px;
   width: auto;
   cursor: pointer;
-}
-
-.nav-links {
-  display: flex;
-  gap: 20px;
 }
 
 .nav-links a {
@@ -116,7 +111,7 @@ header {
 
 .quote-btn:hover { background: #e65c00; }
 
-<!-- ================= Menu ================= -->
+/* ================= Menu ================= */
 .menu-btn {
   display: none;
   font-size: 25px;
@@ -124,23 +119,25 @@ header {
   border: none;
   color: #ffffff;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 1002;
 }
 
 /* Responsive Menu */
 @media (max-width: 768px) {
   .nav-links {
     position: fixed;
-    top: 0;
+    display: flex;
+    top: 70px;
     right: -100%;   /* hide outside */
     width: 260px;
+    height: calc(100% - 70px);
     height: 100%;
     background: #002b5c;
     flex-direction: column;
     padding: 80px 25px;
     gap: 20px;
     transition: 0.4s ease;
-    z-index: 1000;
+    z-index: 1001;
   }
 
   .nav-links.show {
@@ -168,6 +165,10 @@ header {
 .overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+.menu-btn.active {
+  transform: rotate(90deg);
 }
 
 <!-- ================= Breadcrumb Section ================= -->
@@ -845,7 +846,7 @@ max-width: 250px;   /* max width limit */
 
 .popup-box button:hover { background: #002244; }
 
-/* ===================== POPUP ===================== */
+/* ===================== Button ===================== */
 .whatsapp-btn {
   display: inline-flex;
   align-items: center;
