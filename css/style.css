@@ -129,7 +129,7 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 30px;   /* desktop gap */
+  gap: 45px;   /* desktop gap */
   align-items: center;
   list-style: none;
 }
