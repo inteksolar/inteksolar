@@ -113,6 +113,7 @@ header {
   padding: 5px 0;
   white-space: nowrap;
   font-size: 14px;
+  width: 100%;   /* 👈 full width clickable */
 }
 
 .nav-links a:hover {
@@ -197,6 +198,8 @@ header {
     transition: 0.4s ease;
     z-index: 1001;
     overflow-y: auto;
+    text-align: left;   /* 👈 text left */
+    align-items: flex-start; /* 👈 flex items left */
   }
 
 .nav-links a::after {
