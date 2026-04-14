@@ -91,23 +91,20 @@ color: #002b5c;
 .contact-card h2 {
   font-size: 25px;
   font-weight: 800;
-  margin-bottom: 10px;
   color: #002b5c;
   margin-bottom: 6px;   /* title niche gap pan ochhu */
 }
 
 .contact-card h3 {
-  font-size: 25px;
-  font-weight: 800;
-  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
   color: #002b5c;
-  margin-bottom: 8px;   /* title niche gap pan ochhu */
+  margin-bottom: 10px;   /* title niche gap pan ochhu */
 }
 
 .contact-card h4 {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 10px;
   color: #002b5c;
   margin-bottom: 6px;   /* title niche gap pan ochhu */
 }
@@ -115,7 +112,6 @@ color: #002b5c;
 .contact-card h5 {
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 10px;
   color: #002b5c;
   margin-bottom: 6px;   /* title niche gap pan ochhu */
 }
