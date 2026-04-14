@@ -178,6 +178,20 @@ header {
   color: #e5e7eb;
 }
 
+/* ===================== Divider ===================== */
+.divider-gradient {
+  border: none;
+  height: 3px;
+  margin: 25px 0;
+  background: linear-gradient(to right, transparent, #ff8c00, #ffcc00, transparent);
+}
+.divider-simple {
+  border: none;
+  height: 1px;
+  background: #ff8c00;
+  margin: 20px 0;
+}
+
 /* ===================== HERO SECTION ===================== */
 .hero {
   position: relative;
