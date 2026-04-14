@@ -3,14 +3,14 @@
 ================================ */
 .breadcrumb-section {
   margin-top: 100px; /* contact page ma thodu ochu spacing */
-  background: #002b5c; /* blue background */
+  background: #ffffff; /* blue background */
 }
 
 .breadcrumb-section h1 {
   margin: 0;
   font-size: 30px;       /* heading thodi moti */
   font-weight: 700;
-color: #ffffff;
+color: #002b5c;
 }
 
 .breadcrumb {
@@ -19,7 +19,7 @@ color: #ffffff;
 }
 
 .breadcrumb a {
-  color: #fff;
+  color: #002b5c;
   text-decoration: none;
   font-weight: 500;
 }
@@ -30,7 +30,7 @@ color: #ffffff;
 
 .breadcrumb span {
   margin: 0 6px;
-  color: #e5e7eb;
+  color: #002b5c;
 }
 
 .contact-section {
