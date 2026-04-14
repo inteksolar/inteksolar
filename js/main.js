@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (navLinks) navLinks.classList.remove("show");
       if (overlay) overlay.classList.remove("active");
       document.body.classList.remove("menu-open");
-      if (menuBtn) menuBtn.classList.remove("active");
     });
   });
 
