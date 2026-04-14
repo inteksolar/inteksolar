@@ -294,6 +294,7 @@ body.menu-open {
 
 .menu-title span {
   transition: 0.3s;
+  font-size: 20px;
 }
 
 .menu-item.active .menu-title span {
