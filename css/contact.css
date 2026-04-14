@@ -88,9 +88,25 @@ color: #002b5c;
   height: 100px;
 }
 
-.contact-card h3 {
+.contact-card h2 {
   font-size: 25px;
   font-weight: 800;
+  margin-bottom: 10px;
+  color: #002b5c;
+  margin-bottom: 6px;   /* title niche gap pan ochhu */
+}
+
+.contact-card h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #002b5c;
+  margin-bottom: 8px;   /* title niche gap pan ochhu */
+}
+
+.contact-card h4 {
+  font-size: 25px;
+  font-weight: 600;
   margin-bottom: 10px;
   color: #002b5c;
   margin-bottom: 6px;   /* title niche gap pan ochhu */
