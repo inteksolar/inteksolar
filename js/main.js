@@ -1,15 +1,17 @@
-/* ===================== QUOTE POPUP ===================== */
-document.addEventListener('DOMContentLoaded', () => {
+/* ===================== MAIN SCRIPT ===================== */
+document.addEventListener("DOMContentLoaded", () => {
+
+  /* ===================== QUOTE POPUP ===================== */
   const quoteBtn = document.getElementById('quoteBtn');
   const quotePopup = document.getElementById('quotePopup');
   const quoteCloseBtn = document.getElementById('quoteCloseBtn');
   const quoteForm = document.getElementById('quoteForm');
 
   if (quoteBtn && quotePopup && quoteCloseBtn && quoteForm) {
-    quotePopup.style.display = 'none'; // initially hide
+    quotePopup.style.display = 'none';
 
     quoteBtn.addEventListener('click', () => {
-      quotePopup.style.display = 'flex'; // show popup
+      quotePopup.style.display = 'flex';
     });
 
     quoteCloseBtn.addEventListener('click', () => {
@@ -32,49 +34,55 @@ document.addEventListener('DOMContentLoaded', () => {
           alert("✅ Your quote request has been sent successfully!");
           quotePopup.style.display = 'none';
         } else {
-          const data = await response.json();
-          alert(data.error || "⚠️ Something went wrong. Please try again.");
+          alert("⚠️ Something went wrong. Please try again.");
         }
-      } catch (err) {
-        alert("⚠️ Something went wrong. Please try again.");
+      } catch {
+        alert("⚠️ Network error. Please try again.");
       }
     });
   }
-});
 
-/* ===================== MOBILE MENU ===================== */
-function toggleMenu() {
-  document.querySelector(".nav-links").classList.toggle("show");
-  document.querySelector(".overlay").classList.toggle("active");
-  document.body.classList.toggle("menu-open");
-}
+  /* ===================== MOBILE MENU ===================== */
+  const menuBtn = document.querySelector(".menu-btn");
+  const navLinks = document.querySelector(".nav-links");
+  const overlay = document.querySelector(".overlay");
 
-/* ===================== FAQ SECTION ===================== */
-document.addEventListener("DOMContentLoaded", () => {
-  // --- Accordion Expand/Collapse ---
+  window.toggleMenu = function () {
+    if (navLinks) navLinks.classList.toggle("show");
+    if (overlay) overlay.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
+    if (menuBtn) menuBtn.classList.toggle("active");
+  };
+
+  // Auto close menu on link click
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      if (navLinks) navLinks.classList.remove("show");
+      if (overlay) overlay.classList.remove("active");
+      document.body.classList.remove("menu-open");
+      if (menuBtn) menuBtn.classList.remove("active");
+    });
+  });
+
+  /* ===================== FAQ SECTION ===================== */
   document.querySelectorAll(".faq-question").forEach(question => {
     question.addEventListener("click", () => {
       const parent = question.parentElement;
 
-      // Close all other open FAQs
       document.querySelectorAll(".faq-item.active").forEach(item => {
-        if (item !== parent) {
-          item.classList.remove("active");
-          const icon = item.querySelector(".faq-toggle");
-          if (icon) icon.textContent = "+";
-        }
+        if (item !== parent) item.classList.remove("active");
       });
 
-      // Toggle clicked FAQ
       parent.classList.toggle("active");
-      const toggleIcon = question.querySelector(".faq-toggle");
-      if (toggleIcon) {
-        toggleIcon.textContent = parent.classList.contains("active") ? "−" : "+";
+
+      const icon = question.querySelector(".faq-toggle");
+      if (icon) {
+        icon.textContent = parent.classList.contains("active") ? "−" : "+";
       }
     });
   });
 
-  // --- Show More FAQs toggle ---
+  // Show More FAQs
   const faqBtn = document.querySelector(".faq-btn");
   const moreFaqs = document.querySelectorAll(".hidden-faq");
 
@@ -86,11 +94,8 @@ document.addEventListener("DOMContentLoaded", () => {
         : 'Show Less FAQs <i class="fas fa-chevron-up"></i>';
     });
   }
-});
 
-/* ===================== Reviews Section ===================== */
-document.addEventListener('DOMContentLoaded', () => {
-  // --- Read More toggle per review ---
+  /* ===================== REVIEWS SECTION ===================== */
   document.querySelectorAll('.read-more-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const reviewText = btn.previousElementSibling;
@@ -101,7 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- Show More Reviews toggle ---
   const showMoreBtn = document.querySelector(".show-more-btn");
   const moreReviews = document.querySelectorAll(".more-reviews");
 
@@ -113,12 +117,13 @@ document.addEventListener('DOMContentLoaded', () => {
         : 'Show Less Reviews <i class="fas fa-chevron-up"></i>';
     });
   }
+
 });
 
-/* ===================== Underline Animation Script ===================== */
-window.addEventListener("scroll", function () {
+/* ===================== SCROLL ANIMATION ===================== */
+window.addEventListener("scroll", () => {
   const underline = document.querySelector(".title-underline");
-  if (!underline) return; // safety check
+  if (!underline) return;
 
   const position = underline.getBoundingClientRect().top;
   const windowHeight = window.innerHeight;
