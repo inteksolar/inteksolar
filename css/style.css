@@ -146,6 +146,18 @@ header {
   padding: 5px 0;
 }
 
+@media (min-width: 769px) {
+  .nav-links a {
+    color: #ffffff;           /* white text */
+    text-decoration: none;   /* underline remove */
+    font-weight: 500;
+  }
+
+  .nav-links a:hover {
+    color: #ff8c00;          /* hover orange */
+  }
+}
+
 .nav-links a:hover { color: #ff8c00; }
 
 .nav-links a::after {
