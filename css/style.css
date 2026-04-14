@@ -140,6 +140,7 @@ header {
 .nav-links a {
   color: #ffffff;
   text-decoration: none;
+  position: relative
   font-weight: 500;
   transition: color 0.3s;
   padding: 5px 0;
@@ -147,10 +148,25 @@ header {
 
 .nav-links a:hover { color: #ff8c00; }
 
-  .nav-links.show {
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ff8c00;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+ .nav-links.show {
     right: 0;
   }
-  .menu-btn {
+ .menu-btn {
     display: block;
   }
 }
