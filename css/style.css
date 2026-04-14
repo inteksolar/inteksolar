@@ -728,7 +728,7 @@ max-width: 250px;   /* max width limit */
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background-color: #25D366; /* orange button */
+  background-color: #ff8c00; /* orange button */
   color: #fff;
   padding: 10px 20px;
   font-size: 1rem;
