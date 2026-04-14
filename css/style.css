@@ -103,6 +103,20 @@ header {
 .quote-btn:hover { background: #e65c00; }
 
 /* ================= Menu ================= */
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s;
+  padding: 5px 0;
+}
+
+.nav-links a:hover {
+  color: #ff8c00;
+}
+
 .menu-btn {
   display: none;
   font-size: 25px;
@@ -117,6 +131,7 @@ header {
   display: flex;
   gap: 40px;   /* desktop gap */
   align-items: center;
+  list-style: none;
 }
 
 /* Responsive Menu */
@@ -136,29 +151,6 @@ header {
     z-index: 1001;
     overflow-y: auto;
   }
-
-.nav-links a {
-  color: #ffffff;
-  text-decoration: none;
-  position: relative
-  font-weight: 500;
-  transition: color 0.3s;
-  padding: 5px 0;
-}
-
-@media (min-width: 769px) {
-  .nav-links a {
-    color: #ffffff;           /* white text */
-    text-decoration: none;   /* underline remove */
-    font-weight: 500;
-  }
-
-  .nav-links a:hover {
-    color: #ff8c00;          /* hover orange */
-  }
-}
-
-.nav-links a:hover { color: #ff8c00; }
 
 .nav-links a::after {
   content: "";
