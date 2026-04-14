@@ -258,9 +258,8 @@ body.menu-open {
   font-weight: 500;
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  gap: 6px;   /* 👈 text ane icon vachche gap */
 }
 
 /* Submenu hidden */
