@@ -302,6 +302,11 @@ body.menu-open {
 .menu-title i {
   font-size: 14px;       /* 👈 professional size */
   line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.menu-item.active .menu-title i {
+  transform: rotate(180deg);
 }
 
 .menu-item.active .menu-title span {
