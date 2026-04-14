@@ -123,9 +123,10 @@ color: #002b5c;
 }
 
 .contact-btn {
-  background-color: #ff6600;
+  background-color: #ff8c00;
   color: white;
   padding: 12px 20px;
   border-radius: 50px;
   border: none;
+  text-decoration: none;
 }
