@@ -134,6 +134,39 @@ header {
   list-style: none;
 }
 
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Hidden by default */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #002b5c;
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+  padding: 10px 0;
+}
+
+/* Dropdown links */
+.dropdown-menu a {
+  padding: 10px 15px;
+  color: #fff;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background: #ff8c00;
+}
+
+/* Show on hover (desktop) */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
 /* Responsive Menu */
 @media (max-width: 768px) {
   .nav-links {
