@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* ===================== MOBILE MENU ===================== */
 function toggleMenu() {
-  document.getElementById("navLinks").classList.toggle("show");
+  document.querySelector(".nav-links").classList.toggle("show");
+  document.querySelector(".overlay").classList.toggle("active");
 }
 
 /* ===================== FAQ SECTION ===================== */
