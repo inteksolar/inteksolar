@@ -246,6 +246,56 @@ body.menu-open {
   overflow: hidden;
   touch-action: none;
 }
+
+/* Menu Item */
+.menu-item {
+  width: 100%;
+}
+
+/* Title (clickable) */
+.menu-title {
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Submenu hidden */
+.submenu {
+  display: none;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+/* Submenu links */
+.submenu a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+/* Hover */
+.submenu a:hover {
+  color: #ff8c00;
+}
+
+/* Open state */
+.menu-item.active .submenu {
+  display: flex;
+}
+
+.menu-title span {
+  transition: 0.3s;
+}
+
+.menu-item.active .menu-title span {
+  transform: rotate(180deg);
+}
+
 /* ================= Breadcrumb Section ================= */
 .breadcrumb-section {
   background: #fff; /* blue background */
