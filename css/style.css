@@ -131,7 +131,7 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 23px;   /* desktop gap */
+  gap: 15px;   /* desktop gap */
   align-items: center;
   list-style: none;
 }
