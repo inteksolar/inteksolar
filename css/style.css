@@ -318,6 +318,14 @@ body.menu-open {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  display: none; /* Default (desktop) hide */
+}
+
+/* Mobile ma show */
+@media (max-width: 768px) {
+  .menu-cta {
+    display: flex;
+  }
 }
 
 .call-btn {
