@@ -345,8 +345,8 @@ body.menu-open {
 .whatsapp-btn {
   background: #25D366;
   color: #fff;
-  font-size: 17px;   /* thodu vadhu */
-  padding: 16px 50px;
+  font-size: 25px;   /* thodu vadhu */
+  padding: 25px 50px;
 }
 
 .call-btn:hover {
