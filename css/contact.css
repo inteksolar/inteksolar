@@ -97,8 +97,8 @@ color: #002b5c;
 }
 
 .contact-card h3 {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 800;
   margin-bottom: 10px;
   color: #002b5c;
   margin-bottom: 8px;   /* title niche gap pan ochhu */
@@ -113,15 +113,15 @@ color: #002b5c;
 }
 
 .contact-card h5 {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   margin-bottom: 10px;
   color: #002b5c;
   margin-bottom: 6px;   /* title niche gap pan ochhu */
 }
 
 .contact-card p {
-  font-size: 20px;
+  font-size: 18px;
   color: #002b5c;
   line-height: 1.6;
 }
