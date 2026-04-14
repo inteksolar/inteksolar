@@ -125,17 +125,12 @@ header {
     background: #002b5c;
     flex-direction: column;
     padding: 20px 25px;
-    gap: 20px;
+    gap: 30px;
     transition: 0.4s ease;
     z-index: 1001;
     overflow-y: auto;
+    align-items: center;
   }
-
-.nav-links {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
 
 .nav-links a {
   color: #ffffff;
