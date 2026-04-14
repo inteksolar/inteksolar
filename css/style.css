@@ -167,6 +167,18 @@ header {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static;
+    display: none;
+    background: #003366;
+  }
+
+  .dropdown-menu.show-dropdown {
+    display: flex;
+  }
+}
+
 /* Responsive Menu */
 @media (max-width: 768px) {
   .nav-links {
