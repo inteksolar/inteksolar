@@ -187,7 +187,7 @@ header {
     position: fixed;
     display: flex;
     top: 80px;
-    right: -100%;
+    left: -100%;
     width: 260px;
     height: calc(100% - 70px);
     background: #002b5c;
@@ -215,7 +215,7 @@ header {
 }
 
  .nav-links.show {
-    right: 0;
+    left: 0;
   }
  .menu-btn {
     display: block;
