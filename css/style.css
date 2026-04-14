@@ -115,7 +115,7 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 30px;   /* desktop gap */
+  gap: 40px;   /* desktop gap */
   align-items: center;
 }
 
@@ -131,7 +131,7 @@ header {
     background: #002b5c;
     flex-direction: column;
     padding: 20px 25px;
-    gap: 30px;
+    gap: 20px;
     transition: 0.4s ease;
     z-index: 1001;
     overflow-y: auto;
