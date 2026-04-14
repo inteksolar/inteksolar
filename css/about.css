@@ -1,14 +1,14 @@
 /* About Page Specific CSS */
 .breadcrumb-section {
   margin-top: 100px; /* header niche enough gap */
-background: #002b5c; /* blue background */
+background: #ffffff; /* blue background */
 }
 
 .breadcrumb-section h1 {
   margin: 0;
   font-size: 30px;       /* heading thodi moti */
   font-weight: 700;
-  color: #ffffff;
+  color: #002b5c;
 }
 
 .breadcrumb {
