@@ -804,6 +804,19 @@ max-width: 250px;   /* max width limit */
 
 .popup-box button:hover { background: #002244; }
 
+/* ===================== POPUP ===================== */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 
 /* ===================== FOOTER ===================== */
 .footer {
