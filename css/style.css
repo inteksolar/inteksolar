@@ -111,6 +111,8 @@ header {
   font-weight: 500;
   transition: color 0.3s;
   padding: 5px 0;
+  white-space: nowrap;
+  font-size: 14px;
 }
 
 .nav-links a:hover {
@@ -129,7 +131,7 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 45px;   /* desktop gap */
+  gap: 25px;   /* desktop gap */
   align-items: center;
   list-style: none;
 }
