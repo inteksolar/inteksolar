@@ -294,7 +294,14 @@ body.menu-open {
 
 .menu-title span {
   transition: 0.3s;
-  font-size: 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-title i {
+  font-size: 14px;       /* 👈 professional size */
+  line-height: 1;
 }
 
 .menu-item.active .menu-title span {
