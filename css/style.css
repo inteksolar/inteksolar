@@ -313,6 +313,31 @@ body.menu-open {
   transform: rotate(180deg);
 }
 
+.menu-cta {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.call-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #002b5c;
+  padding: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.call-btn:hover {
+  background: #ff8c00;
+  color: #fff;
+}
+
 /* ================= Breadcrumb Section ================= */
 .breadcrumb-section {
   background: #fff; /* blue background */
