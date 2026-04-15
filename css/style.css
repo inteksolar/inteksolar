@@ -1114,3 +1114,19 @@ body {
 body.menu-open, body[style*="overflow: hidden"] {
     overflow: hidden !important;
 }
+
+/* Force vertical scroll */
+html, body {
+    height: auto !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+/* Fix for mobile */
+@media screen and (max-width: 768px) {
+    body {
+        position: relative !important;
+        overflow-y: scroll !important;
+        -webkit-overflow-scrolling: touch;
+    }
+}
