@@ -104,6 +104,10 @@ header {
 
 /* ================= Menu ================= */
 
+.menu-btn {
+  display: none;   /* 🔥 desktop ma hide */
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;  /* 🔥 main fix */
@@ -161,6 +165,15 @@ header {
   position: relative;
 }
 
+
+.menu-btn {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+
 /* ================= MOBILE MENU ================= */
 
 @media (max-width: 768px) {
@@ -185,7 +198,7 @@ header {
   }
 
   .menu-btn {
-    display: none;
+    display: block;
     margin-left: 5px;
   }
 }
