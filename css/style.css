@@ -250,6 +250,7 @@ background: #e65c00;
   }
 .submenu a {
     color: #ffffff; 
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .submenu a:hover {
