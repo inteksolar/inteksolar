@@ -108,6 +108,7 @@ header {
   display: flex;
   justify-content: space-between;  /* 🔥 main fix */
   align-items: center;
+  padding: 8px 15px;
 }
 
 .nav-links {
@@ -143,7 +144,7 @@ header {
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
 }
 
 /* Rotate icon */
