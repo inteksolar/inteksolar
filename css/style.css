@@ -107,7 +107,9 @@ header {
   transition: background 0.3s;
 }
 
-.quote-btn:hover { background: #e65c00; }
+.quote-btn:hover { 
+background: #e65c00; 
+}
 
 /* ================= Menu ================= */
 
@@ -242,7 +244,7 @@ header {
   .submenu {
     position: static;
     display: none;
-    background: ##003366;
+    background: ##002b5c;
     box-shadow: none;
   }
   .menu-item.active .submenu {
