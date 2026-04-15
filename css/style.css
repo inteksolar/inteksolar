@@ -104,9 +104,7 @@ header {
 
 /* ================= Menu ================= */
 
-.menu-btn {
-  display: none;   /* 🔥 desktop ma hide */
-}
+
 
 .navbar {
   display: flex;
@@ -174,6 +172,18 @@ header {
   cursor: pointer;
 }
 
+/* Default (Desktop) */
+.menu-btn {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block !important;  /* 🔥 force show */
+  }
+}
+
 /* ================= MOBILE MENU ================= */
 
 @media (max-width: 768px) {
@@ -195,11 +205,6 @@ header {
 
   .nav-links.show {
     left: 0;
-  }
-
-  .menu-btn {
-    display: block;
-    margin-left: 5px;
   }
 }
 
