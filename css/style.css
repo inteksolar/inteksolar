@@ -151,8 +151,14 @@ header {
   background: #002b5c;
   display: none;
   flex-direction: column;
-  min-width: 200px;
+  min-width: 220px;
   padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s;
 }
 
 /* Dropdown links */
@@ -160,15 +166,25 @@ header {
   padding: 10px 15px;
   color: #fff;
   display: block;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .dropdown-menu a:hover {
   background: #ff8c00;
 }
 
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+}
+
 /* Show on hover (desktop) */
 .dropdown:hover .dropdown-menu {
   display: flex;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
