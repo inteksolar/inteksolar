@@ -237,6 +237,7 @@ background: #e65c00;
   display: block;   /* 🔥 IMPORTANT */
   padding: 10px 15px;
   color: #002b5c;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 /* Mobile submenu */
@@ -247,6 +248,14 @@ background: #e65c00;
     background: ##002b5c;
     box-shadow: none;
   }
+.submenu a {
+    color: #ffffff; 
+}
+
+.submenu a:hover {
+    color: #ff8c00;       /* 🔥 orange hover */
+  }
+
   .menu-item.active .submenu {
     display: flex;
   }
