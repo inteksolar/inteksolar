@@ -949,7 +949,7 @@ max-width: 250px;   /* max width limit */
   font-weight: 500;
 }
 
-.footer-call-btn {
+.footer-top-call-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -965,12 +965,12 @@ max-width: 250px;   /* max width limit */
   transition: background 0.3s;
 }
 
-.footer-call-btn i {
+.footer-top-call-btn i {
   font-size: 1.1rem;
   color: #fff !important;
 }
 
-.footer-call-btn:hover {
+.footer-top-call-btn:hover {
   background-color: #ff8c00;
 }
 
