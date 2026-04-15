@@ -332,20 +332,21 @@ body.menu-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 10px;
   background: #ffffff;
-  color: #002b5c;
-  padding: 10px;
+  color: #000000;
+  padding: 20px;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 5px;
 }
 
 .nav-whatsapp-btn {
   background: #25D366;
   color: #fff;
-  font-size: 25px;   /* thodu vadhu */
+  border-radius: 50px;
+  font-size: 40px;   /* thodu vadhu */
   padding: 50px 50px;
 }
 
