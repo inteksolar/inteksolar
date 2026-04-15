@@ -1094,5 +1094,5 @@ max-width: 250px;   /* max width limit */
 }
 
 body.menu-open {
-  overflow: hidden;
+  overflow-y: hidden;
 }
