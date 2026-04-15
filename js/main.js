@@ -73,6 +73,13 @@ document.querySelectorAll(".nav-links a").forEach(link => {
   });
 });
 
+  overlay.addEventListener("click", () => {
+  navLinks.classList.remove("show");
+  overlay.classList.remove("active");
+  menuBtn.classList.remove("active");
+  document.body.style.overflow = "auto";
+});
+
 // Dropdown mobile
 document.querySelectorAll(".menu-title").forEach(item => {
   item.addEventListener("click", function () {
