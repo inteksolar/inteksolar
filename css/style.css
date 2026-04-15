@@ -1,9 +1,6 @@
 /* ===================== GENERAL SETTINGS ===================== */
 html {
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
-  scroll-behavior: smooth;
   height: auto;
 }
 
@@ -14,11 +11,10 @@ body {
   color: #333;
   line-height: 1.6;
   background: #fff;
-  /* આ મહત્વનું છે */
-  overflow-y: auto !important; 
-  overflow-x: hidden;
+  /* આ લાઈન જ સ્ક્રોલિંગ ચાલુ કરશે */
+  overflow-y: visible !important; 
+  overflow-x: hidden !important;
   position: relative;
-  min-height: 100vh;
 }
 
 * {
