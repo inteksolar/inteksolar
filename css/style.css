@@ -359,7 +359,7 @@ header {
 .hero {
   position: relative;
   background: #f8f9fa;
-  padding: 80px 10% 80px;
+  padding: 80px 10% 60px;
   min-height: 100vh;
 }
 
@@ -413,7 +413,7 @@ header {
 
   .hero-text {
     font-size: 1.5rem;
-    margin-top: 40px; /* 👈 extra space header & text vachche */
+    margin-top: 30px; /* 👈 extra space header & text vachche */
   }
 }
 
