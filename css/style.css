@@ -170,6 +170,15 @@ header {
   }
 }
 
+@media (min-width: 769px) {
+  .menu-item {
+    position: relative;
+  }
+
+  .menu-item:hover .submenu {
+    display: flex;
+  }
+}
 /* ================= MENU ITEM ================= */
 
 .menu-title {
@@ -216,6 +225,40 @@ header {
 
   .menu-btn {
     display: block;
+  }
+}
+
+/* ================= SUB MENU ================= */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background: #ffffff;
+  min-width: 200px;
+  flex-direction: column;   /* 🔥 IMPORTANT */
+
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  z-index: 9999;
+}
+
+.submenu a {
+  display: block;   /* 🔥 IMPORTANT */
+  padding: 10px 15px;
+  color: #002b5c;
+}
+@media (max-width: 768px) {
+  .submenu {
+    position: static;
+    display: none;
+    background: #003366;
+    box-shadow: none;
+  }
+
+  .menu-item.active .submenu {
+    display: flex;
   }
 }
 
