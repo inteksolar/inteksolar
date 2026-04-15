@@ -176,14 +176,14 @@ header {
 .dropdown-menu a {
   display: block;
   padding: 12px 18px;
-  color: #ffffff;
+  color: #002b5c;
   text-decoration: none;
   font-size: 14px;
   transition: 0.3s;
 }
 
 .dropdown-menu a:hover {
-  background: rgba(255, 140, 0, 0.2);
+  background: #f5f5f5;
   color: #ff8c00;
 }
 
