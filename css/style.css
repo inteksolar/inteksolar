@@ -245,8 +245,9 @@ background: #e65c00;
   .submenu {
     position: static;
     display: none;
-    background: ##002b5c;
-    box-shadow: none;
+    background: ##002b5c; 
+    box-shadow: none !important;
+    border-radius: 0 !important;
   }
 .submenu a {
     color: #ffffff; 
