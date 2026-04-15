@@ -188,11 +188,25 @@ header {
 }
 
 @media (min-width: 769px) {
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background: #ffffff;
+    min-width: 220px;
+
+    display: none;
+    flex-direction: column;
+
+    padding: 10px 0;
+    border-radius: 8px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
   .dropdown:hover .dropdown-menu {
     display: flex;
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
   }
 }
 
