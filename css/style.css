@@ -257,6 +257,13 @@ header {
     box-shadow: none;
   }
 
+  /* Desktop hover */
+@media (min-width: 769px) {
+  .menu-item:hover .submenu {
+    display: flex;
+  }
+}
+
   .menu-item.active .submenu {
     display: flex;
   }
