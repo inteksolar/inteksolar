@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
- /* ===================== MOBILE MENU ===================== */
+/* ===================== MOBILE MENU ===================== */
 
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
@@ -50,50 +50,42 @@ const overlay = document.querySelector(".overlay");
 
 // Toggle Menu
 window.toggleMenu = function () {
-  navLinks.classList.toggle("show");
-  overlay.classList.toggle("active");
-  menuBtn.classList.toggle("active");
+  const isOpen = navLinks.classList.toggle("show");
 
-  // ✅ Scroll lock fix
-  if (navLinks.classList.contains("show")) {
-    document.body.classList.add("menu-open");
-  } else {
-    document.body.classList.remove("menu-open");
-  }
+  overlay.classList.toggle("active", isOpen);
+  menuBtn.classList.toggle("active", isOpen);
+
+  // ✅ Proper scroll control
+  document.body.classList.toggle("menu-open", isOpen);
 };
 
 // Overlay click → close menu
-overlay.addEventListener("click", () => {
+overlay.addEventListener("click", closeMenu);
+
+// Auto close menu on link click
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", closeMenu);
+});
+
+// ✅ Central close function (IMPORTANT)
+function closeMenu() {
   navLinks.classList.remove("show");
   overlay.classList.remove("active");
   menuBtn.classList.remove("active");
   document.body.classList.remove("menu-open");
-});
-
-// Auto close menu on link click
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("show");
-    overlay.classList.remove("active");
-    menuBtn.classList.remove("active");
-    document.body.classList.remove("menu-open");
-  });
-});
+}
 
 /* ===================== DROPDOWN (MOBILE) ===================== */
 
-// Toggle dropdown on mobile click
 document.querySelectorAll(".menu-title").forEach(item => {
   item.addEventListener("click", function () {
     if (window.innerWidth <= 768) {
       const parent = this.parentElement;
 
-      // Close other dropdowns
       document.querySelectorAll(".menu-item").forEach(el => {
         if (el !== parent) el.classList.remove("active");
       });
 
-      // Toggle current dropdown
       parent.classList.toggle("active");
     }
   });
