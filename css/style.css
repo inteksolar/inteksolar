@@ -1087,5 +1087,4 @@ max-width: 250px;   /* max width limit */
 
 body.menu-open {
   overflow: hidden;
-  height: 100vh;
 }
