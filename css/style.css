@@ -12,6 +12,7 @@ body {
   line-height: 1.6;
   background: #fff;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 * {
@@ -358,6 +359,7 @@ header {
   position: relative;
   background: #f8f9fa;
   padding: 150px 10% 80px; /* Top padding વધારીને 150px કરો */
+  min-height: 100vh;
 }
 
 .hero-container {
