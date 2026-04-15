@@ -42,50 +42,63 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ===================== MOBILE MENU ===================== */
-  const menuBtn = document.querySelector(".menu-btn");
-  const navLinks = document.querySelector(".nav-links");
-  const overlay = document.querySelector(".overlay");
+ /* ===================== MOBILE MENU ===================== */
 
-  window.toggleMenu = function () {
-    if (navLinks) navLinks.classList.toggle("show");
-    if (overlay) overlay.classList.toggle("active");
-    document.body.classList.toggle("menu-open");
-    if (menuBtn) menuBtn.classList.toggle("active");
-  };
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+const overlay = document.querySelector(".overlay");
 
-  // Auto close menu on link click
-  document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-      if (navLinks) navLinks.classList.remove("show");
-      if (overlay) overlay.classList.remove("active");
-      document.body.classList.remove("menu-open");
-    });
+// Toggle Menu
+window.toggleMenu = function () {
+  navLinks.classList.toggle("show");
+  overlay.classList.toggle("active");
+  menuBtn.classList.toggle("active");
+
+  // ✅ Scroll lock fix
+  if (navLinks.classList.contains("show")) {
+    document.body.classList.add("menu-open");
+  } else {
+    document.body.classList.remove("menu-open");
+  }
+};
+
+// Overlay click → close menu
+overlay.addEventListener("click", () => {
+  navLinks.classList.remove("show");
+  overlay.classList.remove("active");
+  menuBtn.classList.remove("active");
+  document.body.classList.remove("menu-open");
+});
+
+// Auto close menu on link click
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("show");
+    overlay.classList.remove("active");
+    menuBtn.classList.remove("active");
+    document.body.classList.remove("menu-open");
   });
+});
 
-document.querySelectorAll(".dropdown > a").forEach(item => {
-  item.addEventListener("click", function(e) {
+/* ===================== DROPDOWN (MOBILE) ===================== */
+
+// Toggle dropdown on mobile click
+document.querySelectorAll(".menu-title").forEach(item => {
+  item.addEventListener("click", function () {
     if (window.innerWidth <= 768) {
-      e.preventDefault();
-      this.nextElementSibling.classList.toggle("show-dropdown");
+      const parent = this.parentElement;
+
+      // Close other dropdowns
+      document.querySelectorAll(".menu-item").forEach(el => {
+        if (el !== parent) el.classList.remove("active");
+      });
+
+      // Toggle current dropdown
+      parent.classList.toggle("active");
     }
   });
 });
-
-document.querySelectorAll(".menu-title").forEach(item => {
-  item.addEventListener("click", function () {
-    const parent = this.parentElement;
-
-    // Close others
-    document.querySelectorAll(".menu-item").forEach(el => {
-      if (el !== parent) el.classList.remove("active");
-    });
-
-    // Toggle current
-    parent.classList.toggle("active");
-  });
-});
-
+  
   /* ===================== FAQ SECTION ===================== */
   document.querySelectorAll(".faq-question").forEach(question => {
     question.addEventListener("click", () => {
