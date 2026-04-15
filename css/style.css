@@ -328,7 +328,7 @@ body.menu-open {
   }
 }
 
-.call-btn {
+.nav-call-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -342,14 +342,14 @@ body.menu-open {
   font-size: 15px;
 }
 
-.whatsapp-btn {
+.nav-whatsapp-btn {
   background: #25D366;
   color: #fff;
   font-size: 25px;   /* thodu vadhu */
   padding: 25px 50px;
 }
 
-.call-btn:hover {
+.nav-call-btn:hover {
   background: #ff8c00;
   color: #fff;
 }
