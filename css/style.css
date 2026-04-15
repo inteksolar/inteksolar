@@ -13,6 +13,7 @@ body {
   background: #fff;
   overflow-x: hidden;
   min-height: 100vh;
+  padding-top: 90px; /* header height jetlu */
 }
 
 * {
@@ -358,7 +359,7 @@ header {
 .hero {
   position: relative;
   background: #f8f9fa;
-  padding: 150px 10% 80px; /* Top padding વધારીને 150px કરો */
+  padding: 80px 10% 80px;
   min-height: 100vh;
 }
 
