@@ -185,7 +185,7 @@ header {
   }
 
   .menu-btn {
-    display: block;
+    display: none;
     margin-left: 5px;
   }
 }
