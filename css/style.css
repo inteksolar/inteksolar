@@ -132,10 +132,9 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 15px;   /* desktop gap */
+  gap: 20px;   /* desktop gap */
   align-items: center;
   list-style: none;
-  position: fixed;
 }
 
 /* Dropdown container */
@@ -164,7 +163,7 @@ header {
   border: 1px solid rgba(255,255,255,0.1);
 
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-
+  pointer-events: none;
   z-index: 9999;
 
   /* Animation */
@@ -193,14 +192,8 @@ header {
     display: flex;
     opacity: 1;
     transform: translateY(0);
+    pointer-events: auto;
   }
-}
-
-/* Show on hover (desktop) */
-.dropdown:hover .dropdown-menu {
-  display: flex;
-  opacity: 1;
-  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
@@ -367,7 +360,7 @@ body.menu-open {
 }
 
 .nav-call-btn {
-  display: inline flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
@@ -382,10 +375,15 @@ body.menu-open {
 
 .nav-whatsapp-btn {
   background: #25D366;
+  display: flex;
+  justify-content: center;
+  width: 100%
   color: #fff;
   border-radius: 50px;
-  font-size: 40px;   /* thodu vadhu */
-  padding: 50px 50px;
+  font-size: 16px;   /* thodu vadhu */
+  padding: 14px 18px;
+  align-items: center;
+  gap: 10px;
 }
 
 .nav-call-btn:hover {
