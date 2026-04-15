@@ -72,13 +72,6 @@ header {
   z-index: 1000;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 10px;
-}
-
 .logo img {
   height: 40px;
   width: auto;
@@ -104,6 +97,14 @@ header {
 
 /* ================= Menu ================= */
 
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+}
+
+/* Links */
 .nav-links a {
   color: #ffffff;
   text-decoration: none;
@@ -113,103 +114,50 @@ header {
   padding: 5px 0;
   white-space: nowrap;
   font-size: 14px;
-  width: 100%;   /* 👈 full width clickable */
 }
 
-.nav-links a:hover {
-  color: #ff8c00;
-}
+/* ================= DROPDOWN ================= */
 
-.menu-btn {
-  display: none;
-  font-size: 25px;
-  background: transparent;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  z-index: 1002;
-}
-
-.nav-links {
-  display: flex;
-  gap: 20px;   /* desktop gap */
-  align-items: center;
-  list-style: none;
-}
-
-/* Dropdown container */
 .dropdown {
   position: relative;
 }
 
-/* Hidden by default */
-.dropdown-menu {
-  position: absolute;
-  top: 110%;
-  left: 0;
-
-  min-width: 220px;
-  padding: 10px 0;
-
-  display: none;
-  flex-direction: column;
-
-  /* 🔥 Glass Effect */
-  background: rgba(0, 43, 92, 0.75);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.1);
-
-  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-  pointer-events: none;
-  z-index: 9999;
-
-  /* Animation */
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-}
-
-/* Dropdown links */
-.dropdown-menu a {
-  display: block;
-  padding: 12px 18px;
-  color: #002b5c !important;
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.dropdown-menu a:hover {
-  background: #f5f5f5;
-  color: #ff8c00;
-}
-
+/* Desktop dropdown */
 @media (min-width: 769px) {
   .dropdown-menu {
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 0;
 
-    background: #ffffff;
     min-width: 220px;
+    padding: 10px 0;
 
     display: none;
     flex-direction: column;
 
-    padding: 10px 0;
+    background: #ffffff;
     border-radius: 8px;
 
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    z-index: 9999;
   }
 
   .dropdown:hover .dropdown-menu {
     display: flex;
   }
+
+  .dropdown-menu a {
+    padding: 10px 15px;
+    color: #002b5c;
+  }
+
+  .dropdown-menu a:hover {
+    background: #f5f5f5;
+    color: #ff8c00;
+  }
 }
 
+/* Mobile dropdown */
 @media (max-width: 768px) {
   .dropdown-menu {
     position: static;
@@ -217,16 +165,37 @@ header {
     background: #003366;
   }
 
-  .dropdown-menu.show-dropdown {
+  .menu-item.active .dropdown-menu {
     display: flex;
   }
 }
 
-/* Responsive Menu */
+/* ================= MENU ITEM ================= */
+
+.menu-title {
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Rotate icon */
+.menu-title i {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.menu-item.active .menu-title i {
+  transform: rotate(180deg);
+}
+
+/* ================= MOBILE MENU ================= */
+
 @media (max-width: 768px) {
   .nav-links {
     position: fixed;
-    display: flex;
     top: 80px;
     left: -100%;
     width: 260px;
@@ -238,173 +207,64 @@ header {
     transition: 0.4s ease;
     z-index: 1001;
     overflow-y: auto;
-    text-align: left;   /* 👈 text left */
-    align-items: flex-start; /* 👈 flex items left */
+    align-items: flex-start;
   }
 
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background: #ff8c00;
-  left: 0;
-  bottom: -4px;
-  transition: 0.3s;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
- .nav-links.show {
+  .nav-links.show {
     left: 0;
   }
- .menu-btn {
+
+  .menu-btn {
     display: block;
   }
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
-  z-index: 999;
-}
-
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.menu-btn.active {
-  transform: rotate(90deg);
-}
-
-body.menu-open {
-  overflow: hidden;
-  touch-action: none;
-}
-
-/* Menu Item */
-.menu-item {
-  width: 100%;
-}
-
-/* Title (clickable) */
-.menu-title {
-  color: #ffffff;
-  font-weight: 500;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;   /* 👈 text ane icon vachche gap */
-}
-
-/* Submenu hidden */
-.submenu {
-  display: none;
-  flex-direction: column;
-  padding-left: 15px;
-   max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-/* Submenu links */
-.submenu a {
-  color: #ccc;
-  text-decoration: none;
-  padding: 8px 0;
-  font-size: 14px;
-}
-
-/* Hover */
-.submenu a:hover {
-  color: #ff8c00;
-}
-
-/* Open state */
-.menu-item.active .submenu {
-  display: flex;
-  max-height: 300px; /* adjust based on content */
-  padding-top: 5px;
-}
-
-.menu-title span {
-  transition: 0.3s;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-}
-
-.menu-title i {
-  font-size: 14px;       /* 👈 professional size */
-  line-height: 1;
-  transition: transform 0.3s ease;
-}
-
-.menu-item.active .menu-title i {
-  transform: rotate(180deg);
-}
-
-.menu-item.active .menu-title span {
-  transform: rotate(180deg);
-}
+/* ================= CTA BUTTON ================= */
 
 .menu-cta {
   margin-top: 20px;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 10px;
-  display: none; /* Default (desktop) hide */
 }
 
-/* Mobile ma show */
 @media (max-width: 768px) {
   .menu-cta {
     display: flex;
   }
 }
 
-.nav-call-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: #ffffff;
-  color: #000000;
-  padding: 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 5px;
-}
-
 .nav-whatsapp-btn {
   background: #25D366;
   display: flex;
   justify-content: center;
-  width: 100%
+  width: 100%;
   color: #fff;
   border-radius: 50px;
-  font-size: 16px;   /* thodu vadhu */
+  font-size: 16px;
   padding: 14px 18px;
   align-items: center;
   gap: 10px;
+}
+
+.nav-call-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #000;
+  padding: 14px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .nav-call-btn:hover {
   background: #ff8c00;
   color: #fff;
 }
-
 /* ================= Breadcrumb Section ================= */
 .breadcrumb-section {
   background: #fff; /* blue background */
