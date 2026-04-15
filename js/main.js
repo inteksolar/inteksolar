@@ -57,7 +57,7 @@ window.toggleMenu = function () {
   if (navLinks.classList.contains("show")) {
     document.body.style.overflow = "hidden";
   } else {
-    document.body.style.overflow = "";
+    document.body.style.overflow = "auto";
   }
 };
 
@@ -69,7 +69,7 @@ document.querySelectorAll(".nav-links a").forEach(link => {
     menuBtn.classList.remove("active");
 
     // 🔥 RESET scroll
-    document.body.style.overflow = "";
+    document.body.style.overflow = "auto";
   });
 });
 
@@ -77,7 +77,7 @@ document.querySelectorAll(".nav-links a").forEach(link => {
   navLinks.classList.remove("show");
   overlay.classList.remove("active");
   menuBtn.classList.remove("active");
-  document.body.style.overflow = "";
+  document.body.style.overflow = "auto";
 });
 
 // Dropdown mobile
