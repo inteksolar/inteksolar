@@ -1088,3 +1088,17 @@ max-width: 250px;   /* max width limit */
 body.menu-open {
   overflow: hidden;
 }
+
+/* આ કોડ ફોર્સફુલી સ્ક્રોલિંગ ચાલુ કરશે */
+html {
+    overflow-y: scroll !important;
+}
+body {
+    overflow-y: visible !important;
+    height: auto !important;
+}
+
+/* જ્યારે મેનુ ખુલે ત્યારે જ સ્ક્રોલ બંધ થશે */
+body.menu-open, body[style*="overflow: hidden"] {
+    overflow: hidden !important;
+}
