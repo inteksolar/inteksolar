@@ -295,6 +295,7 @@ body.menu-open {
 .menu-item.active .submenu {
   display: flex;
   max-height: 300px; /* adjust based on content */
+  padding-top: 5px;
 }
 
 .menu-title span {
