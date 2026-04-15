@@ -273,6 +273,9 @@ body.menu-open {
   display: none;
   flex-direction: column;
   padding-left: 15px;
+   max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 
 /* Submenu links */
@@ -281,9 +284,6 @@ body.menu-open {
   text-decoration: none;
   padding: 8px 0;
   font-size: 14px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
 }
 
 /* Hover */
@@ -295,7 +295,6 @@ body.menu-open {
 .menu-item.active .submenu {
   display: flex;
   max-height: 300px; /* adjust based on content */
-  padding-top: 5px;
 }
 
 .menu-title span {
