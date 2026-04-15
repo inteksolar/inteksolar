@@ -1084,3 +1084,8 @@ max-width: 250px;   /* max width limit */
   .hero h1 { font-size: 2rem; }
   .hero p { font-size: 1rem; }
 }
+
+body.menu-open {
+  overflow: hidden;
+  height: 100vh;
+}
