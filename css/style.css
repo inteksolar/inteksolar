@@ -295,6 +295,7 @@ background: #e65c00;
   color: #fff;
   border-radius: 50px;
   font-size: 18px;
+  font-weight: 1200;
   padding: 14px 18px;
   align-items: center;
   gap: 10px;
@@ -310,7 +311,7 @@ background: #e65c00;
   padding: 16px 20px;
   border-radius: 0px;
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 1200;
   font-size: 20px;
 }
 
