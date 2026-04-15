@@ -11,10 +11,7 @@ body {
   color: #333;
   line-height: 1.6;
   background: #fff;
-  /* આ લાઈન જ સ્ક્રોલિંગ ચાલુ કરશે */
-  overflow-y: visible !important; 
-  overflow-x: hidden !important;
-  position: relative;
+  overflow-x: hidden;
 }
 
 * {
