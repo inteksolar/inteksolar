@@ -13,7 +13,7 @@ body {
   background: #fff;
   overflow-x: hidden;
   min-height: 100vh;
-  padding-top: 90px; /* header height jetlu */
+  padding-top: 90px;
 }
 
 * {
