@@ -135,6 +135,7 @@ header {
   gap: 15px;   /* desktop gap */
   align-items: center;
   list-style: none;
+  position: fixed;
 }
 
 /* Dropdown container */
@@ -280,6 +281,9 @@ body.menu-open {
   text-decoration: none;
   padding: 8px 0;
   font-size: 14px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 
 /* Hover */
@@ -290,6 +294,7 @@ body.menu-open {
 /* Open state */
 .menu-item.active .submenu {
   display: flex;
+  max-height: 300px; /* adjust based on content */
 }
 
 .menu-title span {
