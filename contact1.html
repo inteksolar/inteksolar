@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260703-05-6766c4c"}');</script><script src="/_sdk/f432b76fb310b513.telemetry_sdk.js" integrity="sha512-9FJQ55EKmmqhyyik8BhrMVfm0+iYYfb8uOlRsjtkxJMEI97qOVEI4PnHohDjQAtvAep0IOEpdQ64eki0sz62ug=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/0179d719c431a79e.data_sdk.js" integrity="sha512-OsRvJkI5GkC3MJQcgotQYotpzrMSX415GiKKgvYdxQEEkzD/fdchShO2FMSy0PJr/tiINMXOk5Vl2zAgg6bUiA=="></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1f2a24;
+      --muted: #68736d;
+      --cream: #f5f1e9;
+      --cream-deep: #ebe4d8;
+      --sage: #b9c5b7;
+      --sage-dark: #4e6757;
+      --line: #d9d1c4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      width: 100%;
+      font-family: 'DM Sans', sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+    }
+
+    .display-font {
+      font-family: 'Fraunces', serif;
+    }
+
+    .soft-grid {
+      background-image:
+        linear-gradient(rgba(31,42,36,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(31,42,36,0.035) 1px, transparent 1px);
+      background-size: 38px 38px;
+    }
+
+    .hero-image-wrap::before {
+      content: "";
+      position: absolute;
+      inset: 16px -16px -16px 16px;
+      border: 1px solid rgba(78, 103, 87, 0.25);
+      border-radius: 32px;
+      z-index: 0;
+    }
+
+    .form-field {
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #cbc2b4;
+      background: transparent;
+      padding: 0.85rem 0;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .form-field:focus {
+      border-color: var(--sage-dark);
+      box-shadow: 0 1px 0 var(--sage-dark);
+    }
+
+    .form-field::placeholder {
+      color: #9b958c;
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 1px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 180ms ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link:focus-visible::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      animation: revealUp 700ms cubic-bezier(.2,.7,.2,1) forwards;
+    }
+
+    .delay-1 { animation-delay: 80ms; }
+    .delay-2 { animation-delay: 180ms; }
+    .delay-3 { animation-delay: 280ms; }
+    .delay-4 { animation-delay: 380ms; }
+
+    @keyframes revealUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-image-wrap::before {
+        inset: 10px -10px -10px 10px;
+      }
+    }
+  </style>
+  <script src="/_sdk/0b3af1c300e720aa.resizing_sdk.js" type="text/javascript" integrity="sha512-nX1P6oXZmEY5wCI2lUVg3BwKu1cr0yi+ZpXgZ0Yn90vkSwvpmyzBMvOyD6VLJUtBwFI2dSrw1b6OvORxSggw3w=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full min-h-screen" style="background: rgb(245, 241, 233);">
+  <header class="w-full border-b border-[#ddd5c8]/80">
+   <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-5 flex items-center justify-between"><a href="#" data-template-id="site-logo" class="canva-text text-[15px] tracking-[0.28em] uppercase font-semibold" style="color: rgb(31, 42, 36); font-weight: 700; font-style: normal; font-size: 15px; letter-spacing: 0.08rem;">NORTH &amp; CO.</a>
+    <nav class="hidden md:flex items-center gap-9 text-sm text-[#5f6b64]" aria-label="Primary navigation"><a href="#" data-template-id="nav-work" class="canva-link nav-link transition-colors hover:text-[#1f2a24]" style="color: rgb(95, 107, 100); font-weight: 400; font-style: normal; font-size: 14px;">Work</a> <a href="#" data-template-id="nav-about" class="canva-link nav-link transition-colors hover:text-[#1f2a24]" style="color: rgb(95, 107, 100); font-weight: 400; font-style: normal; font-size: 14px;">About</a> <a href="#contact-form" data-template-id="nav-contact" class="canva-link nav-link transition-colors hover:text-[#1f2a24]" style="color: rgb(95, 107, 100); font-weight: 400; font-style: normal; font-size: 14px;">Contact</a>
+    </nav><a href="#contact-form" data-template-id="header-cta" class="canva-button hidden sm:inline-flex items-center gap-2 rounded-full border border-[#9fae9f] px-4 py-2 text-sm font-medium transition-all hover:bg-[#243229] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#8ca18f] focus:ring-offset-2 focus:ring-offset-[#f5f1e9]" style="background: transparent; color: rgb(38, 52, 43);"> <span data-template-id="header-cta-text" class="canva-text" style="font-weight: 500; font-style: normal; font-size: 14px;">Let’s talk</span> <i data-lucide="arrow-up-right" class="w-4 h-4"></i> </a>
+   </div>
+  </header>
+  <main>
+   <section class="soft-grid">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-14 md:py-20 lg:py-24 grid lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-20 items-center">
+     <div class="max-w-2xl">
+      <p data-template-id="hero-eyebrow" class="canva-text reveal text-xs tracking-[0.28em] uppercase text-[#6c7a70] mb-5" style="color: rgb(108, 122, 112); font-weight: 600; font-style: normal; font-size: 12px; letter-spacing: 0.1rem;">Start the conversation</p>
+      <h1 data-template-id="hero-title" class="canva-text display-font reveal delay-1 leading-[1.04] max-w-[760px]" style="color: rgb(31, 42, 36); font-weight: 600; font-style: normal; font-size: 32px; line-height: 1.05;">We’d love to hear what you’re building.</h1>
+      <p data-template-id="hero-copy" class="canva-text reveal delay-2 mt-6 max-w-xl text-[#667168] leading-7" style="color: rgb(102, 113, 104); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.7;">Whether you have a project in mind, a question for our team, or simply want to say hello, we’re always open to thoughtful conversations.</p>
+     </div>
+     <div class="hero-image-wrap reveal delay-3 relative">
+      <div class="relative z-10 overflow-hidden rounded-[28px] aspect-[4/5] md:aspect-[5/4] lg:aspect-[4/5]"><img data-template-id="hero-image" loading="lazy" class="canva-image w-full h-full object-cover" src="https://images.pexels.com/photos/1313534/pexels-photo-1313534.jpeg" alt="Contemporary building facade with reflective glass windows in an urban environment.">
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="border-t border-[#ddd5c8]" id="contact">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-16 md:py-24 grid lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-20">
+     <div class="lg:pr-8">
+      <p data-template-id="contact-kicker" class="canva-text text-xs tracking-[0.24em] uppercase text-[#79877d] mb-4" style="color: rgb(121, 135, 125); font-weight: 600; font-style: normal; font-size: 12px; letter-spacing: 0.08rem;">Get in touch</p>
+      <h2 data-template-id="contact-heading" class="canva-text display-font leading-tight max-w-lg" style="color: rgb(34, 48, 39); font-weight: 500; font-style: normal; font-size: 24px; line-height: 1.1;">Let’s make something meaningful together.</h2>
+      <p data-template-id="contact-copy" class="canva-text mt-5 max-w-md text-[#6a746e] leading-7" style="color: rgb(106, 116, 110); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">Tell us a little about your idea and we’ll get back to you as soon as we can.</p>
+      <div class="mt-12 space-y-8">
+       <div class="border-t border-[#d9d1c4] pt-5">
+        <p data-template-id="email-label" class="canva-text text-xs tracking-[0.2em] uppercase text-[#879087] mb-2" style="color: rgb(135, 144, 135); font-weight: 600; font-style: normal; font-size: 11px; letter-spacing: 0.08rem;">Email</p>
+        <p data-template-id="email-value" class="canva-text text-[#273229]" style="color: rgb(39, 50, 41); font-weight: 500; font-style: normal; font-size: 17px;">hello@northandco.studio</p>
+       </div>
+       <div class="border-t border-[#d9d1c4] pt-5">
+        <p data-template-id="phone-label" class="canva-text text-xs tracking-[0.2em] uppercase text-[#879087] mb-2" style="color: rgb(135, 144, 135); font-weight: 600; font-style: normal; font-size: 11px; letter-spacing: 0.08rem;">Phone</p>
+        <p data-template-id="phone-value" class="canva-text text-[#273229]" style="color: rgb(39, 50, 41); font-weight: 500; font-style: normal; font-size: 17px;">+91 79 4000 2184</p>
+       </div>
+       <div class="border-t border-[#d9d1c4] pt-5">
+        <p data-template-id="address-label" class="canva-text text-xs tracking-[0.2em] uppercase text-[#879087] mb-2" style="color: rgb(135, 144, 135); font-weight: 600; font-style: normal; font-size: 11px; letter-spacing: 0.08rem;">Studio</p>
+        <p data-template-id="address-value" class="canva-text text-[#273229] leading-7 max-w-xs" style="color: rgb(39, 50, 41); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.6;">204 Olive House, C.G. Road, Ahmedabad, Gujarat</p>
+       </div>
+      </div>
+     </div>
+     <section id="contact-form" data-template-id="form-panel" class="canva-panel bg-[#fbf8f2] rounded-[28px] p-6 sm:p-8 md:p-10 shadow-[0_18px_60px_rgba(41,48,42,0.08)]" style="background: rgb(251, 248, 242);">
+      <div class="flex items-start justify-between gap-4 mb-8">
+       <div>
+        <p data-template-id="form-kicker" class="canva-text text-xs tracking-[0.24em] uppercase text-[#839083] mb-3" style="color: rgb(131, 144, 131); font-weight: 600; font-style: normal; font-size: 12px; letter-spacing: 0.08rem;">Send a note</p>
+        <h2 data-template-id="form-heading" class="canva-text display-font" style="color: rgb(34, 48, 39); font-weight: 500; font-style: normal; font-size: 24px;">How can we help?</h2>
+       </div>
+       <div class="hidden sm:flex w-11 h-11 rounded-full border border-[#d7d0c4] items-center justify-center text-[#55675a]"><i data-lucide="send" class="w-4 h-4"></i>
+       </div>
+      </div>
+      <form id="contactForm" novalidate="">
+       <div class="space-y-7">
+        <div><label for="name" data-template-id="name-label" class="canva-text block text-sm font-medium text-[#344138]" style="color: rgb(52, 65, 56); font-weight: 500; font-style: normal; font-size: 14px;">Your name</label> <input id="name" name="name" type="text" data-template-id="name-input" class="canva-input form-field mt-1" autocomplete="name" required="" placeholder="Jane Cooper" style="color: rgb(31, 42, 36); font-weight: 400; font-style: normal; font-size: 16px;">
+         <p id="nameError" class="hidden text-sm text-[#a3564c] mt-2">Please enter your name.</p>
+        </div>
+        <div><label for="email" data-template-id="email-label-form" class="canva-text block text-sm font-medium text-[#344138]" style="color: rgb(52, 65, 56); font-weight: 500; font-style: normal; font-size: 14px;">Email address</label> <input id="email" name="email" type="email" data-template-id="email-input" class="canva-input form-field mt-1" autocomplete="email" required="" placeholder="jane@example.com" style="color: rgb(31, 42, 36); font-weight: 400; font-style: normal; font-size: 16px;">
+         <p id="emailError" class="hidden text-sm text-[#a3564c] mt-2">Please enter a valid email address.</p>
+        </div>
+        <div><label for="message" data-template-id="message-label" class="canva-text block text-sm font-medium text-[#344138]" style="color: rgb(52, 65, 56); font-weight: 500; font-style: normal; font-size: 14px;">Your message</label> <textarea id="message" name="message" rows="5" data-template-id="message-input" class="canva-input form-field mt-1 resize-none" required="" style="color: rgb(31, 42, 36); font-weight: 400; font-style: normal; font-size: 16px;">Tell us about your project, timeline, or question...</textarea>
+         <p id="messageError" class="hidden text-sm text-[#a3564c] mt-2">Please enter a message.</p>
+        </div>
+       </div>
+       <div class="mt-9"><button id="submitButton" type="submit" data-template-id="submit-button" class="canva-button w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-full px-6 py-3 text-sm font-semibold transition-all hover:translate-y-[-1px] focus:outline-none focus:ring-2 focus:ring-[#879b89] focus:ring-offset-2 focus:ring-offset-[#fbf8f2] disabled:opacity-70 disabled:cursor-not-allowed" style="background: rgb(37, 50, 41); color: rgb(255, 255, 255);"> <span id="submitIdle" data-template-id="submit-idle-text" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 14px;">Send message</span> <span id="submitLoading" data-template-id="submit-loading-text" class="canva-text hidden" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 14px;">Sending...</span> <i id="submitIcon" data-lucide="arrow-up-right" class="w-4 h-4"></i> <span id="spinner" class="hidden w-4 h-4 rounded-full border-2 border-white/40 border-t-white animate-spin"></span> </button>
+       </div>
+       <div id="successMessage" data-template-id="success-message" class="canva-text hidden mt-5 rounded-xl bg-[#edf3ec] px-4 py-3 text-sm text-[#41604b]" style="background: rgb(237, 243, 236); color: rgb(65, 96, 75); font-weight: 400; font-style: normal; font-size: 14px;">Thank you — your message has been sent. We’ll be in touch soon.</div>
+       <div id="errorMessage" data-template-id="error-message" class="canva-text hidden mt-5 rounded-xl bg-[#f8ece8] px-4 py-3 text-sm text-[#9b4f44]" style="background: rgb(248, 236, 232); color: rgb(155, 79, 68); font-weight: 400; font-style: normal; font-size: 14px;">Something went wrong while sending your message. Please try again.</div>
+      </form>
+     </section>
+    </div>
+   </section>
+  </main>
+  <footer class="border-t border-[#ddd5c8]">
+   <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-8 flex flex-col md:flex-row gap-5 md:items-center md:justify-between">
+    <div>
+     <p data-template-id="footer-brand" class="canva-text text-sm tracking-[0.2em] uppercase font-semibold" style="color: rgb(31, 42, 36); font-weight: 700; font-style: normal; font-size: 13px; letter-spacing: 0.08rem;">NORTH &amp; CO.</p>
+     <p data-template-id="footer-copy" class="canva-text mt-2 text-sm text-[#788279]" style="color: rgb(120, 130, 121); font-weight: 400; font-style: normal; font-size: 14px;">Thoughtful work, lasting impact.</p>
+    </div>
+    <div class="flex gap-6 text-sm text-[#5d6b61]"><a href="#" data-template-id="footer-instagram" class="canva-link nav-link" style="color: rgb(93, 107, 97); font-weight: 400; font-style: normal; font-size: 14px;">Instagram</a> <a href="#" data-template-id="footer-linkedin" class="canva-link nav-link" style="color: rgb(93, 107, 97); font-weight: 400; font-style: normal; font-size: 14px;">LinkedIn</a>
+    </div>
+   </div>
+  </footer>
+  <script src="/_sdk/e063511df281944a.editing_sdk.js" integrity="sha512-Xa8p4aPfoMxVnzxQE2WAG0FfoaPLxdjOJMfUZGm1yZosJTYmnNDvgLkJ2EoN0i3zxjeQVAzUMSXNvTKQVqbXyQ=="></script>
+  <script>
+    lucide.createIcons();
+
+    const form = document.getElementById('contactForm');
+    const submitButton = document.getElementById('submitButton');
+    const submitIdle = document.getElementById('submitIdle');
+    const submitLoading = document.getElementById('submitLoading');
+    const submitIcon = document.getElementById('submitIcon');
+    const spinner = document.getElementById('spinner');
+    const successMessage = document.getElementById('successMessage');
+    const errorMessage = document.getElementById('errorMessage');
+
+    const fields = {
+      name: document.getElementById('name'),
+      email: document.getElementById('email'),
+      message: document.getElementById('message')
+    };
+
+    const errors = {
+      name: document.getElementById('nameError'),
+      email: document.getElementById('emailError'),
+      message: document.getElementById('messageError')
+    };
+
+    let sdkReady = false;
+
+    const dataHandler = {
+      onDataChanged() {
+        // Write-only contact form: no records are displayed in the interface.
+      }
+    };
+
+    async function initDataSdk() {
+      const result = await window.dataSdk.init(dataHandler);
+      sdkReady = result.isOk;
+      if (!result.isOk) {
+        errorMessage.classList.remove('hidden');
+      }
+    }
+
+    initDataSdk();
+
+    function setLoading(isLoading) {
+      submitButton.disabled = isLoading;
+      submitIdle.classList.toggle('hidden', isLoading);
+      submitLoading.classList.toggle('hidden', !isLoading);
+      submitIcon.classList.toggle('hidden', isLoading);
+      spinner.classList.toggle('hidden', !isLoading);
+    }
+
+    function hideMessages() {
+      successMessage.classList.add('hidden');
+      errorMessage.classList.add('hidden');
+    }
+
+    function validateForm() {
+      let isValid = true;
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      Object.values(errors).forEach(el => el.classList.add('hidden'));
+
+      if (!fields.name.value.trim()) {
+        errors.name.classList.remove('hidden');
+        isValid = false;
+      }
+
+      if (!emailPattern.test(fields.email.value.trim())) {
+        errors.email.classList.remove('hidden');
+        isValid = false;
+      }
+
+      if (!fields.message.value.trim()) {
+        errors.message.classList.remove('hidden');
+        isValid = false;
+      }
+
+      return isValid;
+    }
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      hideMessages();
+
+      if (!validateForm()) return;
+
+      if (!sdkReady) {
+        errorMessage.classList.remove('hidden');
+        return;
+      }
+
+      setLoading(true);
+
+      const result = await window.dataSdk.create({
+        name: fields.name.value.trim(),
+        email: fields.email.value.trim(),
+        message: fields.message.value.trim(),
+        submitted_at: new Date().toISOString()
+      });
+
+      setLoading(false);
+
+      if (result.isOk) {
+        form.reset();
+        successMessage.classList.remove('hidden');
+      } else {
+        errorMessage.classList.remove('hidden');
+      }
+    });
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a15df905d49547e5',t:'MTc4MzE2NjQ2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body></html>
