@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Why Solar Energy? | Intek Solar Systems</title>
+  <meta name="description" content="Discover the benefits of solar energy, rooftop solar systems, electricity savings and sustainable energy solutions with Intek Solar Systems in South Gujarat.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue: #002b5c;
+      --blue2: #064387;
+      --orange: #ff6600;
+      --light: #f5f8fc;
+      --text: #29384c;
+      --muted: #6b7a90;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid #e8edf4;
+      backdrop-filter: blur(12px);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--blue);
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .brand-mark {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: linear-gradient(135deg, var(--blue), var(--blue2));
+      color: white;
+      font-size: 24px;
+    }
+
+    .brand small {
+      display: block;
+      margin-top: 4px;
+      color: var(--orange);
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      color: var(--orange);
+    }
+
+    .nav-cta {
+      padding: 12px 17px;
+      border-radius: 9px;
+      background: var(--orange);
+      color: white !important;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0 105px;
+      color: white;
+      background:
+        linear-gradient(100deg, rgba(0,26,59,.95), rgba(0,43,92,.70)),
+        url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2000&q=85')
+        center/cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      right: -130px;
+      bottom: -200px;
+      border: 55px solid rgba(255,102,0,.16);
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 19px;
+      color: #ffb47f;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 3px;
+      background: var(--orange);
+    }
+
+    .hero h1 {
+      margin-bottom: 23px;
+      font-size: clamp(39px, 6vw, 68px);
+      line-height: 1.12;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: #ff8738;
+    }
+
+    .hero p {
+      max-width: 660px;
+      margin-bottom: 30px;
+      color: #e0e9f5;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 14px 21px;
+      border-radius: 9px;
+      background: var(--orange);
+      color: white;
+      font-size: 13px;
+      font-weight: 800;
+      transition: .25s;
+    }
+
+    .btn:hover {
+      background: #e85b00;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      margin-left: 10px;
+      border: 1px solid rgba(255,255,255,.55);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--blue);
+    }
+
+    /* SECTION COMMON */
+    .section {
+      padding: 82px 0;
+    }
+
+    .section-light {
+      background: var(--light);
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 0 auto 43px;
+      text-align: center;
+    }
+
+    .section-label {
+      margin-bottom: 12px;
+      color: var(--orange);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .section-title {
+      margin-bottom: 17px;
+      color: var(--blue);
+      font-size: clamp(29px, 4vw, 43px);
+      line-height: 1.25;
+      letter-spacing: -1px;
+    }
+
+    .section-title span {
+      color: var(--orange);
+    }
+
+    .section-desc {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    /* BENEFITS */
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .benefit-card {
+      padding: 30px 26px;
+      border: 1px solid #e4ebf3;
+      border-radius: 17px;
+      background: white;
+      transition: transform .3s, box-shadow .3s, border-color .3s;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-6px);
+      border-color: #ffc49f;
+      box-shadow: 0 15px 36px rgba(0,43,92,.08);
+    }
+
+    .benefit-icon {
+      display: grid;
+      place-items: center;
+      width: 57px;
+      height: 57px;
+      margin-bottom: 21px;
+      border-radius: 15px;
+      background: #fff0e5;
+      color: var(--orange);
+      font-size: 27px;
+    }
+
+    .benefit-card h3 {
+      margin-bottom: 12px;
+      color: var(--blue);
+      font-size: 18px;
+    }
+
+    .benefit-card p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    /* SAVINGS */
+    .savings-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .savings-image {
+      min-height: 420px;
+      border-radius: 22px;
+      background:
+        linear-gradient(0deg, rgba(0,43,92,.12), transparent),
+        url('https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=1100&q=85')
+        center/cover no-repeat;
+      box-shadow: 0 20px 45px rgba(0,43,92,.12);
+    }
+
+    .savings-copy h2 {
+      margin-bottom: 18px;
+      color: var(--blue);
+      font-size: clamp(29px, 4vw, 41px);
+      line-height: 1.25;
+    }
+
+    .savings-copy > p {
+      margin-bottom: 24px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .saving-points {
+      display: grid;
+      gap: 17px;
+      margin-bottom: 28px;
+    }
+
+    .saving-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+    }
+
+    .tick {
+      display: grid;
+      place-items: center;
+      flex: 0 0 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: var(--orange);
+      color: white;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .saving-point h3 {
+      margin-bottom: 3px;
+      color: var(--blue);
+      font-size: 15px;
+    }
+
+    .saving-point p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    /* SOLAR TYPES */
+    .type-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .type-card {
+      overflow: hidden;
+      border: 1px solid #e4ebf3;
+      border-radius: 17px;
+      background: white;
+    }
+
+    .type-top {
+      padding: 25px 25px 21px;
+      background: var(--blue);
+      color: white;
+    }
+
+    .type-top .type-icon {
+      display: block;
+      margin-bottom: 13px;
+      color: #ff8738;
+      font-size: 29px;
+    }
+
+    .type-top h3 {
+      font-size: 20px;
+    }
+
+    .type-body {
+      padding: 24px 25px 27px;
+    }
+
+    .type-body p {
+      margin-bottom: 17px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .type-body a {
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    /* CONSIDERATIONS */
+    .consider-layout {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .consider-intro h2 {
+      margin-bottom: 17px;
+      color: var(--blue);
+      font-size: clamp(28px, 4vw, 39px);
+      line-height: 1.25;
+    }
+
+    .consider-intro p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .consider-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .consider-item {
+      padding: 19px 21px;
+      border: 1px solid #e3eaf2;
+      border-radius: 13px;
+      background: white;
+    }
+
+    .consider-item h3 {
+      margin-bottom: 6px;
+      color: var(--blue);
+      font-size: 15px;
+    }
+
+    .consider-item p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    /* FAQ */
+    .faq-list {
+      max-width: 850px;
+      margin: auto;
+      display: grid;
+      gap: 13px;
+    }
+
+    .faq-item {
+      padding: 22px 24px;
+      border: 1px solid #e4ebf3;
+      border-radius: 13px;
+      background: white;
+    }
+
+    .faq-item h3 {
+      margin-bottom: 8px;
+      color: var(--blue);
+      font-size: 16px;
+    }
+
+    .faq-item p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    /* CTA */
+    .cta {
+      padding: 68px 0;
+      background: linear-gradient(120deg, var(--blue), #07509b);
+      color: white;
+    }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .cta h2 {
+      margin-bottom: 12px;
+      font-size: clamp(28px, 4vw, 39px);
+      line-height: 1.25;
+    }
+
+    .cta p {
+      max-width: 680px;
+      color: #d9e7f7;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+    .footer {
+      padding: 45px 0 22px;
+      background: #001b3b;
+      color: white;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 38px;
+      padding-bottom: 30px;
+    }
+
+    .footer h3 {
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+
+    .footer p,
+    .footer a {
+      color: #bdcbe0;
+      font-size: 13px;
+      line-height: 2;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 5px;
+    }
+
+    .footer a:hover {
+      color: #ff8738;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.13);
+      color: #aabbd2;
+      font-size: 12px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 99;
+      display: grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+      font-size: 25px;
+      box-shadow: 0 6px 22px rgba(0,0,0,.2);
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.07);
+    }
+
+    @media (max-width: 900px) {
+      .nav-links { gap: 13px; }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .type-grid { grid-template-columns: 1fr; }
+      .consider-layout { grid-template-columns: 1fr; gap: 30px; }
+    }
+
+    @media (max-width: 650px) {
+      .nav { min-height: 70px; }
+      .brand { font-size: 17px; }
+      .brand-mark { width: 38px; height: 38px; }
+      .nav-cta { padding: 10px 12px; font-size: 12px; }
+      .hero { padding: 76px 0; }
+      .hero h1 { letter-spacing: -1px; }
+      .hero p { font-size: 14px; }
+      .btn { padding: 13px 15px; font-size: 12px; }
+      .btn-outline { margin: 12px 0 0; }
+      .section { padding: 62px 0; }
+      .benefit-grid { grid-template-columns: 1fr; }
+      .savings-layout { grid-template-columns: 1fr; gap: 30px; }
+      .savings-image { min-height: 270px; }
+      .cta-inner { flex-direction: column; align-items: flex-start; }
+      .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+      .footer-bottom { flex-direction: column; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index2.html">
+        <span class="brand-mark">☀</span>
+        <span>INTEK<small>SOLAR SYSTEMS</small></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index2.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Our Services</a>
+        <a href="why-solar.html" class="active">Why Solar?</a>
+        <a href="contact.html" class="nav-cta">Get a Quote ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="eyebrow">A SMARTER ENERGY CHOICE</div>
+        <h1>Why Go Solar?<br>
+          <span>Power Your Future.</span>
+        </h1>
+        <p>
+          The sun offers a renewable source of energy for homes and
+          businesses. Discover how a well-planned rooftop solar system
+          can support your energy needs and help manage electricity costs.
+        </p>
+        <a class="btn" href="contact.html">Explore Solar for Your Property ↗</a>
+        <a class="btn btn-outline" href="#benefits">Discover the Benefits ↓</a>
+      </div>
+    </section>
+
+    <!-- INTRO & BENEFITS -->
+    <section class="section container" id="benefits">
+      <div class="section-heading">
+        <div class="section-label">THE POWER OF SOLAR</div>
+        <h2 class="section-title">Good for Your Home.<br>
+          <span>Better for Tomorrow.</span>
+        </h2>
+        <p class="section-desc">
+          Solar energy allows you to generate electricity from sunlight.
+          Depending on your property, electricity usage and system design,
+          it may offer financial and environmental benefits over time.
+        </p>
+      </div>
+
+      <div class="benefit-grid">
+        <article class="benefit-card">
+          <div class="benefit-icon">₹</div>
+          <h3>Potential Bill Savings</h3>
+          <p>
+            Generate electricity on-site and potentially reduce the amount
+            you purchase from the grid. Actual savings depend on usage,
+            tariffs, system size and applicable utility rules.
+          </p>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">☀</div>
+          <h3>Renewable Energy</h3>
+          <p>
+            Sunlight is a renewable energy source. A rooftop solar system
+            helps you make use of this natural resource to generate power.
+          </p>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">🌿</div>
+          <h3>Lower Operational Emissions</h3>
+          <p>
+            Solar electricity has no direct fuel-combustion emissions
+            during operation and can help reduce reliance on grid
+            electricity generated from fossil fuels.
+          </p>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">🏠</div>
+          <h3>Use Your Rooftop</h3>
+          <p>
+            Make productive use of a suitable roof area without needing
+            a separate ground-level site for a typical rooftop installation.
+          </p>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">📊</div>
+          <h3>Plan Long-Term Energy Costs</h3>
+          <p>
+            Solar can help offset a portion of your electricity demand
+            over the system's useful life, while future savings and
+            payback depend on project-specific factors.
+          </p>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <h3>Energy Awareness</h3>
+          <p>
+            Monitoring solar generation can help you understand
+            electricity production and make better-informed decisions
+            about when you use power.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SAVINGS -->
+    <section class="section section-light">
+      <div class="container savings-layout">
+        <div class="savings-image" role="img"
+             aria-label="Rooftop solar panels generating electricity"></div>
+
+        <div class="savings-copy">
+          <div class="section-label">MAKE ENERGY WORK FOR YOU</div>
+          <h2>Understand Your Solar Savings Potential</h2>
+          <p>
+            Every property has different energy needs. The right solar
+            system starts with your electricity bills, available roof area
+            and the way you use electricity during the day.
+          </p>
+
+          <div class="saving-points">
+            <div class="saving-point">
+              <span class="tick">✓</span>
+              <div>
+                <h3>Review Your Electricity Usage</h3>
+                <p>Look at your monthly consumption and tariff to estimate the potential benefit.</p>
+              </div>
+            </div>
+
+            <div class="saving-point">
+              <span class="tick">✓</span>
+              <div>
+                <h3>Choose a Suitable System Size</h3>
+                <p>Match the system design to your roof, consumption and applicable connection limits.</p>
+              </div>
+            </div>
+
+            <div class="saving-point">
+              <span class="tick">✓</span>
+              <div>
+                <h3>Understand the Full Project Cost</h3>
+                <p>Consider equipment, installation, approvals, maintenance and any eligible subsidy.</p>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn" href="contact.html">Request a Solar Assessment ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLAR SYSTEM TYPES -->
+    <section class="section container">
+      <div class="section-heading">
+        <div class="section-label">KNOW YOUR OPTIONS</div>
+        <h2 class="section-title">Which Solar System Is <span>Right for You?</span></h2>
+        <p class="section-desc">
+          The suitable system depends on your electricity connection,
+          backup requirements, roof conditions and local regulations.
+        </p>
+      </div>
+
+      <div class="type-grid">
+        <article class="type-card">
+          <div class="type-top">
+            <span class="type-icon">↔</span>
+            <h3>On-Grid Solar</h3>
+          </div>
+          <div class="type-body">
+            <p>
+              Connected to the electricity grid. It can help offset
+              grid consumption, subject to generation, usage and
+              applicable metering rules. Standard grid-tied systems
+              generally shut down during a grid outage.
+            </p>
+            <a href="services.html">Explore Our Services ↗</a>
+          </div>
+        </article>
+
+        <article class="type-card">
+          <div class="type-top">
+            <span class="type-icon">🔋</span>
+            <h3>Off-Grid Solar</h3>
+          </div>
+          <div class="type-body">
+            <p>
+              Designed for locations that operate independently of
+              the grid, typically using batteries and careful load
+              planning. Capacity and backup depend on the design.
+            </p>
+            <a href="services.html">Explore Our Services ↗</a>
+          </div>
+        </article>
+
+        <article class="type-card">
+          <div class="type-top">
+            <span class="type-icon">☀</span>
+            <h3>Hybrid Solar</h3>
+          </div>
+          <div class="type-body">
+            <p>
+              Combines solar generation with battery storage and,
+              where supported, a grid connection. Backup capability
+              depends on inverter configuration and battery capacity.
+            </p>
+            <a href="services.html">Explore Our Services ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- WHAT TO CONSIDER -->
+    <section class="section section-light">
+      <div class="container consider-layout">
+        <div class="consider-intro">
+          <div class="section-label">BEFORE YOU INSTALL</div>
+          <h2>Make an Informed Solar Decision</h2>
+          <p>
+            Solar is a long-term investment. Before choosing a system,
+            review the technical requirements and financial assumptions
+            for your particular property.
+          </p>
+        </div>
+
+        <div class="consider-list">
+          <article class="consider-item">
+            <h3>01. Roof Suitability</h3>
+            <p>
+              Check roof condition, usable area, shading, orientation
+              and structural suitability before installation.
+            </p>
+          </article>
+
+          <article class="consider-item">
+            <h3>02. System Design & Quality</h3>
+            <p>
+              Review module and inverter compatibility, electrical
+              protection, mounting structure, workmanship and warranty
+              terms in the quotation.
+            </p>
+          </article>
+
+          <article class="consider-item">
+            <h3>03. Savings & Payback</h3>
+            <p>
+              Request an estimate based on your actual bill, expected
+              generation, tariff, project cost and ongoing charges.
+              Savings and payback are not guaranteed.
+            </p>
+          </article>
+
+          <article class="consider-item">
+            <h3>04. Approvals & Subsidy Eligibility</h3>
+            <p>
+              Confirm current DISCOM requirements, metering arrangements
+              and eligibility criteria for any government subsidy before
+              relying on a benefit in your budget.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section container">
+      <div class="section-heading">
+        <div class="section-label">COMMON QUESTIONS</div>
+        <h2 class="section-title">Solar Energy <span>FAQs</span></h2>
+        <p class="section-desc">
+          A few things to understand before moving ahead with rooftop solar.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <article class="faq-item">
+          <h3>Will solar make my electricity bill zero?</h3>
+          <p>
+            Not necessarily. Your final bill can still include fixed
+            charges, minimum charges, grid imports and other applicable
+            fees. The result depends on system generation, usage and
+            your electricity tariff.
+          </p>
+        </article>
+
+        <article class="faq-item">
+          <h3>Does solar generate electricity on cloudy days?</h3>
+          <p>
+            Solar panels can generate electricity in diffuse sunlight,
+            but output is generally lower than on sunny days. Generation
+            also varies with shading, temperature and system conditions.
+          </p>
+        </article>
+
+        <article class="faq-item">
+          <h3>Will an on-grid solar system work during a power cut?</h3>
+          <p>
+            A standard grid-tied inverter usually shuts down during a
+            grid outage for safety. Backup requires a suitable backup
+            or hybrid configuration and compatible storage or equipment.
+          </p>
+        </article>
+
+        <article class="faq-item">
+          <h3>Is a government subsidy available for solar?</h3>
+          <p>
+            Eligible residential consumers may qualify for government
+            rooftop solar support under applicable schemes. Eligibility,
+            amounts and application procedures can change, so check
+            the current official scheme and DISCOM requirements.
+          </p>
+        </article>
+
+        <article class="faq-item">
+          <h3>How do I know what system capacity I need?</h3>
+          <p>
+            Start with your recent electricity bills, daytime usage,
+            available roof area and connection details. A site assessment
+            can help establish an appropriate system size.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Thinking About Going Solar?</h2>
+          <p>
+            Let Intek Solar Systems help you explore the options
+            for your home, shop, office or industrial property in
+            Valsad, Vapi and surrounding areas.
+          </p>
+        </div>
+        <a class="btn" href="contact.html">Let's Discuss Your Project ↗</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index2.html" style="color:white">
+            <span class="brand-mark">☀</span>
+            <span>INTEK<small>SOLAR SYSTEMS</small></span>
+          </a>
+          <p style="margin-top:17px;max-width:350px">
+            A solar business brand of Intek Technologies,
+            serving Valsad, Vapi and surrounding areas of South Gujarat.
+          </p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index2.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="why-solar.html">Why Solar?</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <p>Valsad – Vapi, Gujarat, India</p>
+          <p>Website: www.inteksolar.in</p>
+          <a href="contact.html">Send an Enquiry ↗</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Intek Solar Systems. All rights reserved.</span>
+        <span>A brand of Intek Technologies</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP -->
+  <a class="whatsapp" id="whatsappButton"
+     href="https://wa.me/91XXXXXXXXXX"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Contact Intek Solar Systems on WhatsApp">◉</a>
+
+  <script>
+    // Replace with your actual WhatsApp number.
+    // Use India country code + 10-digit number, without + or spaces.
+    const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    document.getElementById("whatsappButton").href =
+      "https://wa.me/" + WHATSAPP_NUMBER;
+  </script>
+
+</body>
+</html>
