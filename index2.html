@@ -1,0 +1,1061 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#002b5c">
+
+<title>Intek Solar Systems | Smart Solar Solutions Gujarat</title>
+<meta name="description" content="Intek Solar Systems provides modern residential and commercial rooftop solar solutions in Vapi, Valsad and across Gujarat.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy: #002b5c;
+  --blue: #064387;
+  --orange: #ff6600;
+  --light-blue: #55c6fd;
+  --white: #ffffff;
+  --light: #f4f8fc;
+  --text: #243449;
+  --muted: #68788d;
+  --shadow: 0 18px 55px rgba(0, 43, 92, .12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+button, input, select, textarea { font: inherit; }
+img { display: block; max-width: 100%; }
+.container { width: min(1180px, 91%); margin: auto; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  padding: 15px 23px;
+  border-radius: 9px;
+  background: var(--orange);
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  transition: .3s ease;
+}
+.btn:hover { background: #e95700; transform: translateY(-3px); box-shadow: 0 10px 25px #ff660040; }
+.btn-outline { background: transparent; border: 1px solid #ffffffa0; }
+.btn-outline:hover { background: white; color: var(--navy); }
+
+/* Top information bar */
+.topbar {
+  background: var(--navy);
+  color: white;
+  font-size: 12px;
+  padding: 10px 0;
+}
+.topbar-inner {
+  display: flex; justify-content: space-between;
+  align-items: center; gap: 12px; flex-wrap: wrap;
+}
+.topbar a:hover { color: var(--light-blue); }
+
+/* Header and navigation */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,.96);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 4px 24px #002b5c0d;
+}
+.nav {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--navy);
+  font-weight: 900;
+  font-size: 21px;
+  letter-spacing: -.8px;
+}
+.brand-mark {
+  width: 45px; height: 45px;
+  border-radius: 12px;
+  display: grid; place-items: center;
+  background: var(--navy);
+  color: var(--orange);
+  font-size: 28px;
+}
+.brand small {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 2.2px;
+  margin-top: 3px;
+}
+.nav-links { display: flex; align-items: center; gap: 26px; }
+.nav-links a { font-size: 13px; font-weight: 700; transition: .2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--orange); }
+.menu-btn {
+  display: none;
+  border: 0; background: var(--light);
+  color: var(--navy); padding: 10px 13px;
+  border-radius: 8px; font-size: 23px; cursor: pointer;
+}
+
+/* Hero slider */
+.hero {
+  position: relative;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  background: var(--navy);
+  color: white;
+  overflow: hidden;
+}
+.hero-slide {
+  position: absolute; inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .8s ease, visibility .8s;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.04);
+}
+.hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+  animation: zoomIn 7s ease forwards;
+}
+@keyframes zoomIn { to { transform: scale(1.12); } }
+
+.hero-slide::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    rgba(0,26,58,.95) 0%,
+    rgba(0,43,92,.83) 43%,
+    rgba(0,43,92,.20) 100%);
+}
+.slide-1 {
+  background-image: url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2000&q=85");
+}
+.slide-2 {
+  background-image: url("https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=2000&q=85");
+}
+.slide-3 {
+  background-image: url("https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=2000&q=85");
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(1180px, 91%);
+  margin: auto;
+  padding: 90px 0 115px;
+  animation: rise .8s ease;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #ffb27d;
+  background: #ffffff12;
+  border: 1px solid #ffffff28;
+  border-radius: 100px;
+  padding: 10px 15px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.eyebrow::before {
+  content: "";
+  width: 7px; height: 7px;
+  border-radius: 50%; background: var(--orange);
+  box-shadow: 0 0 12px var(--orange);
+}
+.hero h1 {
+  max-width: 740px;
+  margin: 25px 0 20px;
+  font-size: clamp(38px, 5.5vw, 69px);
+  line-height: 1.09;
+  letter-spacing: -2.7px;
+  font-weight: 900;
+}
+.hero h1 span { color: var(--orange); }
+.hero p {
+  max-width: 565px;
+  color: #e0eafa;
+  font-size: 16px;
+  line-height: 1.9;
+}
+.hero-actions { display: flex; gap: 13px; flex-wrap: wrap; margin-top: 30px; }
+.hero-note { margin-top: 28px; font-size: 12px; color: #d1e1f6; }
+.hero-note span { color: var(--orange); margin-right: 6px; }
+
+.slider-controls {
+  position: absolute; z-index: 3;
+  bottom: 34px; left: 50%;
+  transform: translateX(-50%);
+  display: flex; align-items: center; gap: 12px;
+}
+.dot {
+  width: 9px; height: 9px;
+  border: 0; border-radius: 30px;
+  background: #ffffff70; cursor: pointer;
+  transition: .3s;
+}
+.dot.active { width: 33px; background: var(--orange); }
+.slider-arrow {
+  position: absolute; z-index: 4;
+  top: 50%; transform: translateY(-50%);
+  width: 44px; height: 44px;
+  display: grid; place-items: center;
+  color: white; font-size: 22px;
+  border: 1px solid #ffffff60;
+  background: #001c3c55;
+  border-radius: 50%; cursor: pointer;
+}
+.slider-arrow:hover { background: var(--orange); }
+.prev { left: 25px; } .next { right: 25px; }
+
+/* Floating metrics */
+.stats-wrap { position: relative; z-index: 5; margin-top: -46px; }
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: white;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  border: 1px solid #eaf0f7;
+  overflow: hidden;
+}
+.stat {
+  text-align: center;
+  padding: 27px 14px;
+  border-right: 1px solid #eaf0f7;
+}
+.stat:last-child { border: 0; }
+.stat strong {
+  color: var(--navy);
+  font-size: 29px;
+  font-weight: 900;
+}
+.stat strong span { color: var(--orange); }
+.stat p { color: var(--muted); font-size: 12px; margin-top: 7px; }
+
+/* Shared section styling */
+section { padding: 95px 0; }
+.section-head { max-width: 690px; margin: 0 auto 46px; text-align: center; }
+.kicker {
+  color: var(--orange); font-weight: 900;
+  font-size: 11px; letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.section-head h2 {
+  margin: 14px 0;
+  color: var(--navy);
+  font-size: clamp(29px, 4vw, 43px);
+  line-height: 1.2;
+  letter-spacing: -1.4px;
+}
+.section-head p { color: var(--muted); font-size: 14px; line-height: 1.9; }
+
+/* About */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+.about-visual { position: relative; padding: 0 30px 30px 0; }
+.about-visual img {
+  width: 100%; height: 445px; object-fit: cover;
+  border-radius: 16px;
+}
+.about-visual::before {
+  content: ""; position: absolute;
+  left: -12px; top: -12px;
+  width: 125px; height: 125px;
+  border-left: 5px solid var(--orange);
+  border-top: 5px solid var(--orange);
+  border-radius: 12px 0 0 0;
+}
+.experience-card {
+  position: absolute; bottom: 0; right: 0;
+  padding: 22px 25px; background: var(--navy);
+  color: white; border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.experience-card strong { display: block; font-size: 29px; }
+.experience-card span { font-size: 11px; color: #d4e6ff; }
+.about-copy h2 {
+  color: var(--navy); font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.2; margin: 15px 0 20px;
+  letter-spacing: -1.4px;
+}
+.about-copy > p { font-size: 14px; line-height: 1.95; color: var(--muted); }
+.check-list { list-style: none; margin: 25px 0 30px; display: grid; gap: 14px; }
+.check-list li { display: flex; gap: 12px; align-items: center; font-size: 13px; font-weight: 700; }
+.check {
+  display: grid; place-items: center; flex: 0 0 25px;
+  width: 25px; height: 25px; border-radius: 50%;
+  background: #fff0e7; color: var(--orange); font-weight: 900;
+}
+
+/* Services */
+.services { background: var(--light); }
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+.service-card {
+  background: white;
+  border: 1px solid #e7eef6;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: .35s ease;
+}
+.service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow); }
+.service-card img { width: 100%; height: 220px; object-fit: cover; transition: .5s; }
+.service-card:hover img { transform: scale(1.04); }
+.service-image { overflow: hidden; }
+.service-body { padding: 25px; }
+.service-icon {
+  display: grid; place-items: center;
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  background: #fff0e7; color: var(--orange);
+  font-size: 24px; margin-top: -49px;
+  position: relative; z-index: 1;
+  border: 4px solid white;
+}
+.service-body h3 { color: var(--navy); font-size: 18px; margin: 16px 0 10px; }
+.service-body p { color: var(--muted); font-size: 13px; line-height: 1.85; }
+.learn { display: inline-block; margin-top: 18px; color: var(--orange); font-size: 12px; font-weight: 900; }
+
+/* Benefits banner */
+.benefits {
+  background: var(--navy); color: white;
+  position: relative; overflow: hidden;
+}
+.benefits::after {
+  content: "☼"; position: absolute;
+  font-size: 340px; right: -20px; top: -105px;
+  color: #ffffff08; pointer-events: none;
+}
+.benefits .section-head h2 { color: white; }
+.benefits .section-head p { color: #c7d8ec; }
+.benefit-grid {
+  position: relative; z-index: 1;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+}
+.benefit {
+  padding: 28px 21px; border: 1px solid #ffffff20;
+  border-radius: 13px; background: #ffffff08;
+  transition: .3s;
+}
+.benefit:hover { background: #ffffff12; transform: translateY(-5px); }
+.benefit-icon { font-size: 31px; margin-bottom: 18px; }
+.benefit h3 { font-size: 16px; margin-bottom: 10px; }
+.benefit p { color: #c8d9ed; font-size: 12px; line-height: 1.9; }
+
+/* Process */
+.process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; }
+.process { position: relative; text-align: center; padding: 10px; }
+.process-num {
+  width: 63px; height: 63px; margin: 0 auto 22px;
+  border-radius: 18px; display: grid; place-items: center;
+  background: var(--light); color: var(--orange);
+  font-size: 22px; font-weight: 900;
+  border: 1px solid #e6edf6;
+}
+.process h3 { color: var(--navy); font-size: 16px; margin-bottom: 10px; }
+.process p { color: var(--muted); font-size: 12px; line-height: 1.8; }
+
+/* Call to action */
+.cta { padding: 0 0 95px; }
+.cta-box {
+  border-radius: 18px; padding: 58px;
+  color: white; background:
+  linear-gradient(110deg, rgba(0,43,92,.98), rgba(6,67,135,.88)),
+  url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1500&q=80") center/cover;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 30px;
+}
+.cta-box h2 { font-size: clamp(27px, 4vw, 39px); line-height: 1.2; margin: 12px 0; }
+.cta-box p { color: #d5e6f9; font-size: 13px; line-height: 1.8; max-width: 580px; }
+
+/* Contact */
+.contact { background: var(--light); }
+.contact-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 55px; }
+.contact-info h3 { color: var(--navy); font-size: 27px; margin: 14px 0; }
+.contact-info > p { color: var(--muted); font-size: 13px; line-height: 1.9; }
+.contact-item { display: flex; gap: 15px; align-items: flex-start; margin-top: 25px; }
+.contact-item .ci {
+  width: 44px; height: 44px; flex: 0 0 44px;
+  display: grid; place-items: center;
+  color: var(--orange); background: white;
+  border-radius: 12px; font-size: 19px;
+}
+.contact-item strong { color: var(--navy); font-size: 13px; display: block; margin: 3px 0 6px; }
+.contact-item span, .contact-item a { color: var(--muted); font-size: 12px; line-height: 1.8; }
+.contact-form {
+  background: white; padding: 32px;
+  border-radius: 15px; box-shadow: var(--shadow);
+}
+.contact-form h3 { color: var(--navy); font-size: 23px; margin-bottom: 8px; }
+.contact-form > p { color: var(--muted); font-size: 12px; margin-bottom: 24px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field.full { grid-column: 1 / -1; }
+.field label { font-size: 11px; color: var(--navy); font-weight: 800; }
+.field input, .field select, .field textarea {
+  width: 100%; border: 1px solid #dfe7f0;
+  border-radius: 8px; padding: 13px;
+  outline: none; background: #fbfdff;
+  color: var(--text); font-size: 12px;
+}
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--orange); }
+.field textarea { resize: vertical; min-height: 100px; }
+.contact-form button { width: 100%; margin-top: 20px; }
+
+/* Footer */
+footer { background: #001d3e; color: white; padding: 60px 0 0; }
+.footer-grid {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 38px; padding-bottom: 42px;
+}
+.footer-brand .brand { color: white; }
+.footer-brand .brand small { color: #b8cbe1; }
+.footer-brand > p { color: #b8cbe1; font-size: 12px; line-height: 1.9; margin-top: 20px; max-width: 300px; }
+footer h4 { font-size: 14px; margin-bottom: 20px; }
+.footer-links { display: grid; gap: 13px; }
+.footer-links a, .footer-links span { font-size: 12px; color: #b8cbe1; line-height: 1.7; }
+.footer-links a:hover { color: var(--orange); }
+.footer-bottom {
+  border-top: 1px solid #ffffff1c;
+  padding: 22px 0; color: #b8cbe1;
+  font-size: 11px; display: flex;
+  justify-content: space-between; gap: 15px; flex-wrap: wrap;
+}
+.footer-bottom span { color: var(--orange); }
+
+/* Floating WhatsApp */
+.whatsapp {
+  position: fixed; z-index: 999;
+  right: 22px; bottom: 22px;
+  width: 57px; height: 57px;
+  border-radius: 50%; background: #20c76a;
+  color: white; display: grid; place-items: center;
+  box-shadow: 0 8px 25px #0003;
+  transition: .3s;
+}
+.whatsapp:hover { transform: scale(1.1); }
+.whatsapp svg { width: 29px; height: 29px; fill: currentColor; }
+
+/* Scroll animations */
+.reveal { opacity: 0; transform: translateY(25px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+@keyframes rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+@media (max-width: 980px) {
+  .nav-links { gap: 15px; }
+  .nav-links a { font-size: 12px; }
+  .nav .btn { padding: 12px 15px; }
+  .about-grid { gap: 35px; }
+  .benefit-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .service-grid { gap: 15px; }
+  .service-body { padding: 20px; }
+}
+
+@media (max-width: 760px) {
+  .topbar-inner { justify-content: center; text-align: center; }
+  .topbar-inner > span:first-child { display: none; }
+  .nav { min-height: 72px; }
+  .brand { font-size: 18px; }
+  .brand-mark { width: 39px; height: 39px; font-size: 24px; }
+  .menu-btn { display: block; margin-left: auto; }
+  .nav > .btn { display: none; }
+  .nav-links {
+    display: none; position: absolute; top: 72px;
+    left: 0; right: 0; background: white;
+    padding: 22px 5%; box-shadow: 0 15px 20px #002b5c12;
+    flex-direction: column; align-items: stretch; gap: 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 14px 0; border-bottom: 1px solid #edf1f7; font-size: 14px; }
+  .hero { min-height: 590px; }
+  .hero-slide::before { background: linear-gradient(90deg, rgba(0,26,58,.93), rgba(0,43,92,.65)); }
+  .hero-content { padding: 70px 0 100px; }
+  .hero h1 { letter-spacing: -1.5px; }
+  .hero p { font-size: 14px; }
+  .slider-arrow { width: 36px; height: 36px; font-size: 17px; }
+  .prev { left: 10px; } .next { right: 10px; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat { border-bottom: 1px solid #eaf0f7; padding: 21px 10px; }
+  .stat:nth-child(2) { border-right: 0; }
+  .stat:nth-child(3), .stat:nth-child(4) { border-bottom: 0; }
+  .stat strong { font-size: 25px; }
+  section { padding: 70px 0; }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 38px; }
+  .about-visual img { height: 330px; }
+  .service-grid { grid-template-columns: 1fr; }
+  .service-card img { height: 235px; }
+  .benefit-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .benefit { padding: 21px 16px; }
+  .process-grid { grid-template-columns: repeat(2, 1fr); gap: 25px 10px; }
+  .cta { padding-bottom: 70px; }
+  .cta-box { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
+  .contact-form { padding: 23px 18px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px 20px; }
+}
+
+@media (max-width: 390px) {
+  .hero-actions .btn { width: 100%; }
+  .form-grid { grid-template-columns: 1fr; }
+  .field.full { grid-column: auto; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>☀ Smart Energy. Sustainable Future.</span>
+    <span>Serving Vapi, Valsad & Gujarat &nbsp; | &nbsp;
+      <a href="mailto:info@inteksolar.in">✉ Contact Us</a>
+    </span>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a href="#home" class="brand" aria-label="Intek Solar Systems home">
+      <div class="brand-mark">☼</div>
+      <div>INTEK <span style="color:var(--orange)">SOLAR</span>
+        <small>SYSTEMS · GUJARAT</small>
+      </div>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#benefits">Why Solar?</a>
+      <a href="#process">Our Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn">Get Free Quote ↗</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home" aria-label="Solar solutions">
+    <div class="hero-slide slide-1 active" data-slide="0"></div>
+    <div class="hero-slide slide-2" data-slide="1"></div>
+    <div class="hero-slide slide-3" data-slide="2"></div>
+
+    <div class="hero-content" id="heroContent">
+      <div class="eyebrow" id="heroEyebrow">Powering a Brighter Tomorrow</div>
+      <h1 id="heroTitle">Your Roof.<br>Your Power.<br><span>Your Future.</span></h1>
+      <p id="heroText">Make the switch to smart solar energy with Intek Solar Systems. Discover a cleaner, smarter way to power your home and business.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn">Get Your Solar Quote <span>↗</span></a>
+        <a href="#services" class="btn btn-outline">Explore Solutions →</a>
+      </div>
+      <div class="hero-note"><span>✦</span> Residential & Commercial Rooftop Solar Solutions</div>
+    </div>
+
+    <button class="slider-arrow prev" id="prevSlide" aria-label="Previous slide">‹</button>
+    <button class="slider-arrow next" id="nextSlide" aria-label="Next slide">›</button>
+
+    <div class="slider-controls" aria-label="Choose slide">
+      <button class="dot active" data-dot="0" aria-label="Slide 1"></button>
+      <button class="dot" data-dot="1" aria-label="Slide 2"></button>
+      <button class="dot" data-dot="2" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <div class="container stats-wrap">
+    <div class="stats reveal">
+      <div class="stat"><strong><span>01</span></strong><p>Customer-First Approach</p></div>
+      <div class="stat"><strong><span>☀</span> Solar</strong><p>Clean & Renewable Energy</p></div>
+      <div class="stat"><strong><span>360°</span></strong><p>End-to-End Solar Support</p></div>
+      <div class="stat"><strong><span>GJ</span></strong><p>Local Focus Across Gujarat</p></div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <img
+          src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1000&q=85"
+          alt="Solar panels installed on a rooftop"
+          loading="lazy">
+        <div class="experience-card">
+          <strong>Go Solar ☀</strong>
+          <span>A smarter energy choice</span>
+        </div>
+      </div>
+
+      <div class="about-copy reveal">
+        <div class="kicker">Who We Are</div>
+        <h2>Powering Gujarat with <span style="color:var(--orange)">Smarter Solar</span> Solutions</h2>
+        <p>Intek Solar Systems, a unit of Intek Technologies, is focused on helping homes and businesses explore reliable rooftop solar energy. We bring together modern solar technology, thoughtful system planning and customer-focused service.</p>
+        <ul class="check-list">
+          <li><span class="check">✓</span> Residential rooftop solar solutions</li>
+          <li><span class="check">✓</span> Commercial and industrial solar systems</li>
+          <li><span class="check">✓</span> Solar system planning and installation support</li>
+          <li><span class="check">✓</span> Guidance on applicable solar subsidies and processes</li>
+        </ul>
+        <a href="#contact" class="btn">Let's Discuss Your Project ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Our Solar Solutions</div>
+        <h2>Clean Energy for Every Roof</h2>
+        <p>Explore solar solutions designed around your property, energy needs and long-term goals.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=850&q=85" alt="Residential solar panels" loading="lazy">
+          </div>
+          <div class="service-body">
+            <div class="service-icon">⌂</div>
+            <h3>Residential Solar</h3>
+            <p>Explore rooftop solar for your home and make better use of clean, renewable energy.</p>
+            <a href="#contact" class="learn">GET HOME SOLAR QUOTE ↗</a>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=850&q=85" alt="Commercial solar installation" loading="lazy">
+          </div>
+          <div class="service-body">
+            <div class="service-icon">▦</div>
+            <h3>Commercial Solar</h3>
+            <p>Solar solutions for offices, shops, hospitals and other commercial properties.</p>
+            <a href="#contact" class="learn">DISCUSS YOUR PROJECT ↗</a>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=850&q=85" alt="Large-scale clean energy infrastructure" loading="lazy">
+          </div>
+          <div class="service-body">
+            <div class="service-icon">⚡</div>
+            <h3>Industrial Solar</h3>
+            <p>Plan solar installations for industrial facilities and businesses with substantial energy needs.</p>
+            <a href="#contact" class="learn">REQUEST A CONSULTATION ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">The Solar Advantage</div>
+        <h2>A Brighter Choice for Your Future</h2>
+        <p>Solar energy can help you make informed energy decisions while contributing to a cleaner environment.</p>
+      </div>
+
+      <div class="benefit-grid">
+        <div class="benefit reveal">
+          <div class="benefit-icon">₹</div>
+          <h3>Potential Bill Savings</h3>
+          <p>Generate electricity from sunlight and potentially reduce your grid electricity purchases.</p>
+        </div>
+        <div class="benefit reveal">
+          <div class="benefit-icon">☀</div>
+          <h3>Clean Energy</h3>
+          <p>Use a renewable source of energy and reduce dependence on conventional electricity generation.</p>
+        </div>
+        <div class="benefit reveal">
+          <div class="benefit-icon">⌂</div>
+          <h3>Use Your Rooftop</h3>
+          <p>Turn suitable unused rooftop space into a productive source of electricity.</p>
+        </div>
+        <div class="benefit reveal">
+          <div class="benefit-icon">↗</div>
+          <h3>Long-Term Planning</h3>
+          <p>Review system performance, costs and expected savings before making your investment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Simple & Transparent</div>
+        <h2>Your Journey to Solar Starts Here</h2>
+        <p>Our proposed process helps you understand each stage, from the first discussion to installation.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process reveal">
+          <div class="process-num">01</div>
+          <h3>Share Your Needs</h3>
+          <p>Tell us about your property, electricity usage and goals.</p>
+        </div>
+        <div class="process reveal">
+          <div class="process-num">02</div>
+          <h3>Plan Your System</h3>
+          <p>Review suitable system capacity, equipment and project costs.</p>
+        </div>
+        <div class="process reveal">
+          <div class="process-num">03</div>
+          <h3>Installation</h3>
+          <p>Coordinate the installation and applicable approvals as agreed.</p>
+        </div>
+        <div class="process reveal">
+          <div class="process-num">04</div>
+          <h3>Go Solar</h3>
+          <p>Complete the commissioning process and understand your system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container cta">
+    <div class="cta-box reveal">
+      <div>
+        <div class="kicker">Make the Smart Energy Move</div>
+        <h2>Ready to Explore Solar for Your Property?</h2>
+        <p>Get in touch with Intek Solar Systems to discuss your requirements and receive a project-specific quotation.</p>
+      </div>
+      <a href="#contact" class="btn">Get a Free Quote ↗</a>
+    </div>
+  </div>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Let's Connect</div>
+        <h2>Start Your Solar Journey</h2>
+        <p>Share a few details about your project. We'll help you understand the next steps.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="kicker">Contact Intek</div>
+          <h3>Let's Talk Solar.</h3>
+          <p>Looking for residential, commercial or industrial rooftop solar? Contact our team to discuss your requirements.</p>
+
+          <div class="contact-item">
+            <div class="ci">⌖</div>
+            <div><strong>Our Service Area</strong><span>Vapi, Valsad and across Gujarat, India</span></div>
+          </div>
+          <div class="contact-item">
+            <div class="ci">✉</div>
+            <div><strong>Email Us</strong><a href="mailto:info@inteksolar.in">info@inteksolar.in</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="ci">◎</div>
+            <div><strong>Visit Our Website</strong><a href="https://www.inteksolar.in">www.inteksolar.in</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="ci">☀</div>
+            <div><strong>Our Brand</strong><span>Intek Solar Systems<br>A unit of Intek Technologies</span></div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="quoteForm">
+          <h3>Request a Solar Quote</h3>
+          <p>Fill out the form to prepare your enquiry.</p>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="customerName">Full Name *</label>
+              <input id="customerName" name="name" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="customerPhone">Mobile Number *</label>
+              <input id="customerPhone" name="phone" type="tel" inputmode="numeric" pattern="[0-9+() -]{10,16}" placeholder="Your phone number" required>
+            </div>
+            <div class="field">
+              <label for="solarType">Solar Requirement *</label>
+              <select id="solarType" name="requirement" required>
+                <option value="">Select requirement</option>
+                <option>Residential Solar</option>
+                <option>Commercial Solar</option>
+                <option>Industrial Solar</option>
+                <option>Solar System Upgrade</option>
+                <option>Other Enquiry</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="customerCity">City / Location</label>
+              <input id="customerCity" name="city" placeholder="e.g. Vapi, Valsad">
+            </div>
+            <div class="field full">
+              <label for="customerMessage">Project Details</label>
+              <textarea id="customerMessage" name="message" placeholder="Monthly electricity bill, property type or any questions..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Send Enquiry on WhatsApp ↗</button>
+          <p style="margin:14px 0 0;line-height:1.7">Your enquiry will open in WhatsApp for you to review and send.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <div class="brand-mark">☼</div>
+          <div>INTEK <span style="color:var(--orange)">SOLAR</span><small>SYSTEMS · GUJARAT</small></div>
+        </a>
+        <p>Smarter rooftop solar solutions for homes and businesses. Powering a cleaner future, one rooftop at a time.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Our Services</a>
+          <a href="#benefits">Why Solar?</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Our Solutions</h4>
+        <div class="footer-links">
+          <a href="#services">Residential Solar</a>
+          <a href="#services">Commercial Solar</a>
+          <a href="#services">Industrial Solar</a>
+          <a href="#contact">Solar Consultation</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <div class="footer-links">
+          <span>Vapi, Valsad, Gujarat</span>
+          <a href="mailto:info@inteksolar.in">info@inteksolar.in</a>
+          <a href="https://www.inteksolar.in">inteksolar.in</a>
+          <a href="#contact">Request a Quote ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> Intek Solar Systems. All rights reserved.</div>
+      <div>A unit of Intek Technologies · <span>Powering a Brighter Future ☀</span></div>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp" id="whatsappLink" href="#" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16 .8A15 15 0 0 0 3.1 23.4L1 31l7.8-2A15.2 15.2 0 1 0 16 .8Zm0 27.5a12.3 12.3 0 0 1-6.2-1.7l-.5-.3-4.6 1.2L6 23l-.3-.5a12.3 12.3 0 1 1 10.3 5.8Zm6.8-9.2c-.4-.2-2.3-1.2-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.3-2.1-2.7-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7l-1.2-2.8c-.3-.7-.6-.6-.9-.6h-.8c-.3 0-.7.1-1.1.5-.4.4-1.4 1.4-1.4 3.3s1.4 3.8 1.6 4.1c.2.3 2.8 4.3 6.8 6 .9.4 1.6.6 2.1.7.9.3 1.8.2 2.5.1.8-.1 2.3-.9 2.6-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5Z"/>
+  </svg>
+</a>
+
+<script>
+// =======================================================
+// INTEK SOLAR SYSTEMS - CUSTOMIZE YOUR BUSINESS DETAILS
+// =======================================================
+
+// IMPORTANT: Replace this with your business WhatsApp number.
+// Use country code + number, digits only. Example: 919876543210
+const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+
+const slides = [
+  {
+    eyebrow: "Powering a Brighter Tomorrow",
+    title: "Your Roof.<br>Your Power.<br><span>Your Future.</span>",
+    text: "Make the switch to smart solar energy with Intek Solar Systems. Discover a cleaner, smarter way to power your home and business."
+  },
+  {
+    eyebrow: "Smart Solar for Modern Living",
+    title: "Turn Sunlight<br>Into <span>Smart Savings.</span>",
+    text: "Explore a rooftop solar system suited to your electricity usage, available space and energy goals."
+  },
+  {
+    eyebrow: "For Homes & Businesses",
+    title: "A Cleaner<br>Energy <span>Future.</span>",
+    text: "From homes to commercial properties, take the next step towards renewable energy with Intek Solar Systems."
+  }
+];
+
+let currentSlide = 0;
+let sliderTimer;
+
+const slideElements = document.querySelectorAll(".hero-slide");
+const dots = document.querySelectorAll(".dot");
+const heroContent = document.getElementById("heroContent");
+
+function showSlide(index) {
+  currentSlide = (index + slides.length) % slides.length;
+
+  slideElements.forEach((el, i) =>
+    el.classList.toggle("active", i === currentSlide)
+  );
+
+  dots.forEach((dot, i) =>
+    dot.classList.toggle("active", i === currentSlide)
+  );
+
+  document.getElementById("heroEyebrow").textContent =
+    slides[currentSlide].eyebrow;
+  document.getElementById("heroTitle").innerHTML =
+    slides[currentSlide].title;
+  document.getElementById("heroText").textContent =
+    slides[currentSlide].text;
+
+  heroContent.style.animation = "none";
+  void heroContent.offsetWidth;
+  heroContent.style.animation = "rise .65s ease";
+}
+
+function startSlider() {
+  clearInterval(sliderTimer);
+  sliderTimer = setInterval(() => showSlide(currentSlide + 1), 6000);
+}
+
+document.getElementById("prevSlide").addEventListener("click", () => {
+  showSlide(currentSlide - 1);
+  startSlider();
+});
+
+document.getElementById("nextSlide").addEventListener("click", () => {
+  showSlide(currentSlide + 1);
+  startSlider();
+});
+
+dots.forEach(dot => {
+  dot.addEventListener("click", () => {
+    showSlide(Number(dot.dataset.dot));
+    startSlider();
+  });
+});
+
+startSlider();
+
+// Mobile navigation
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", String(isOpen));
+  menuBtn.textContent = isOpen ? "✕" : "☰";
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.textContent = "☰";
+  });
+});
+
+// Scroll reveal animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+// Dynamic copyright year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// WhatsApp contact
+function validWhatsAppNumber() {
+  return /^\d{10,15}$/.test(WHATSAPP_NUMBER);
+}
+
+function openWhatsApp(message) {
+  if (!validWhatsAppNumber()) {
+    alert("Please configure your business WhatsApp number in the HTML code first.");
+    return;
+  }
+  const url = "https://wa.me/" + WHATSAPP_NUMBER +
+              "?text=" + encodeURIComponent(message);
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+
+document.getElementById("whatsappLink").addEventListener("click", (event) => {
+  event.preventDefault();
+  openWhatsApp("Hello Intek Solar Systems, I would like to enquire about rooftop solar.");
+});
+
+// The form prepares the enquiry in WhatsApp.
+// It does not store customer data or send anything automatically.
+document.getElementById("quoteForm").addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const form = event.currentTarget;
+  if (!form.reportValidity()) return;
+
+  const data = new FormData(form);
+  const message = [
+    "Hello Intek Solar Systems, I would like a solar quotation.",
+    "",
+    "Name: " + data.get("name"),
+    "Mobile: " + data.get("phone"),
+    "Requirement: " + data.get("requirement"),
+    "Location: " + (data.get("city") || "Not provided"),
+    "Project details: " + (data.get("message") || "Not provided")
+  ].join("\n");
+
+  openWhatsApp(message);
+});
+</script>
+
+</body>
+</html>
