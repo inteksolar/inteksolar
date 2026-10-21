@@ -726,6 +726,409 @@ footer h4 { font-size: 14px; margin-bottom: 20px; }
     </div>
   </section>
 
+  
+<!-- CUSTOMER REVIEWS SECTION -->
+<section class="reviews-section" id="reviews">
+  <div class="reviews-container">
+
+    <div class="reviews-heading">
+      <span class="reviews-label">CUSTOMER TESTIMONIALS</span>
+      <h2>Our Customers. <span>Their Experience.</span></h2>
+      <p>
+        Every solar journey is different. We value our customers'
+        feedback and strive to make every project experience better.
+      </p>
+    </div>
+
+    <!-- Review summary -->
+    <div class="reviews-summary">
+      <div class="summary-icon">★</div>
+      <div>
+        <h3>Customer Feedback Matters</h3>
+        <p>Have worked with us? Share your genuine experience.</p>
+      </div>
+      <a href="contact.html" class="review-cta">Share Your Feedback ↗</a>
+    </div>
+
+    <!-- Review cards -->
+    <div class="reviews-grid">
+
+      <article class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">C</div>
+          <div class="review-person">
+            <h3>Customer Name</h3>
+            <span>Residential Solar Customer</span>
+          </div>
+          <span class="review-quote">“</span>
+        </div>
+
+        <div class="review-stars" aria-label="Customer rating">
+          ★★★★★
+        </div>
+
+        <p class="review-text">
+          Add the customer's genuine feedback here about their
+          experience with Intek Solar Systems.
+        </p>
+
+        <div class="review-bottom">
+          <span>Residential Solar</span>
+          <span class="verified-label">Customer Review</span>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-top">
+          <div class="review-avatar avatar-orange">C</div>
+          <div class="review-person">
+            <h3>Customer Name</h3>
+            <span>Commercial Customer</span>
+          </div>
+          <span class="review-quote">“</span>
+        </div>
+
+        <div class="review-stars" aria-label="Customer rating">
+          ★★★★★
+        </div>
+
+        <p class="review-text">
+          Replace this sample text with an authentic testimonial
+          describing the customer's actual project experience.
+        </p>
+
+        <div class="review-bottom">
+          <span>Commercial Solar</span>
+          <span class="verified-label">Customer Review</span>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-top">
+          <div class="review-avatar avatar-blue">C</div>
+          <div class="review-person">
+            <h3>Customer Name</h3>
+            <span>Solar Project Customer</span>
+          </div>
+          <span class="review-quote">“</span>
+        </div>
+
+        <div class="review-stars" aria-label="Customer rating">
+          ★★★★★
+        </div>
+
+        <p class="review-text">
+          Add real feedback about communication, product selection,
+          installation or support, as applicable to this customer.
+        </p>
+
+        <div class="review-bottom">
+          <span>Solar Solutions</span>
+          <span class="verified-label">Customer Review</span>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="reviews-footer">
+      <div>
+        <h3>Have we helped you go solar?</h3>
+        <p>Your feedback helps other customers make informed decisions.</p>
+      </div>
+
+      <!-- Replace the URL with your Google review link -->
+      <a href="contact.html" class="google-review-btn">
+        <span class="google-g">G</span>
+        Write a Review
+        <span>↗</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.reviews-section {
+  padding: 85px 20px;
+  background: #f5f8fc;
+  font-family: 'Inter', 'Lato', Arial, sans-serif;
+}
+
+.reviews-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.reviews-heading {
+  max-width: 730px;
+  text-align: center;
+  margin: 0 auto 42px;
+}
+
+.reviews-label {
+  color: #ff6600;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.reviews-heading h2 {
+  color: #002b5c;
+  font-size: clamp(29px, 4vw, 43px);
+  line-height: 1.25;
+  margin: 15px 0;
+  letter-spacing: -1px;
+}
+
+.reviews-heading h2 span {
+  color: #ff6600;
+}
+
+.reviews-heading > p {
+  color: #6b7a90;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.reviews-summary {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 23px 25px;
+  margin-bottom: 28px;
+  border: 1px solid #e4ebf3;
+  border-radius: 16px;
+  background: white;
+}
+
+.summary-icon {
+  flex: 0 0 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #fff0e5;
+  color: #ff6600;
+  font-size: 29px;
+}
+
+.reviews-summary h3 {
+  color: #002b5c;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.reviews-summary p {
+  color: #6b7a90;
+  font-size: 13px;
+}
+
+.review-cta {
+  margin-left: auto;
+  white-space: nowrap;
+  background: #002b5c;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.review-cta:hover {
+  background: #ff6600;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.review-card {
+  background: white;
+  border: 1px solid #e4ebf3;
+  border-radius: 17px;
+  padding: 25px 23px 20px;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,43,92,.08);
+}
+
+.review-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-avatar {
+  flex: 0 0 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e5eefb;
+  color: #064387;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.avatar-orange {
+  background: #fff0e5;
+  color: #ff6600;
+}
+
+.avatar-blue {
+  background: #e4f4ff;
+  color: #064387;
+}
+
+.review-person {
+  min-width: 0;
+}
+
+.review-person h3 {
+  color: #002b5c;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.review-person span {
+  color: #7a8798;
+  font-size: 11px;
+}
+
+.review-quote {
+  margin-left: auto;
+  align-self: flex-start;
+  color: #ff6600;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.review-stars {
+  color: #f4a51c;
+  font-size: 17px;
+  letter-spacing: 3px;
+  margin: 21px 0 13px;
+}
+
+.review-text {
+  min-height: 85px;
+  color: #58677c;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.review-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #edf0f5;
+  color: #6b7a90;
+  font-size: 11px;
+}
+
+.verified-label {
+  color: #064387;
+  font-weight: 700;
+}
+
+.reviews-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px 30px;
+  margin-top: 28px;
+  border-radius: 17px;
+  background: #002b5c;
+  color: white;
+}
+
+.reviews-footer h3 {
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
+.reviews-footer p {
+  color: #d6e3f4;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.google-review-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  padding: 13px 17px;
+  border-radius: 9px;
+  background: white;
+  color: #002b5c;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.google-g {
+  color: #4285f4;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+@media (max-width: 850px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .reviews-grid .review-card:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-section {
+    padding: 60px 16px;
+  }
+
+  .reviews-summary {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .review-cta {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-grid .review-card:last-child {
+    grid-column: auto;
+  }
+
+  .review-text {
+    min-height: 0;
+  }
+
+  .reviews-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 25px 22px;
+  }
+}
+</style>
+
   <section id="process">
     <div class="container">
       <div class="section-head reveal">
