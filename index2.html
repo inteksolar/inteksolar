@@ -725,7 +725,258 @@ footer h4 { font-size: 14px; margin-bottom: 20px; }
       </div>
     </div>
   </section>
+  
+<!-- OUR PARTNERS SECTION -->
+<section class="partners-section" id="partners">
+  <div class="partners-container">
 
+    <div class="partners-heading">
+      <span class="partners-tag">OUR PARTNERS</span>
+      <h2>Strong Partnerships.<br>
+        <span>Smarter Solar Solutions.</span>
+      </h2>
+      <p>
+        We collaborate with trusted solar manufacturers,
+        technology providers and industry partners to deliver
+        reliable and efficient solar energy solutions.
+      </p>
+    </div>
+
+    <div class="partners-grid">
+
+      <!-- Partner 1 -->
+      <div class="partner-card">
+        <div class="partner-logo">
+          <img src="images/partner-1.png"
+               alt="Solar Partner 1 Logo">
+        </div>
+        <h3>Solar Partner 1</h3>
+        <p>Solar Module Partner</p>
+      </div>
+
+      <!-- Partner 2 -->
+      <div class="partner-card">
+        <div class="partner-logo">
+          <img src="images/partner-2.png"
+               alt="Solar Partner 2 Logo">
+        </div>
+        <h3>Solar Partner 2</h3>
+        <p>Solar Technology Partner</p>
+      </div>
+
+      <!-- Partner 3 -->
+      <div class="partner-card">
+        <div class="partner-logo">
+          <img src="images/partner-3.png"
+               alt="Solar Partner 3 Logo">
+        </div>
+        <h3>Solar Partner 3</h3>
+        <p>Solar Solutions Partner</p>
+      </div>
+
+      <!-- Partner 4 -->
+      <div class="partner-card">
+        <div class="partner-logo">
+          <img src="images/partner-4.png"
+               alt="Solar Partner 4 Logo">
+        </div>
+        <h3>Solar Partner 4</h3>
+        <p>Installation & Support Partner</p>
+      </div>
+
+      <!-- Partner 5 -->
+      <div class="partner-card">
+        <div class="partner-logo">
+          <img src="images/partner-1.png"
+               alt="Solar Partner 1 Logo">
+        </div>
+        <h3>Solar Partner 1</h3>
+        <p>Solar Module Partner</p>
+      </div>
+
+      <!-- Partner 6 -->
+      <div class="partner-card">
+        <div class="partner-logo">
+          <img src="images/partner-2.png"
+               alt="Solar Partner 2 Logo">
+        </div>
+        <h3>Solar Partner 2</h3>
+        <p>Solar Technology Partner</p>
+      </div>
+
+      <!-- Partner 7 -->
+      <div class="partner-card">
+        <div class="partner-logo">
+          <img src="images/partner-3.png"
+               alt="Solar Partner 3 Logo">
+        </div>
+        <h3>Solar Partner 3</h3>
+        <p>Solar Solutions Partner</p>
+      </div>
+
+      <!-- Partner 8 -->
+      <div class="partner-card">
+        <div class="partner-logo">
+          <img src="images/partner-4.png"
+               alt="Solar Partner 4 Logo">
+        </div>
+        <h3>Solar Partner 4</h3>
+        <p>Installation & Support Partner</p>
+      </div>
+
+    </div>
+
+    <div class="partners-footer">
+      <span class="partners-footer-icon">✦</span>
+      <p>Building a brighter future, together.</p>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.partners-section {
+  padding: 85px 20px;
+  background: #f5f8fc;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+.partners-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.partners-heading {
+  max-width: 700px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.partners-tag {
+  display: inline-block;
+  color: #ff6600;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.partners-heading h2 {
+  color: #002b5c;
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.2;
+  margin: 0 0 18px;
+  font-weight: 800;
+}
+
+.partners-heading h2 span {
+  color: #ff6600;
+}
+
+.partners-heading > p {
+  color: #617087;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.partner-card {
+  background: #ffffff;
+  border: 1px solid #e5ebf3;
+  border-radius: 18px;
+  padding: 28px 18px 25px;
+  text-align: center;
+  transition: transform .3s ease,
+              box-shadow .3s ease,
+              border-color .3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-7px);
+  border-color: #ff6600;
+  box-shadow: 0 15px 35px rgba(0, 43, 92, .10);
+}
+
+.partner-logo {
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 85px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.partner-card h3 {
+  color: #002b5c;
+  font-size: 17px;
+  margin: 0 0 9px;
+  font-weight: 800;
+}
+
+.partner-card p {
+  color: #738095;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.partners-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 38px;
+  color: #002b5c;
+  font-weight: 700;
+}
+
+.partners-footer p {
+  margin: 0;
+}
+
+.partners-footer-icon {
+  color: #ff6600;
+  font-size: 24px;
+}
+
+@media (max-width: 850px) {
+  .partners-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .partners-section {
+    padding: 65px 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .partner-card {
+    padding: 22px 12px;
+  }
+
+  .partner-logo {
+    height: 80px;
+  }
+
+  .partner-card h3 {
+    font-size: 15px;
+  }
+}
+</style>
   
 <!-- CUSTOMER REVIEWS SECTION -->
 <section class="reviews-section" id="reviews">
