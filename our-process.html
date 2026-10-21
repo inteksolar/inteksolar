@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Our Process | Intek Solar Systems</title>
+  <meta name="description" content="Discover how Intek Solar Systems guides customers through solar enquiry, site assessment, quotation, approvals, installation and system handover in South Gujarat.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue: #002b5c;
+      --blue2: #064387;
+      --orange: #ff6600;
+      --light: #f5f8fc;
+      --text: #26364b;
+      --muted: #6b7a90;
+      --white: #ffffff;
+      --border: #e4ebf3;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background: white;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--blue);
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .brand-mark {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      color: white;
+      background: linear-gradient(135deg, var(--blue), var(--blue2));
+      font-size: 24px;
+    }
+
+    .brand small {
+      display: block;
+      margin-top: 4px;
+      color: var(--orange);
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      color: var(--orange);
+    }
+
+    .nav-cta {
+      padding: 12px 17px;
+      border-radius: 9px;
+      background: var(--orange);
+      color: white !important;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0 105px;
+      color: white;
+      background:
+        linear-gradient(100deg, rgba(0,25,57,.95), rgba(0,43,92,.72)),
+        url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2000&q=85')
+        center/cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      right: -130px;
+      bottom: -200px;
+      border: 55px solid rgba(255,102,0,.16);
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 790px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 19px;
+      color: #ffb47f;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 3px;
+      background: var(--orange);
+    }
+
+    .hero h1 {
+      margin-bottom: 23px;
+      font-size: clamp(39px, 6vw, 66px);
+      line-height: 1.12;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: #ff8738;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin-bottom: 30px;
+      color: #e0e9f5;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 14px 21px;
+      border-radius: 9px;
+      background: var(--orange);
+      color: white;
+      font-size: 13px;
+      font-weight: 800;
+      transition: .25s;
+    }
+
+    .btn:hover {
+      background: #e85b00;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      margin-left: 10px;
+      border: 1px solid rgba(255,255,255,.55);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--blue);
+    }
+
+    /* INTRO */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-light {
+      background: var(--light);
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+
+    .section-label {
+      margin-bottom: 12px;
+      color: var(--orange);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .section-title {
+      margin-bottom: 17px;
+      color: var(--blue);
+      font-size: clamp(29px, 4vw, 43px);
+      line-height: 1.25;
+      letter-spacing: -1px;
+    }
+
+    .section-title span {
+      color: var(--orange);
+    }
+
+    .section-desc {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    /* PROCESS TIMELINE */
+    .timeline {
+      position: relative;
+      max-width: 930px;
+      margin: auto;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 38px;
+      bottom: 38px;
+      left: 36px;
+      width: 2px;
+      background: linear-gradient(var(--orange), #ffd0b3);
+    }
+
+    .step {
+      position: relative;
+      display: grid;
+      grid-template-columns: 74px 1fr;
+      gap: 22px;
+      margin-bottom: 23px;
+    }
+
+    .step:last-child {
+      margin-bottom: 0;
+    }
+
+    .step-number {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      place-items: center;
+      width: 74px;
+      height: 74px;
+      border: 5px solid white;
+      border-radius: 20px;
+      background: var(--blue);
+      color: white;
+      font-size: 18px;
+      font-weight: 800;
+      box-shadow: 0 5px 18px rgba(0,43,92,.12);
+    }
+
+    .step:nth-child(even) .step-number {
+      background: var(--orange);
+    }
+
+    .step-content {
+      padding: 24px 28px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: white;
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .step-content:hover {
+      transform: translateX(4px);
+      box-shadow: 0 12px 30px rgba(0,43,92,.07);
+    }
+
+    .step-tag {
+      display: inline-block;
+      margin-bottom: 8px;
+      color: var(--orange);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+    }
+
+    .step-content h3 {
+      margin-bottom: 9px;
+      color: var(--blue);
+      font-size: 19px;
+    }
+
+    .step-content p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .step-content ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      list-style: none;
+      margin-top: 16px;
+    }
+
+    .step-content li {
+      padding: 6px 10px;
+      border-radius: 7px;
+      background: #f1f5fa;
+      color: #52647b;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    /* COMMITMENT */
+    .commit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .commit-card {
+      padding: 30px 26px;
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      background: white;
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .commit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 35px rgba(0,43,92,.08);
+    }
+
+    .commit-icon {
+      display: grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      background: #fff0e5;
+      color: var(--orange);
+      font-size: 26px;
+    }
+
+    .commit-card h3 {
+      margin-bottom: 10px;
+      color: var(--blue);
+      font-size: 17px;
+    }
+
+    .commit-card p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    /* CUSTOMER CHECKLIST */
+    .check-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .check-copy h2 {
+      margin-bottom: 16px;
+      color: var(--blue);
+      font-size: clamp(28px, 4vw, 39px);
+      line-height: 1.25;
+    }
+
+    .check-copy > p {
+      margin-bottom: 23px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 15px;
+      list-style: none;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .tick {
+      display: grid;
+      place-items: center;
+      flex: 0 0 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--orange);
+      color: white;
+      font-size: 12px;
+    }
+
+    .check-panel {
+      padding: 32px;
+      border-radius: 20px;
+      background: var(--blue);
+      color: white;
+    }
+
+    .check-panel h3 {
+      margin-bottom: 14px;
+      font-size: 23px;
+    }
+
+    .check-panel > p {
+      margin-bottom: 23px;
+      color: #d6e3f4;
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .panel-note {
+      padding: 16px;
+      border-left: 3px solid var(--orange);
+      background: rgba(255,255,255,.08);
+      color: #e6edf7;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    /* FAQ */
+    .faq-list {
+      max-width: 850px;
+      margin: auto;
+      display: grid;
+      gap: 13px;
+    }
+
+    .faq-item {
+      padding: 22px 24px;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      background: white;
+    }
+
+    .faq-item h3 {
+      margin-bottom: 8px;
+      color: var(--blue);
+      font-size: 15px;
+    }
+
+    .faq-item p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    /* CTA */
+    .cta {
+      padding: 67px 0;
+      background: linear-gradient(120deg, var(--blue), #07509b);
+      color: white;
+    }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .cta h2 {
+      margin-bottom: 12px;
+      font-size: clamp(28px, 4vw, 39px);
+      line-height: 1.25;
+    }
+
+    .cta p {
+      max-width: 650px;
+      color: #d9e7f7;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+    .footer {
+      padding: 45px 0 22px;
+      background: #001b3b;
+      color: white;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 38px;
+      padding-bottom: 30px;
+    }
+
+    .footer h3 {
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+
+    .footer p,
+    .footer a {
+      color: #bdcbe0;
+      font-size: 13px;
+      line-height: 2;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 5px;
+    }
+
+    .footer a:hover {
+      color: #ff8738;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.13);
+      color: #aabbd2;
+      font-size: 12px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 99;
+      display: grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+      font-size: 25px;
+      box-shadow: 0 6px 22px rgba(0,0,0,.2);
+    }
+
+    @media (max-width: 900px) {
+      .nav-links { gap: 12px; }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .commit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .check-layout { gap: 28px; }
+    }
+
+    @media (max-width: 650px) {
+      .nav { min-height: 70px; }
+      .brand { font-size: 17px; }
+      .brand-mark { width: 38px; height: 38px; }
+      .nav-cta { padding: 10px 12px; font-size: 12px; }
+      .hero { padding: 75px 0; }
+      .hero h1 { letter-spacing: -1px; }
+      .hero p { font-size: 14px; }
+      .btn { padding: 13px 15px; font-size: 12px; }
+      .btn-outline { margin: 12px 0 0; }
+      .section { padding: 60px 0; }
+      .timeline::before { left: 23px; }
+      .step { grid-template-columns: 48px 1fr; gap: 12px; }
+      .step-number {
+        width: 48px;
+        height: 48px;
+        border-width: 3px;
+        border-radius: 14px;
+        font-size: 14px;
+      }
+      .step-content { padding: 20px 17px; }
+      .step-content h3 { font-size: 17px; }
+      .commit-grid { grid-template-columns: 1fr; }
+      .check-layout { grid-template-columns: 1fr; }
+      .check-panel { padding: 25px; }
+      .cta-inner { align-items: flex-start; flex-direction: column; }
+      .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+      .footer-bottom { flex-direction: column; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index2.html">
+        <span class="brand-mark">☀</span>
+        <span>INTEK<small>SOLAR SYSTEMS</small></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index2.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Our Services</a>
+        <a href="our-process.html" class="active">Our Process</a>
+        <a href="contact.html" class="nav-cta">Get a Quote ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="eyebrow">HOW WE WORK</div>
+        <h1>Your Solar Journey.<br>
+          <span>Step by Step.</span>
+        </h1>
+        <p>
+          Going solar starts with understanding your needs.
+          Our process is designed to help you explore your options,
+          understand your quotation and prepare for the next steps
+          towards a rooftop solar project.
+        </p>
+        <a href="contact.html" class="btn">Start Your Solar Enquiry ↗</a>
+        <a href="#process" class="btn btn-outline">See Our Process ↓</a>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section container" id="process">
+      <div class="section-heading">
+        <div class="section-label">OUR WORKFLOW</div>
+        <h2 class="section-title">A Clear Process from Enquiry to <span>Handover</span></h2>
+        <p class="section-desc">
+          Each solar project is different. The steps below explain
+          our typical project workflow; the exact sequence can vary
+          depending on site conditions, approvals and project scope.
+        </p>
+      </div>
+
+      <!-- TIMELINE -->
+      <div class="timeline">
+
+        <article class="step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <span class="step-tag">STEP ONE</span>
+            <h3>Initial Enquiry & Discussion</h3>
+            <p>
+              We begin by understanding your property, electricity
+              consumption, goals and approximate budget. This helps
+              us identify which solar options may suit your needs.
+            </p>
+            <ul>
+              <li>Electricity bill discussion</li>
+              <li>Residential or commercial needs</li>
+              <li>Initial project requirements</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <span class="step-tag">STEP TWO</span>
+            <h3>Site Assessment & Feasibility</h3>
+            <p>
+              Where required, the site is assessed for usable roof
+              area, shading, structure, electrical connection and
+              other factors that affect system design.
+            </p>
+            <ul>
+              <li>Roof suitability</li>
+              <li>Available installation area</li>
+              <li>Technical feasibility</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <span class="step-tag">STEP THREE</span>
+            <h3>System Design & Component Selection</h3>
+            <p>
+              The proposed system is planned around estimated energy
+              needs, available space, inverter and module compatibility,
+              electrical protection and applicable requirements.
+            </p>
+            <ul>
+              <li>Capacity planning</li>
+              <li>Module and inverter options</li>
+              <li>Mounting and electrical components</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <span class="step-tag">STEP FOUR</span>
+            <h3>Quotation & Project Confirmation</h3>
+            <p>
+              You receive a quotation outlining the proposed equipment,
+              project scope, price and relevant terms. The project moves
+              forward after you review and confirm the agreed details.
+            </p>
+            <ul>
+              <li>Quotation review</li>
+              <li>Scope and payment terms</li>
+              <li>Customer confirmation</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">05</div>
+          <div class="step-content">
+            <span class="step-tag">STEP FIVE</span>
+            <h3>Documentation & Applicable Approvals</h3>
+            <p>
+              The required documentation and utility application steps
+              are identified according to the project type and current
+              DISCOM rules. Subsidy eligibility is checked separately
+              where applicable.
+            </p>
+            <ul>
+              <li>Required documents</li>
+              <li>Utility application process</li>
+              <li>Applicable subsidy guidance</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">06</div>
+          <div class="step-content">
+            <span class="step-tag">STEP SIX</span>
+            <h3>Installation & Electrical Work</h3>
+            <p>
+              Once the required arrangements are in place, the agreed
+              installation work can proceed, including mounting,
+              module installation, inverter setup, wiring and protection.
+            </p>
+            <ul>
+              <li>Mounting structure</li>
+              <li>Solar modules and inverter</li>
+              <li>Electrical safety components</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">07</div>
+          <div class="step-content">
+            <span class="step-tag">STEP SEVEN</span>
+            <h3>Inspection, Commissioning & Handover</h3>
+            <p>
+              The system proceeds through the applicable testing,
+              inspection, utility approval and commissioning steps.
+              The customer can then review the system operation,
+              monitoring arrangements and product documentation.
+            </p>
+            <ul>
+              <li>Applicable testing and approvals</li>
+              <li>Monitoring guidance</li>
+              <li>Warranty documentation</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- OUR APPROACH -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-label">OUR APPROACH</div>
+          <h2 class="section-title">Built Around Your <span>Requirements</span></h2>
+          <p class="section-desc">
+            Our aim is to make solar project discussions clearer,
+            so you can understand the proposal before making a decision.
+          </p>
+        </div>
+
+        <div class="commit-grid">
+          <article class="commit-card">
+            <div class="commit-icon">◎</div>
+            <h3>Requirement-Based Planning</h3>
+            <p>
+              Explore options based on your consumption, property,
+              roof conditions and intended use of solar energy.
+            </p>
+          </article>
+
+          <article class="commit-card">
+            <div class="commit-icon">▤</div>
+            <h3>Clear Project Information</h3>
+            <p>
+              Review the proposed system capacity, key components,
+              project scope, price and relevant terms in your quotation.
+            </p>
+          </article>
+
+          <article class="commit-card">
+            <div class="commit-icon">⚡</div>
+            <h3>Technical Considerations</h3>
+            <p>
+              Consider equipment compatibility, electrical protection,
+              installation conditions and applicable utility requirements.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER CHECKLIST -->
+    <section class="section container">
+      <div class="check-layout">
+        <div class="check-copy">
+          <div class="section-label">GETTING READY</div>
+          <h2>What You Can Keep Ready Before Your Enquiry</h2>
+          <p>
+            A few basic details can help make the initial discussion
+            more productive. Additional documents may be needed after
+            the project type and eligibility requirements are confirmed.
+          </p>
+
+          <ul class="checklist">
+            <li><span class="tick">✓</span> Recent electricity bill or consumption details</li>
+            <li><span class="tick">✓</span> Property type and installation location</li>
+            <li><span class="tick">✓</span> Approximate available rooftop area</li>
+            <li><span class="tick">✓</span> Any special backup or energy requirements</li>
+            <li><span class="tick">✓</span> Questions about project budget or subsidy eligibility</li>
+          </ul>
+        </div>
+
+        <aside class="check-panel">
+          <h3>Every Project Starts with a Conversation.</h3>
+          <p>
+            Whether you are planning solar for a home, shop, office
+            or industrial property, start by sharing your requirements.
+            We can discuss the appropriate next steps for your project.
+          </p>
+          <a href="contact.html" class="btn">Contact Our Team ↗</a>
+
+          <div class="panel-note" style="margin-top:23px">
+            <strong>Important:</strong> Final system design, installation
+            timelines, approvals and subsidy eligibility depend on the
+            site, project scope and applicable rules.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-label">FREQUENTLY ASKED QUESTIONS</div>
+          <h2 class="section-title">Before We <span>Get Started</span></h2>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>How do I start a solar project?</h3>
+            <p>
+              Contact us with your property type and recent electricity
+              bill. We can discuss your requirements and identify the
+              next steps for assessment and quotation.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3>Is a site visit always necessary?</h3>
+            <p>
+              A site assessment may be required to confirm roof
+              suitability, shading, installation conditions and
+              electrical requirements. The exact approach depends
+              on the project.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3>How long does installation take?</h3>
+            <p>
+              The timeline varies with system size, site conditions,
+              material availability, documentation and required
+              utility approvals. A realistic schedule should be
+              discussed after the project is assessed.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3>Can I receive a government solar subsidy?</h3>
+            <p>
+              Some eligible residential rooftop solar projects may
+              qualify under applicable government schemes. Eligibility,
+              documentation and approval conditions must be checked
+              using the current official guidelines.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Let's Take the First Step Towards Solar.</h2>
+          <p>
+            Share your requirements with Intek Solar Systems and
+            explore a solar solution for your property in Valsad,
+            Vapi and surrounding areas.
+          </p>
+        </div>
+        <a href="contact.html" class="btn">Start Your Enquiry ↗</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index2.html" style="color:white">
+            <span class="brand-mark">☀</span>
+            <span>INTEK<small>SOLAR SYSTEMS</small></span>
+          </a>
+          <p style="margin-top:17px;max-width:350px">
+            A solar business brand of Intek Technologies,
+            serving Valsad, Vapi and surrounding areas of South Gujarat.
+          </p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index2.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="why-solar.html">Why Solar?</a>
+            <a href="our-process.html">Our Process</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <p>Valsad – Vapi, Gujarat, India</p>
+          <p>Website: www.inteksolar.in</p>
+          <a href="contact.html">Send an Enquiry ↗</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Intek Solar Systems. All rights reserved.</span>
+        <span>A brand of Intek Technologies</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP BUTTON -->
+  <a class="whatsapp" id="whatsappButton"
+     href="https://wa.me/91XXXXXXXXXX"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Contact us on WhatsApp">◉</a>
+
+  <script>
+    // Replace with your actual WhatsApp number:
+    // India country code + 10-digit mobile number, without + or spaces.
+    const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    document.getElementById("whatsappButton").href =
+      "https://wa.me/" + WHATSAPP_NUMBER;
+  </script>
+
+</body>
+</html>
